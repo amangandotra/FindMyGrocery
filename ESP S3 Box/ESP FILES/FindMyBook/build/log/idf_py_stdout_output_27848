@@ -1,0 +1,71 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\WINDOWS\system32\cmd.exe /C "cd /D "C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "C:/Users/Bhavika Gandotra/Downloads/Smart Library/ESP S3 Box/ESP FILES/FindMyBook/build/bootloader/bootloader.bin""
+Bootloader binary size 0x57e0 bytes. 0x2820 bytes (31%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Completed 'bootloader'
+[4/9] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_voice.c.obj
+[5/9] Linking C static library esp-idf\ui\libui.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol BSP_ERROR_CHECK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:3
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:3
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:3
+info: INFO: Symbol BSP_I2C_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:10
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:10
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:10
+info: INFO: Symbol BSP_I2C_FAST_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:17
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:17
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:17
+info: INFO: Symbol BSP_I2C_CLK_SPEED_HZ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:23
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:23
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:23
+info: INFO: Symbol BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:30
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:30
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:30
+info: INFO: Symbol BSP_SPIFFS_MOUNT_POINT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:36
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:36
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:36
+info: INFO: Symbol BSP_SPIFFS_PARTITION_LABEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:42
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:42
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:42
+info: INFO: Symbol BSP_SPIFFS_MAX_FILES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:48
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:48
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:48
+info: INFO: Symbol BSP_DISPLAY_BRIGHTNESS_LEDC_CH defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:56
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:71
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:56
+info: INFO: Symbol BSP_LCD_DRAW_BUF_HEIGHT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:64
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:64
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:79
+info: INFO: Symbol BSP_LCD_DRAW_BUF_DOUBLE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:71
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:86
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:71
+info: INFO: Symbol BSP_I2S_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box\Kconfig:78
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-lite\Kconfig:78
+    C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\managed_components\espressif__esp-box-3\Kconfig:93
+info: Trying to set symbol ESPTOOLPY_FLASHSIZE_2MB to n, but it is currently selected by choice ESPTOOLPY_FLASHSIZE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol PARTITION_TABLE_SINGLE_APP to n, but it is currently selected by choice PARTITION_TABLE_TYPE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol SR_MN_EN_NONE to n, but it is currently selected by choice ENGLISH_SR_MN_MODEL_SEL. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol SPIRAM_MODE_QUAD to n, but it is currently selected by choice SPIRAM_MODE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol ESP32S3_INSTRUCTION_CACHE_16KB to n, but it is currently selected by choice ESP32S3_INSTRUCTION_CACHE_SIZE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol ESP32S3_DATA_CACHE_32KB to n, but it is currently selected by choice ESP32S3_DATA_CACHE_SIZE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol ESP32S3_DATA_CACHE_LINE_32B to n, but it is currently selected by choice ESP32S3_DATA_CACHE_LINE_SIZE. For setting it to n, set another choice symbol to y instead.
+info: Trying to set symbol ESP_CONSOLE_UART_DEFAULT to n, but it is currently selected by choice ESP_CONSOLE_UART. For setting it to n, set another choice symbol to y instead.
+[7/9] Linking CXX executable FindMyBook.elf
+FAILED: FindMyBook.elf 
+C:\WINDOWS\system32\cmd.exe /C "cd . && C:\Espressif\tools\xtensa-esp-elf\esp-14.2.0_20251107\xtensa-esp-elf\bin\xtensa-esp32s3-elf-g++.exe -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -nostartfiles    -Wl,--cref -Wl,--defsym=IDF_TARGET_ESP32S3=0 "-Wl,--Map=C:/Users/Bhavika Gandotra/Downloads/Smart Library/ESP S3 Box/ESP FILES/FindMyBook/build/FindMyBook.map" -Wl,--no-warn-rwx-segments -Wl,--orphan-handling=warn -fno-rtti -fno-lto -Wl,--gc-sections -Wl,--warn-common -T esp32s3.peripherals.ld -T esp32s3.rom.ld -T esp32s3.rom.api.ld -T esp32s3.rom.bt_funcs.ld -T esp32s3.rom.libgcc.ld -T esp32s3.rom.wdt.ld -T esp32s3.rom.version.ld -T esp32s3.rom.ble_master.ld -T esp32s3.rom.ble_50.ld -T esp32s3.rom.ble_smp.ld -T esp32s3.rom.ble_dtm.ld -T esp32s3.rom.ble_test.ld -T esp32s3.rom.ble_scan.ld -T esp32s3.rom.libc.ld -T esp32s3.rom.newlib.ld -T memory.ld -T sections.ld @CMakeFiles\FindMyBook.elf.rsp -o FindMyBook.elf && cd ."
+C:/Espressif/tools/xtensa-esp-elf/esp-14.2.0_20251107/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/14.2.0/../../../../xtensa-esp-elf/bin/ld.exe: esp-idf/ui/libui.a(api_voice.c.obj):(.literal.voice_task+0x18): undefined reference to `record_dev'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

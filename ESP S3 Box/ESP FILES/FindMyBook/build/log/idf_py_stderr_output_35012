@@ -1,0 +1,10 @@
+Command: cmake -G Ninja -DPYTHON_DEPS_CHECKED=1 -DPYTHON=C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe -DESP_PLATFORM=1 -DCCACHE_ENABLE=1 C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.5.2/tools/cmake/build.cmake:629 (message):
+  ERROR: Because project depends on both espressif/esp_codec_dev (^1.2.0) and
+  espressif/esp_codec_dev (1.1.0), version solving failed.
+
+Call Stack (most recent call first):
+  C:/Espressif/frameworks/esp-idf-v5.5.2/tools/cmake/project.cmake:740 (idf_build_process)
+  CMakeLists.txt:11 (project)
+
+

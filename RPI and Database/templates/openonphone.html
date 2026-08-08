@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FindMyBook — Location</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f4f6fb;
+      --card:#ffffff;
+      --accent:#1254ff;
+      --muted:#6b7280;
+      --success:#16a34a;
+      --danger:#ef4444;
+      --shadow: 0 8px 28px rgba(18,84,255,0.08);
+      --img-w:332px; /* 87.8mm * 96dpi/25.4 ≈ 332px */
+      --img-h:170px; /* 45.02mm -> ~170px */
+    }
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Arial;background:var(--bg);color:#071029}
+    .topbar{height:72px;background:linear-gradient(90deg,#ffffff, #f8fafc);display:flex;align-items:center;padding:0 24px;box-shadow:0 1px 0 rgba(15,23,42,0.04)}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:44px;width:auto}
+
+    .wrap{max-width:1100px;margin:28px auto;padding:20px}
+    .card{background:var(--card);border-radius:14px;padding:22px;display:flex;gap:24px;box-shadow:var(--shadow);align-items:flex-start}
+
+    /* left column: book image */
+    .left{flex:0 0 auto}
+    .book-image{
+      width:var(--img-w);
+      height:var(--img-h);
+      background:#eef2ff;border-radius:8px;display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:0 6px 18px rgba(15,23,42,0.06);
+    }
+    .book-image img{width:100%;height:100%;object-fit:cover}
+
+    /* right: details */
+    .right{flex:1;display:flex;flex-direction:column}
+    .title{font-size:20px;font-weight:700;color:#072554;margin-bottom:6px}
+    .meta{color:var(--muted);margin-bottom:12px}
+
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:18px}
+    .stat{background:#fbfdff;padding:12px;border-radius:8px;border:1px solid #eef2ff}
+    .stat .k{font-size:12px;color:var(--muted)}
+    .stat .v{font-weight:600;margin-top:6px;color:#0b2a66}
+
+    .actions{display:flex;gap:12px;margin-top:auto}
+    .btn{padding:10px 16px;border-radius:9px;border:none;cursor:pointer;font-weight:600}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 18px rgba(18,84,255,0.12)}
+    .btn-outline{background:transparent;border:1px solid #e6e9f2;color:#0b2a66}
+    .btn-ghost{background:#f8fafc;color:#0b2a66;border:1px dashed #e6e9f2}
+
+    .map-preview{margin-top:18px;border-radius:10px;overflow:hidden;border:1px solid #eef2ff}
+    .map-preview img{width:100%;height:260px;object-fit:cover}
+
+    /* small notices */
+    .notice{padding:8px 12px;border-radius:8px;font-size:13px}
+    .notice.ok{background:#f0fdf4;color:var(--success);border:1px solid rgba(16,185,129,0.12)}
+    .notice.err{background:#fff1f2;color:var(--danger);border:1px solid rgba(239,68,68,0.08)}
+
+    /* modal */
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.45);display:flex;align-items:center;justify-content:center;visibility:hidden;opacity:0;transition:opacity .18s}
+    .modal.show{visibility:visible;opacity:1}
+    .modal-card{width:min(920px,95%);background:var(--card);border-radius:12px;padding:12px}
+    .modal-card img{width:100%;height:560px;object-fit:contain}
+
+    @media (max-width:900px){
+      .card{flex-direction:column;align-items:center}
+      .right{width:100%}
+      .grid{grid-template-columns:1fr}
+      .map-preview img{height:200px}
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="logo">
+      <img src="/static/logo.png" alt="logo" />
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div id="card" class="card">
+      <div class="left">
+        <div class="book-image" id="bookImageWrap">
+          <img id="bookImage" src="/static/books/placeholder.png" alt="book cover" />
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="title" id="bookTitle">Loading…</div>
+        <div class="meta" id="bookCode">Code: —</div>
+
+        <div class="grid">
+          <div class="stat">
+            <div class="k">Rack</div>
+            <div class="v" id="rackV">—</div>
+          </div>
+          <div class="stat">
+            <div class="k">Position</div>
+            <div class="v" id="posV">—</div>
+          </div>
+          <div class="stat">
+            <div class="k">Availability</div>
+            <div class="v" id="availV">—</div>
+          </div>
+        </div>
+
+        <div class="actions">
+          <button id="blinkBookBtn" class="btn btn-primary">Blink Book</button>
+          <button id="blinkRackBtn" class="btn btn-outline">Blink Rack</button>
+          <button id="openLocBtn" class="btn btn-ghost">Open Location</button>
+        </div>
+
+        <div class="map-preview" id="mapPreview" style="display:none; margin-top:18px">
+          <img id="mapImage" src="/static/maps/map_A_left.png" alt="map preview">
+        </div>
+
+        <div style="height:6px"></div>
+        <div id="feedback" style="margin-top:12px"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- modal for larger map -->
+  <div id="modal" class="modal"><div class="modal-card"><button id="closeModal" style="float:right;margin-bottom:8px">Close</button><img id="modalMap" src="" alt="map large"></div></div>
+
+  <script>
+    // Utility: parse query string
+    function qs() {
+      const params = {};
+      const q = location.search.replace(/^\?/, '');
+      q.split('&').forEach(p => { if(!p) return; const [k,v] = p.split('='); params[decodeURIComponent(k)] = decodeURIComponent(v||''); });
+      return params;
+    }
+
+    const params = qs();
+    const rack = (params.r || params.R || '').toUpperCase();
+    const row = params.row || params.rw || '';
+    const col = params.col || params.c || '';
+    const side = (params.side || '').toLowerCase();
+
+    const els = {
+      bookTitle: document.getElementById('bookTitle'),
+      bookCode: document.getElementById('bookCode'),
+      bookImage: document.getElementById('bookImage'),
+      rackV: document.getElementById('rackV'),
+      posV: document.getElementById('posV'),
+      availV: document.getElementById('availV'),
+      mapPreview: document.getElementById('mapPreview'),
+      mapImage: document.getElementById('mapImage'),
+      feedback: document.getElementById('feedback'),
+      modal: document.getElementById('modal'),
+      modalMap: document.getElementById('modalMap')
+    };
+
+    function showFeedback(msg, type='ok'){
+      els.feedback.innerHTML = `<div class="notice ${type==='ok'?'ok':'err'}">${msg}</div>`;
+      setTimeout(()=>{ if(els.feedback) els.feedback.innerHTML = '' }, 3500);
+    }
+
+    // Determine map image name based on rack+side
+    function mapImageFor(rack, side){
+      if(!rack) return '/static/maps/map_A_left.png';
+      const r = rack.toUpperCase();
+      const s = (side||'left').toLowerCase();
+      return `/static/maps/map_${r}_${s}.png`;
+    }
+
+    // call server API to fetch book details for the provided location
+    async function fetchBook(){
+      if(!rack || !row || !col || !side){
+        els.bookTitle.textContent = 'Missing location parameters';
+        els.bookCode.textContent = 'Provide r, row, col and side in URL';
+        return;
+      }
+
+      try{
+        const url = `/api/map-data?r=${encodeURIComponent(rack)}&row=${encodeURIComponent(row)}&col=${encodeURIComponent(col)}&side=${encodeURIComponent(side)}`;
+        const res = await fetch(url);
+        if(!res.ok){
+          els.bookTitle.textContent = 'No book found';
+          els.bookCode.textContent = 'Location empty or server error';
+          showFeedback('No book found at this slot', 'err');
+          return;
+        }
+        const data = await res.json();
+        // expected fields: book_name, book_code, copy_uid, status
+        els.bookTitle.textContent = data.book_name || 'Unknown title';
+        els.bookCode.textContent = `Code: ${data.book_code || '—'}`;
+        els.rackV.textContent = rack;
+        els.posV.textContent = `Row ${row} • Col ${col} • ${side}`;
+        els.availV.textContent = data.status || '—';
+
+        // set book image based on book_code
+        if(data.book_code){
+          const imgPath = `/static/books/${data.book_code}.png`;
+          els.bookImage.src = imgPath;
+        }
+
+        // show map preview
+        const m = mapImageFor(rack, side);
+        els.mapImage.src = m;
+        els.modalMap.src = m;
+        // els.mapPreview.style.display = 'block';
+
+      }catch(e){
+        console.error(e);
+        els.bookTitle.textContent = 'Error fetching data';
+        els.bookCode.textContent = '';
+        showFeedback('Server error while loading book', 'err');
+      }
+    }
+
+    // Blink rack: POST /blink  (as server blink handler expects)
+    async function blinkRack(){
+      try{
+        const body = { rack: rack.toLowerCase()};
+        const res = await fetch('/blink_rack', { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(body) });
+        if(!res.ok) throw new Error('rack rejected');
+        showFeedback('Rack blink request sent', 'ok');
+      }catch(e){
+        showFeedback('Failed to reach rack', 'err');
+      }
+    }
+
+    // Blink book: use same endpoint for now or a dedicated one
+    async function blinkBook(){
+      try{
+        const body = { rack: rack.toLowerCase(), row: parseInt(row)||0, column: parseInt(col)||0, side: side, book:true };
+        const res = await fetch('/blink', { method:'POST', headers:{'content-type':'application/json'}, body: JSON.stringify(body) });
+        if(!res.ok) throw new Error('blink failed');
+        showFeedback('Blinking book LEDs', 'ok');
+      }catch(e){
+        showFeedback('Blink failed', 'err');
+      }
+    }
+
+    document.getElementById('blinkRackBtn').addEventListener('click', blinkRack);
+    document.getElementById('blinkBookBtn').addEventListener('click', blinkBook);
+    document.getElementById('openLocBtn').addEventListener('click', ()=>{
+      els.modal.classList.add('show');
+    });
+    document.getElementById('closeModal').addEventListener('click', ()=>{els.modal.classList.remove('show')});
+
+    // kick off
+    fetchBook();
+  </script>
+</body>
+</html>

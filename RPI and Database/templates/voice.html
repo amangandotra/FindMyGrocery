@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Smart Library Voice</title>
+
+<style>
+
+body{
+background:#0f172a;
+color:white;
+font-family:sans-serif;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+gap:20px;
+}
+
+button{
+background:#2563eb;
+border:none;
+padding:25px;
+font-size:20px;
+border-radius:50%;
+color:white;
+cursor:pointer;
+box-shadow:0 0 25px #2563eb;
+}
+
+#status{
+background:#111827;
+padding:20px;
+border-radius:12px;
+width:320px;
+min-height:120px;
+white-space:pre-line;
+}
+
+</style>
+</head>
+
+<body>
+
+<button onclick="startVoice()">🎤</button>
+
+<div id="status">
+Ready
+</div>
+
+<script>
+
+const statusDiv = document.getElementById("status")
+
+function log(text){
+    statusDiv.innerText += "\n" + text
+}
+
+async function startVoice(){
+
+    statusDiv.innerText = "Listening..."
+
+    // Tell ESP to show overlay
+    await fetch("/voice_start")
+
+    if(!navigator.mediaDevices){
+        log("Browser not supported")
+        return
+    }
+
+    let stream
+
+    try{
+        stream = await navigator.mediaDevices.getUserMedia({audio:true})
+    }catch(e){
+        log("Mic permission denied")
+        return
+    }
+
+    const recorder = new MediaRecorder(stream)
+
+    let chunks=[]
+
+    recorder.ondataavailable = e => chunks.push(e.data)
+
+    recorder.onstop = async ()=>{
+
+        statusDiv.innerText="Processing..."
+
+        const blob=new Blob(chunks,{type:"audio/webm"})
+
+        const fd=new FormData()
+        fd.append("audio",blob,"voice.webm")
+
+        const res = await fetch("/voice",{
+            method:"POST",
+            body:fd
+        })
+
+        const data = await res.json()
+
+        log("Server response:")
+        log(JSON.stringify(data,null,2))
+    }
+
+    recorder.start()
+
+    log("Recording 3 seconds...")
+
+    setTimeout(()=>{
+        recorder.stop()
+    },3000)
+}
+
+</script>
+
+</body>
+</html>

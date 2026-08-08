@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Library Registration</title>
+
+<style>
+
+body{
+font-family: Arial;
+background: linear-gradient(135deg,#4facfe,#00f2fe);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.card{
+background:white;
+padding:40px;
+border-radius:12px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+width:350px;
+text-align:center;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:6px;
+border:1px solid #ccc;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#4facfe;
+border:none;
+color:white;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>Library Registration</h2>
+
+<p><b>Your Enrollment Number</b></p>
+<h3 id="enroll">{{ enrollment_no }}</h3>
+
+<form id="form">
+
+<input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+<button type="submit">Register</button>
+
+</form>
+
+<p id="result"></p>
+
+</div>
+
+
+<script>
+
+document.getElementById("form").addEventListener("submit", async function(e){
+
+e.preventDefault()
+
+let formData = new FormData(this)
+
+let res = await fetch("/register_user",{
+method:"POST",
+body:formData
+})
+
+let data = await res.json()
+
+if(data.status=="success"){
+
+document.getElementById("result").innerHTML =
+"✅ Registration successful<br>Your Enrollment Number: <b>"+data.enrollment+"</b>"
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

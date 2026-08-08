@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+RPI and Database/Include
+RPI and Database/Lib
+FindMyBook.zip
+ESP S3 Box.zip

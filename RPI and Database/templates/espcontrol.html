@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ESP Smart Library Control</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+    margin:0;
+    background:#0f172a;
+    font-family:sans-serif;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    height:100vh;
+}
+
+.container{
+    background:#111827;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 0 40px rgba(0,0,0,0.5);
+    width:350px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    margin:8px 0;
+    font-size:16px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:white;
+    transition:0.2s;
+}
+
+button:hover{
+    transform:scale(1.03);
+}
+
+.issue{ background:#2563eb; }
+.return{ background:#059669; }
+.find{ background:#7c3aed; }
+.voice{ background:#ea580c; }
+.close{ background:#dc2626; }
+
+input{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    border:none;
+    margin-bottom:10px;
+}
+
+#status{
+    margin-top:15px;
+    background:#020617;
+    padding:10px;
+    border-radius:8px;
+    font-size:14px;
+    min-height:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>📚 ESP Smart Library</h2>
+
+<button class="issue" onclick="callESP('/open_issue')">Issue Screen</button>
+
+<button class="return" onclick="callESP('/open_return')">Return Screen</button>
+
+<input id="book" placeholder="Book name (for find)" />
+
+<button class="find" onclick="findBook()">Find Book</button>
+
+<hr>
+
+<button class="voice" onclick="callESP('/voice_start')">Voice Start</button>
+
+<button class="voice" onclick="callESP('/voice_error')">Voice Error</button>
+
+<button class="close" onclick="callESP('/voice_close')">Voice Close</button>
+
+<div id="status">Ready</div>
+
+</div>
+
+<script>
+
+const ESPBOX_IP = "{{ esp_ip if esp_ip else '' }}";
+
+async function callESP(endpoint){
+
+    const url = `http://${location.hostname}${endpoint}`
+
+    document.getElementById("status").innerText="Sending request..."
+
+    try{
+
+        const res = await fetch(url)
+
+        const text = await res.text()
+
+        document.getElementById("status").innerText="Success: "+text
+
+    }catch(e){
+
+        document.getElementById("status").innerText="Error contacting ESP"
+
+    }
+}
+
+async function findBook(){
+
+    const name = document.getElementById("book").value
+
+    if(!name){
+        alert("Enter book name")
+        return
+    }
+
+    const url = `http://${location.hostname}/find_book?name=${encodeURIComponent(name)}`
+
+    document.getElementById("status").innerText="Finding book..."
+
+    try{
+
+        const res = await fetch(url)
+
+        const text = await res.text()
+
+        document.getElementById("status").innerText="Response: "+text
+
+    }catch(e){
+
+        document.getElementById("status").innerText="Error"
+
+    }
+}
+
+</script>
+
+</body>
+</html>

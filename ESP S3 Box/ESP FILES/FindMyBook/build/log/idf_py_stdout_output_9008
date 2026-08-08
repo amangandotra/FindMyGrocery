@@ -1,0 +1,1073 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.2\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\build\FindMyBook.elf C:\Users\Bhavika Gandotra\Downloads\Smart Library\ESP S3 Box\ESP FILES\FindMyBook\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.2\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xa (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4037fb0e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x173c
+load:0x403c8700,len:0xe80
+load:0x403cb700,len:0x31cc
+entry 0x403c8948
+[0;32mI (19) boot: ESP-IDF v5.5.2 2nd stage bootloader[0m
+[0;32mI (19) boot: compile time Feb 10 2026 14:23:46[0m
+[0;32mI (19) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (19) boot: efuse block revision: v1.3[0m
+[0;32mI (20) qio_mode: Enabling QIO for flash chip GD[0m
+[0;32mI (20) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (20) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (20) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (20) boot: Enabling RNG early entropy source...[0m
+[0;32mI (21) boot: Partition Table:[0m
+[0;32mI (21) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (21) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (22) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (22) boot:  2 factory          factory app      00 00 00010000 00400000[0m
+[0;32mI (22) boot: End of partition table[0m
+[0;32mI (23) esp_image: segment 0: paddr=00010020 vaddr=3c0f0020 size=11d83ch (1169468) map[0m
+[0;32mI (197) esp_image: segment 1: paddr=0012d864 vaddr=3fca3c00 size=027b4h ( 10164) load[0m
+[0;32mI (199) esp_image: segment 2: paddr=00130020 vaddr=42000020 size=ead88h (961928) map[0m
+[0;32mI (342) esp_image: segment 3: paddr=0021adb0 vaddr=3fca63b4 size=02e70h ( 11888) load[0m
+[0;32mI (344) esp_image: segment 4: paddr=0021dc28 vaddr=40378000 size=1bb98h (113560) load[0m
+[0;32mI (366) esp_image: segment 5: paddr=002397c8 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (377) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (378) boot: Disabling RNG early entropy source...[0m
+[0;32mI (379) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (379) octal_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (379) octal_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (379) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (380) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (380) octal_psram: VCC          : 0x00 (1.8V)[0m
+[0;32mI (380) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (380) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (381) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (381) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (381) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (382) MSPI Timing: Enter psram timing tuning[0m
+[0;32mI (383) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (383) esp_psram: Speed: 80MHz[0m
+[0;32mI (383) cpu_start: Multicore app[0m
+[0;32mI (986) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (995) cpu_start: Pro cpu start user code[0m
+[0;32mI (995) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (995) app_init: Project name:     FindMyBook[0m
+[0;32mI (995) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (996) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (996) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (996) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (996) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (997) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (997) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (997) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (997) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (997) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (998) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (998) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (999) spi_flash: detected chip: gd[0m
+[0;32mI (999) spi_flash: flash io: qio[0m
+[0;33mW (1000) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1000) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1001) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1001) main_task: Started on CPU0[0m
+[0;32mI (1011) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1011) main_task: Calling app_main()[0m
+[0;32mI (1011) main: Starting FindMyBook UI[0m
+[0;32mI (1031) pp: pp rom version: e7ae62f[0m
+[0;32mI (1031) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1041) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1041) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1051) wifi:wifi certification version: v7.0[0m
+[0;32mI (1051) wifi:config NVS flash: enabled[0m
+[0;32mI (1051) wifi:config nano formatting: disabled[0m
+[0;32mI (1051) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1051) wifi:Init management short buffer num: 32[0m
+[0;32mI (1051) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1051) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1051) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1051) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1051) wifi_init: rx ba win: 6[0m
+[0;32mI (1051) wifi_init: accept mbox: 6[0m
+[0;32mI (1051) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1051) wifi_init: udp mbox: 6[0m
+[0;32mI (1051) wifi_init: tcp mbox: 6[0m
+[0;32mI (1051) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1051) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1051) wifi_init: tcp mss: 1440[0m
+[0;32mI (1051) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1051) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1051) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1091) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1091) wifi:enable tsf[0m
+[0;32mI (1091) WIFI: WiFi init done[0m
+[0;32mI (1091) RFID: RFID init done[0m
+[0;32mI (1091) LVGL: Starting LVGL task[0m
+[0;33mW (1091) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1091) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1101) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1101) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1101) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1121) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1121) wifi:connected with SmartLibrary, aid = 1, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1121) wifi:security: Open Auth, phy: bgn, rssi: -27[0m
+[0;32mI (1121) wifi:pm start, type: 1[0m
+
+[0;32mI (1121) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1121) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1131) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1131) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1151) wifi:pm stop, total sleep time: 0 us / 24912 us[0m
+
+[0;32mI (1151) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (1151) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1151) WIFI: Disconnected, retrying...[0m
+[0;32mI (1151) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1161) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1161) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1171) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1181) wifi:connected with SmartLibrary, aid = 1, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1181) wifi:security: Open Auth, phy: bgn, rssi: -28[0m
+[0;32mI (1181) wifi:pm start, type: 1[0m
+
+[0;32mI (1181) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;33mW (1211) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1211) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1211) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1211) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1211) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1211) main: ✅ LVGL input device detected[0m
+[0;32mI (1211) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1241) RFID: Mode set: 0[0m
+[0;32mI (1241) RFID: Callback cleared[0m
+[0;32mI (1251) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (1251) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1251) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1291) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1291) KEYBOARD: Creating keyboard (parent = 0x3fccba10)[0m
+[0;32mI (1311) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1311) KEYBOARD: Creating keyboard (parent = 0x3fcccf9c)[0m
+[0;32mI (1331) RFID: Callback set[0m
+[0;32mI (1331) RFID: Mode set: 2[0m
+[0;32mI (1341) main: UI started successfully[0m
+[0;32mI (1341) main_task: Returned from app_main()[0m
+[0;32mI (1661) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2201) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2201) WIFI: Connected to WiFi[0m
+[0;32mI (2201) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2201) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2201) WIFI: Starting register IP task[0m
+[0;32mI (2201) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (2921) WIFI: Register Response: [0m
+[0;32mI (6861) RFID: Mode set: 0[0m
+[0;32mI (6861) RFID: Callback cleared[0m
+[0;32mI (7161) RFID: RFID DOOR → AA004A01[0m
+[0;33mW (7161) THEFT: DOOR RFID detected: AA004A01[0m
+[0;32mI (8631) API_THEFT: Response: {
+  "issued": false
+}
+[0m
+[0;31mE (8631) API_THEFT: 🚨🚨🚨 THEFT DETECTED for UID: AA004A01[0m
+[0;32mI (14841) RFID: RFID DOOR → AA004A01[0m
+[0;33mW (14841) THEFT: DOOR RFID detected: AA004A01[0m
+[0;32mI (15211) API_THEFT: Response: {
+  "issued": false
+}
+[0m
+[0;31mE (15211) API_THEFT: 🚨🚨🚨 THEFT DETECTED for UID: AA004A01[0m
+[0;32mI (20501) RFID: RFID DOOR → AA004A01[0m
+[0;33mW (20501) THEFT: DOOR RFID detected: AA004A01[0m
+[0;32mI (20941) API_THEFT: Response: {
+  "issued": false
+}
+[0m
+[0;31mE (20941) API_THEFT: 🚨🚨🚨 THEFT DETECTED for UID: AA004A01[0m
+[0;32mI (40331) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (40331) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (40411) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (40411) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (42461) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (42461) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (42861) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (42861) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (45191) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (45191) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (45521) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (45521) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (986) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (994) cpu_start: Pro cpu start user code[0m
+[0;32mI (995) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (995) app_init: Application information:[0m
+[0;32mI (995) app_init: Project name:     FindMyBook[0m
+[0;32mI (995) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (995) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (995) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (996) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (996) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (996) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (996) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (997) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (997) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (997) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (997) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (998) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (999) spi_flash: detected chip: gd[0m
+[0;32mI (999) spi_flash: flash io: qio[0m
+[0;33mW (999) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1000) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1000) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1001) main_task: Started on CPU0[0m
+[0;32mI (1011) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1011) main_task: Calling app_main()[0m
+[0;32mI (1011) main: Starting FindMyBook UI[0m
+[0;32mI (1031) pp: pp rom version: e7ae62f[0m
+[0;32mI (1031) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1041) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1041) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1051) wifi:wifi certification version: v7.0[0m
+[0;32mI (1051) wifi:config NVS flash: enabled[0m
+[0;32mI (1051) wifi:config nano formatting: disabled[0m
+[0;32mI (1051) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1051) wifi:Init management short buffer num: 32[0m
+[0;32mI (1051) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1051) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1051) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1051) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1051) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1051) wifi_init: rx ba win: 6[0m
+[0;32mI (1051) wifi_init: accept mbox: 6[0m
+[0;32mI (1051) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1051) wifi_init: udp mbox: 6[0m
+[0;32mI (1051) wifi_init: tcp mbox: 6[0m
+[0;32mI (1051) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1051) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1051) wifi_init: tcp mss: 1440[0m
+[0;32mI (1051) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1051) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1051) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1091) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1091) wifi:enable tsf[0m
+[0;32mI (1091) WIFI: WiFi init done[0m
+[0;32mI (1091) RFID: RFID init done[0m
+[0;32mI (1091) LVGL: Starting LVGL task[0m
+[0;33mW (1091) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1101) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1101) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1101) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1111) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1121) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1121) wifi:connected with SmartLibrary, aid = 1, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1121) wifi:security: Open Auth, phy: bgn, rssi: -41[0m
+[0;32mI (1131) wifi:pm start, type: 1[0m
+
+[0;32mI (1131) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1131) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1131) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1211) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1211) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;33mW (1221) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1221) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1221) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1221) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1221) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1221) main: ✅ LVGL input device detected[0m
+[0;32mI (1221) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1251) RFID: Mode set: 0[0m
+[0;32mI (1251) RFID: Callback cleared[0m
+[0;32mI (1261) KEYBOARD: Creating keyboard (parent = 0x3fcc8d8c)[0m
+[0;32mI (1291) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1291) KEYBOARD: Creating keyboard (parent = 0x3fccba58)[0m
+[0;32mI (1321) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1321) KEYBOARD: Creating keyboard (parent = 0x3fcccfe4)[0m
+[0;32mI (1341) RFID: Callback set[0m
+[0;32mI (1341) RFID: Mode set: 2[0m
+[0;32mI (1351) main: UI started successfully[0m
+[0;32mI (1351) main_task: Returned from app_main()[0m
+[0;32mI (2161) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2161) WIFI: Connected to WiFi[0m
+[0;32mI (2161) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2161) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2161) WIFI: Starting register IP task[0m
+[0;32mI (2161) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (2991) WIFI: Register Response: [0m
+[0;32mI (5361) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (5361) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (5391) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (5391) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (6861) RFID: Mode set: 0[0m
+[0;32mI (6861) RFID: Callback cleared[0m
+[0;32mI (9591) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (9591) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (9941) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (9951) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (15091) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (15091) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (16501) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (16501) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (19051) RFID: RFID COUNTER → 0D854103[0m
+[0;32mI (19051) RFID: Ignored counter tag: mode=0[0m
+[0;32mI (42991) RFID: RFID COUNTER → 0D854103[0m
+[0;32mI (42991) RFID: Ignored counter tag: mode=0[0m
+[0;32mI (44321) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (44321) RFID: Callback set[0m
+[0;32mI (44331) RFID: Mode set: 1[0m
+[0;32mI (45191) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (45191) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (45601) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (45601) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (47101) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (47101) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (47131) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (47131) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (48671) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (48671) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (48701) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (48711) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (50241) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (50241) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (50271) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (50281) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (51801) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (51801) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (51831) API_THEFT: Response: {
+  "issued": true
+}
+[0m
+[0;32mI (51841) API_THEFT: ✅ Book is issued – allowed: 0D854103[0m
+[0;32mI (53591) RFID: Mode set: 0[0m
+[0;32mI (53591) RFID: Callback cleared[0m
+[0;32mI (53621) RFID: Mode set: 0[0m
+[0;32mI (53621) RFID: Callback cleared[0m
+[0;32mI (53891) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (53891) RFID: Mode set: 0[0m
+[0;32mI (53891) RFID: Callback cleared[0m
+[0;32mI (55151) RETURN: Return screen loaded → enabling RFID[0m
+[0;32mI (55151) RFID: Callback set[0m
+[0;32mI (55151) RFID: Mode set: 2[0m
+[0;32mI (56601) RFID: RFID COUNTER → 0D854103[0m
+[0;32mI (56601) RETURN_HANDLER: Return RFID scanned: 0D854103[0m
+[0;32mI (61091) API_RETURN: Return successful[0m
+[0;32mI (66641) RFID: Mode set: 0[0m
+[0;32mI (66641) RFID: Callback cleared[0m
+[0;32mI (69051) RFID: RFID DOOR → 0D854103[0m
+[0;33mW (69051) THEFT: DOOR RFID detected: 0D854103[0m
+[0;32mI (70361) API_THEFT: Response: {
+  "issued": false
+}
+[0m
+[0;31mE (70361) API_THEFT: 🚨🚨🚨 THEFT DETECTED for UID: 0D854103[0m
+[0;32mI (344) esp_image: segment 3: paddr=0021adb0 vaddr=3fca63b4 size[0;32mI (991) esp_psram: SPI SRAM memory test OK[0m[0m
+[0;32mI (1000) cpu_start: Pro cpu start user code[0m
+[0;32mI (1000) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1000) app_init: Application information:[0m
+[0;32mI (1000) app_init: Project name:     FindMyBook[0m
+[0;32mI (1000) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (1000) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (1001) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (1001) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (1001) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1001) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1001) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1002) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1002) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (1002) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1002) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1003) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1004) spi_flash: detected chip: gd[0m
+[0;32mI (1004) spi_flash: flash io: qio[0m
+[0;33mW (1004) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1005) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1005) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1006) main_task: Started on CPU0[0m
+[0;32mI (1016) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1016) main: Starting FindMyBook UI[0m
+[0;32mI (1036) pp: pp rom version: e7ae62f[0m
+[0;32mI (1036) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1046) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1046) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1056) wifi:wifi certification version: v7.0[0m
+[0;32mI (1056) wifi:config NVS flash: enabled[0m
+[0;32mI (1056) wifi:config nano formatting: disabled[0m
+[0;32mI (1056) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1056) wifi:Init management short buffer num: 32[0m
+[0;32mI (1056) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1056) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1056) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1056) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi_init: rx ba win: 6[0m
+[0;32mI (1056) wifi_init: accept mbox: 6[0m
+[0;32mI (1056) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1056) wifi_init: udp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp mss: 1440[0m
+[0;32mI (1056) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1056) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1096) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1096) wifi:enable tsf[0m
+[0;32mI (1096) WIFI: WiFi init done[0m
+[0;32mI (1096) RFID: RFID init done[0m
+[0;32mI (1096) LVGL: Starting LVGL task[0m
+[0;33mW (1096) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1096) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1106) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1106) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1106) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1126) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1126) wifi:connected with SmartLibrary, aid = 1, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1126) wifi:security: Open Auth, phy: bgn, rssi: -48[0m
+[0;32mI (1126) wifi:pm start, type: 1[0m
+
+[0;32mI (1126) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1126) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1126) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1126) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1136) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;33mW (1216) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1216) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1216) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1216) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1216) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1216) main: ✅ LVGL input device detected[0m
+[0;32mI (1216) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1246) RFID: Mode set: 0[0m
+[0;32mI (1246) RFID: Callback cleared[0m
+[0;32mI (1256) KEYBOARD: Creating keyboard (parent = 0x3fcc8d94)[0m
+[0;32mI (1286) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1286) KEYBOARD: Creating keyboard (parent = 0x3fccba60)[0m
+[0;32mI (1316) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1316) KEYBOARD: Creating keyboard (parent = 0x3fcccfec)[0m
+[0;32mI (1336) RFID: Callback set[0m
+[0;32mI (1336) RFID: Mode set: 2[0m
+[0;32mI (1346) main: UI started successfully[0m
+[0;32mI (1346) main_task: Returned from app_main()[0m
+[0;32mI (2166) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2166) WIFI: Connected to WiFi[0m
+[0;32mI (2166) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2166) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2166) WIFI: Starting register IP task[0m
+[0;32mI (2166) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (6866) RFID: Mode set: 0[0m
+[0;32mI (6866) RFID: Callback cleared[0m
+[0;31mE (9166) esp-tls: couldn't get hostname for :fmb.local: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9166) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9166) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (9166) WIFI: ⚠️ fmb.local not available or server offline[0m
+[0;33mW (9166) WIFI: HTTP error: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (135746) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (144756) wifi:bcn_timeout,ap_probe_send_start[0m
+[0;32mI (147256) wifi:ap_probe_send over, reset wifi status to disassoc[0m
+[0;32mI (147256) wifi:state: run -> init (0xc800)[0m
+[0;32mI (147276) wifi:pm stop, total sleep time: 82219242 us / 146145385 us[0m
+
+[0;32mI (147276) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (147276) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (147276) WIFI: Disconnected, retrying...[0m
+[0;32mI (149676) WIFI: Disconnected, retrying...[0m
+[0;32mI (152086) WIFI: Disconnected, retrying...[0m
+[0;32mI (154496) WIFI: Disconnected, retrying...[0m
+[0;32mI (156896) WIFI: Disconnected, retrying...[0m
+[0;32mI (159306) WIFI: Disconnected, retrying...[0m
+[0;32mI (161706) WIFI: Disconnected, retrying...[0m
+[0;32mI (164116) WIFI: Disconnected, retrying...[0m
+[0;32mI (166526) WIFI: Disconnected, retrying...[0m
+[0;32mI (168926) WIFI: Disconnected, retrying...[0m
+[0;32mI (171336) WIFI: Disconnected, retrying...[0m
+[0;32mI (173736) WIFI: Disconnected, retrying...[0m
+[0;32mI (176146) WIFI: Disconnected, retrying...[0m
+[0;32mI (178556) WIFI: Disconnected, retrying...[0m
+[0;32mI (180956) WIFI: Disconnected, retrying...[0m
+[0;32mI (183366) WIFI: Disconnected, retrying...[0m
+[0;32mI (183376) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (183376) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (183406) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (183416) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (183426) wifi:connected with SmartLibrary, aid = 3, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (183426) wifi:security: Open Auth, phy: bgn, rssi: -85[0m
+[0;32mI (183426) wifi:pm start, type: 1[0m
+
+[0;32mI (183426) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (183426) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (183436) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (183656) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (183656) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (184456) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (184456) WIFI: Connected to WiFi[0m
+[0;32mI (184456) HTTP_SERVER: Starting HTTP Server[0m
+[0;31mE (184456) httpd: httpd_server_init: error in listen (112)[0m
+[0;32mI (184456) WIFI: Starting register IP task[0m
+[0;32mI (184456) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (186576) WIFI: Register Response: [0m
+[0;32mI (352896) TA: Textarea focused → show keyboard[0m
+[0;32mI (352896) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (352896) KEYBOARD: Creating keyboard (parent = 0x3fcc8d94)[0m
+[0;32mI (352896) TA: keyboard parent=0x3fcc8d94 visible? 1[0m
+[0;32mI (352896) TA: Textarea focused → show keyboard[0m
+[0;32mI (352896) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (352896) KEYBOARD: Creating keyboard (parent = 0x3fcc8d94)[0m
+[0;32mI (352896) TA: keyboard parent=0x3fcc8d94 visible? 1[0m
+[0;32mI (359166) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (359166) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (359166) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (359696) TA: Textarea focused → show keyboard[0m
+[0;32mI (359696) KEYBOARD: Creating keyboard (parent = 0x3fcc8d94)[0m
+[0;32mI (359696) TA: keyboard parent=0x3fcc8d94 visible? 1[0m
+[0;32mI (359696) TA: Textarea focused → show keyboard[0m
+[0;32mI (359696) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (359696) KEYBOARD: Creating keyboard (parent = 0x3fcc8d94)[0m
+[0;32mI (359696) TA: keyboard parent=0x3fcc8d94 visible? 1[0m
+[0;32mI (360996) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (360996) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (360996) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (361406) SEARCH: Starting find book task[0m
+[0;32mI (361406) FINDTASK: Calling API for: english[0m
+[0;32mI (361816) api_findbook: HTTP status = 200[0m
+[0;32mI (361826) api_findbook: Response: {
+  "book_type_id": "ENG-UL",
+  "column": 1,
+  "name": "English Unleashed",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (361826) FINDTASK: Book found[0m
+[0;32mI (361826) FINDTASK: Type ID: ENG-UL[0m
+[0;32mI (361826) FINDTASK: Name: English Unleashed[0m
+[0;32mI (361826) FINDTASK: Rack: A[0m
+[0;32mI (361826) FINDTASK: Row: 1[0m
+[0;32mI (361826) FINDTASK: Column: 1[0m
+[0;32mI (361826) FINDTASK: Side: Left[0m
+[0;32mI (366086) API_BLINK_RACK: Status = 500[0m
+[0;32mI (368336) API_BLINK_RACK: Status = 500[0m
+[0;32mI (344) esp_image: segment 3: paddr=0021adb0 vaddr=3fca63b4 size[0;32mI (991) esp_psram: SPI SRAM memory test OK[0m[0m
+[0;32mI (1000) cpu_start: Pro cpu start user code[0m
+[0;32mI (1000) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1000) app_init: Application information:[0m
+[0;32mI (1000) app_init: Project name:     FindMyBook[0m
+[0;32mI (1000) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (1000) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (1001) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (1001) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (1001) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1001) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1001) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1002) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1002) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (1002) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1002) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1003) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1004) spi_flash: detected chip: gd[0m
+[0;32mI (1004) spi_flash: flash io: qio[0m
+[0;33mW (1004) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1005) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1005) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1006) main_task: Started on CPU0[0m
+[0;32mI (1016) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1016) main: Starting FindMyBook UI[0m
+[0;32mI (1036) pp: pp rom version: e7ae62f[0m
+[0;32mI (1036) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1046) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1046) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1056) wifi:wifi certification version: v7.0[0m
+[0;32mI (1056) wifi:config NVS flash: enabled[0m
+[0;32mI (1056) wifi:config nano formatting: disabled[0m
+[0;32mI (1056) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1056) wifi:Init management short buffer num: 32[0m
+[0;32mI (1056) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1056) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1056) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1056) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi_init: rx ba win: 6[0m
+[0;32mI (1056) wifi_init: accept mbox: 6[0m
+[0;32mI (1056) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1056) wifi_init: udp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp mss: 1440[0m
+[0;32mI (1056) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1056) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1096) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1096) wifi:enable tsf[0m
+[0;32mI (1096) WIFI: WiFi init done[0m
+[0;32mI (1096) RFID: RFID init done[0m
+[0;32mI (1096) LVGL: Starting LVGL task[0m
+[0;33mW (1096) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1096) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1106) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1106) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1106) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1126) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1126) wifi:connected with SmartLibrary, aid = 3, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1126) wifi:security: Open Auth, phy: bgn, rssi: -44[0m
+[0;32mI (1126) wifi:pm start, type: 1[0m
+
+[0;32mI (1126) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1126) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1136) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1136) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1146) wifi:pm stop, total sleep time: 0 us / 15803 us[0m
+
+[0;32mI (1146) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (1146) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1146) WIFI: Disconnected, retrying...[0m
+[0;32mI (1146) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1146) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1156) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1176) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1176) wifi:connected with SmartLibrary, aid = 3, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1176) wifi:security: Open Auth, phy: bgn, rssi: -40[0m
+[0;32mI (1176) wifi:pm start, type: 1[0m
+
+[0;32mI (1176) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1186) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1186) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;33mW (1216) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1216) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1216) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1216) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1216) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1216) main: ✅ LVGL input device detected[0m
+[0;32mI (1216) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1246) RFID: Mode set: 0[0m
+[0;32mI (1246) RFID: Callback cleared[0m
+[0;32mI (1256) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (1286) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1286) KEYBOARD: Creating keyboard (parent = 0x3fccba08)[0m
+[0;32mI (1316) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1316) KEYBOARD: Creating keyboard (parent = 0x3fcccf94)[0m
+[0;32mI (1336) RFID: Callback set[0m
+[0;32mI (1336) RFID: Mode set: 2[0m
+[0;32mI (1346) main: UI started successfully[0m
+[0;32mI (1346) main_task: Returned from app_main()[0m
+[0;32mI (1706) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2206) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2206) WIFI: Connected to WiFi[0m
+[0;32mI (2206) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2206) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2206) WIFI: Starting register IP task[0m
+[0;32mI (2206) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (2656) WIFI: Register Response: [0m
+[0;32mI (6846) RFID: Mode set: 0[0m
+[0;32mI (6846) RFID: Callback cleared[0m
+[0;32mI (15376) TA: Textarea focused → show keyboard[0m
+[0;32mI (15376) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (15376) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (15376) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (15376) TA: Textarea focused → show keyboard[0m
+[0;32mI (15376) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (15376) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (15376) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (16546) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (16546) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (16546) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (17986) TA: Textarea focused → show keyboard[0m
+[0;32mI (17986) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (17986) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (17986) TA: Textarea focused → show keyboard[0m
+[0;32mI (17986) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (17986) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (17986) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (21246) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (21246) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (21246) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (21596) SEARCH: Starting find book task[0m
+[0;32mI (21596) FINDTASK: Calling API for: math[0m
+[0;32mI (22286) api_findbook: HTTP status = 200[0m
+[0;32mI (22286) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (22286) FINDTASK: Book found[0m
+[0;32mI (22286) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (22286) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (22286) FINDTASK: Rack: A[0m
+[0;32mI (22286) FINDTASK: Row: 1[0m
+[0;32mI (22286) FINDTASK: Column: 2[0m
+[0;32mI (22286) FINDTASK: Side: Left[0m
+[0;33mW (27626) HTTP_CLIENT: Connection timed out before data was ready![0m
+[0;31mE (27626) API_BLINK_RACK: HTTP failed: ESP_ERR_HTTP_EAGAIN[0m
+[0;32mI (36816) BLINK: Blink Book requested[0m
+[0;32mI (36816) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (37276) api_blink: Blink response: [0m
+[0;32mI (37286) api_blink: Blink response: {"status": "ok", "rack": "A", "row": 1, "column": 2, "side": "left", "color": {"r": 157, "g": 110, "b": 23}}[0m
+[0;32mI (37286) BLINK_UI: api_blink_book returned color: R:157 G:110 B:23[0m
+[0;32mI (43556) BLINK: Blink Book requested[0m
+[0;32mI (43556) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (43616) api_blink: Blink response: [0m
+[0;32mI (43626) api_blink: Blink response: {"status": "ok", "rack": "A", "row": 1, "column": 2, "side": "left", "color": {"r": 149, "g": 73, "b": 16}}[0m
+[0;32mI (43636) BLINK_UI: api_blink_book returned color: R:149 G:73 B:16[0m
+[0;32mI (47086) BLINK: Blink Book requested[0m
+[0;32mI (47086) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (47516) api_blink: Blink response: [0m
+[0;32mI (47526) api_blink: Blink response: {"status": "ok", "rack": "A", "row": 1, "column": 2, "side": "left", "color": {"r": 131, "g": 15, "b": 148}}[0m
+[0;32mI (47526) BLINK_UI: api_blink_book returned color: R:131 G:15 B:148[0m
+[0;32mI (380066) API_BLINK_RACK: Status = 200[0m
+[0;32mI (381616) BLINK: Blink Book requested[0m
+[0;32mI (381616) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (383136) api_blink: Blink response: [0m
+[0;32mI (383136) api_blink: Blink response: {"status": "ok", "rack": "A", "row": 1, "column": 2, "side": "left", "color": {"r": 85, "g": 90, "b": 155}}[0m
+[0;32mI (383136) BLINK_UI: api_blink_book returned color: R:85 G:90 B:155[0m
+[0;32mI (349) esp_image: segment 3: paddr=0021adb0 vaddr=3fca63b4 size[0;32mI (996) esp_psram: SPI SRAM memory test OK[0m[0m
+[0;32mI (1005) cpu_start: Pro cpu start user code[0m
+[0;32mI (1005) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1005) app_init: Application information:[0m
+[0;32mI (1005) app_init: Project name:     FindMyBook[0m
+[0;32mI (1005) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (1005) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (1006) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (1006) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (1006) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1006) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1007) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1007) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1007) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (1007) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1008) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1008) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1009) spi_flash: detected chip: gd[0m
+[0;32mI (1009) spi_flash: flash io: qio[0m
+[0;33mW (1009) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1010) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1010) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1011) main_task: Started on CPU0[0m
+[0;32mI (1021) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1021) main_task: Calling app_main()[0m
+[0;32mI (1021) main: Starting FindMyBook UI[0m
+[0;32mI (1041) pp: pp rom version: e7ae62f[0m
+[0;32mI (1041) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1051) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1051) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1061) wifi:wifi certification version: v7.0[0m
+[0;32mI (1061) wifi:config NVS flash: enabled[0m
+[0;32mI (1061) wifi:config nano formatting: disabled[0m
+[0;32mI (1061) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1061) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1061) wifi:Init management short buffer num: 32[0m
+[0;32mI (1061) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1061) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1061) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1061) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1061) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1061) wifi_init: rx ba win: 6[0m
+[0;32mI (1061) wifi_init: accept mbox: 6[0m
+[0;32mI (1061) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1061) wifi_init: udp mbox: 6[0m
+[0;32mI (1061) wifi_init: tcp mbox: 6[0m
+[0;32mI (1061) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1061) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1061) wifi_init: tcp mss: 1440[0m
+[0;32mI (1061) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1061) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1061) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1101) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1101) wifi:enable tsf[0m
+[0;32mI (1101) WIFI: WiFi init done[0m
+[0;32mI (1101) RFID: RFID init done[0m
+[0;32mI (1101) LVGL: Starting LVGL task[0m
+[0;33mW (1101) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1101) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1111) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1111) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1111) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1131) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1131) wifi:connected with SmartLibrary, aid = 2, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1131) wifi:security: Open Auth, phy: bgn, rssi: -31[0m
+[0;32mI (1131) wifi:pm start, type: 1[0m
+
+[0;32mI (1131) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1131) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1211) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1211) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1211) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;33mW (1221) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1221) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1221) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1221) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1221) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1221) main: ✅ LVGL input device detected[0m
+[0;32mI (1221) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1251) RFID: Mode set: 0[0m
+[0;32mI (1251) RFID: Callback cleared[0m
+[0;32mI (1261) KEYBOARD: Creating keyboard (parent = 0x3fcc8d98)[0m
+[0;32mI (1291) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1291) KEYBOARD: Creating keyboard (parent = 0x3fccba4c)[0m
+[0;32mI (1321) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1321) KEYBOARD: Creating keyboard (parent = 0x3fcccffc)[0m
+[0;32mI (1341) RFID: Callback set[0m
+[0;32mI (1341) RFID: Mode set: 2[0m
+[0;32mI (1351) main: UI started successfully[0m
+[0;32mI (1351) main_task: Returned from app_main()[0m
+[0;32mI (2651) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2651) WIFI: Connected to WiFi[0m
+[0;32mI (2651) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2651) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2651) WIFI: Starting register IP task[0m
+[0;32mI (2651) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (6881) RFID: Mode set: 0[0m
+[0;32mI (6881) RFID: Callback cleared[0m
+[0;31mE (9651) esp-tls: couldn't get hostname for :fmb.local: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (9651) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (9651) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;33mW (9651) WIFI: ⚠️ fmb.local not available or server offline[0m
+[0;33mW (9651) WIFI: HTTP error: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (65061) TA: Textarea focused → show keyboard[0m
+[0;32mI (65061) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (65061) KEYBOARD: Creating keyboard (parent = 0x3fcc8d98)[0m
+[0;32mI (65061) TA: keyboard parent=0x3fcc8d98 visible? 1[0m
+[0;32mI (65061) TA: Textarea focused → show keyboard[0m
+[0;32mI (65061) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (65061) KEYBOARD: Creating keyboard (parent = 0x3fcc8d98)[0m
+[0;32mI (65061) TA: keyboard parent=0x3fcc8d98 visible? 1[0m
+[0;32mI (69951) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (69951) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (69951) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (70361) TA: Textarea focused → show keyboard[0m
+[0;32mI (70361) KEYBOARD: Creating keyboard (parent = 0x3fcc8d98)[0m
+[0;32mI (70361) TA: keyboard parent=0x3fcc8d98 visible? 1[0m
+[0;32mI (70361) TA: Textarea focused → show keyboard[0m
+[0;32mI (70361) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (70361) KEYBOARD: Creating keyboard (parent = 0x3fcc8d98)[0m
+[0;32mI (70361) TA: keyboard parent=0x3fcc8d98 visible? 1[0m
+[0;32mI (73491) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (73491) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (73491) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (73911) SEARCH: Starting find book task[0m
+[0;32mI (73911) FINDTASK: Calling API for: math[0m
+[0;32mI (74871) api_findbook: HTTP status = 200[0m
+[0;32mI (74871) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (74871) FINDTASK: Book found[0m
+[0;32mI (74871) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (74871) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (74871) FINDTASK: Rack: A[0m
+[0;32mI (74871) FINDTASK: Row: 1[0m
+[0;32mI (74871) FINDTASK: Column: 2[0m
+[0;32mI (74871) FINDTASK: Side: Left[0m
+[0;32mI (79551) API_BLINK_RACK: Status = 500[0m
+[0;32mI (96751) API_BLINK_RACK: Status = 500[0m
+[0;32mI (344) esp_image: segment 3: paddr=0021adb0 vaddr=3fca63b4 size[0;32mI (991) esp_psram: SPI SRAM memory test OK[0m[0m
+[0;32mI (1000) cpu_start: Pro cpu start user code[0m
+[0;32mI (1000) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1000) app_init: Application information:[0m
+[0;32mI (1000) app_init: Project name:     FindMyBook[0m
+[0;32mI (1000) app_init: App version:      9c622b9-dirty[0m
+[0;32mI (1000) app_init: Compile time:     Feb 14 2026 22:57:34[0m
+[0;32mI (1001) app_init: ELF file SHA256:  6fa1c980fdc50c09...[0m
+[0;32mI (1001) app_init: ESP-IDF:          v5.5.2[0m
+[0;32mI (1001) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1001) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1002) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1002) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1002) heap_init: At 3FCAE6A0 len 0003B070 (236 KiB): RAM[0m
+[0;32mI (1002) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1003) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1003) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1004) spi_flash: detected chip: gd[0m
+[0;32mI (1004) spi_flash: flash io: qio[0m
+[0;33mW (1004) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1005) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1005) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1006) main_task: Started on CPU0[0m
+[0;32mI (1016) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1016) main_task: Calling app_main()[0m
+[0;32mI (1016) main: Starting FindMyBook UI[0m
+[0;32mI (1036) pp: pp rom version: e7ae62f[0m
+[0;32mI (1036) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1046) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1046) wifi:wifi firmware version: ee91c8c[0m
+[0;32mI (1056) wifi:wifi certification version: v7.0[0m
+[0;32mI (1056) wifi:config NVS flash: enabled[0m
+[0;32mI (1056) wifi:config nano formatting: disabled[0m
+[0;32mI (1056) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1056) wifi:Init management short buffer num: 32[0m
+[0;32mI (1056) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1056) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1056) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1056) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1056) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1056) wifi_init: rx ba win: 6[0m
+[0;32mI (1056) wifi_init: accept mbox: 6[0m
+[0;32mI (1056) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1056) wifi_init: udp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp mbox: 6[0m
+[0;32mI (1056) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1056) wifi_init: tcp mss: 1440[0m
+[0;32mI (1056) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1056) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1056) phy_init: phy_version 711,97bcf0a2,Aug 25 2025,19:04:10[0m
+[0;32mI (1096) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1096) wifi:enable tsf[0m
+[0;32mI (1096) WIFI: WiFi init done[0m
+[0;32mI (1096) RFID: RFID init done[0m
+[0;32mI (1096) LVGL: Starting LVGL task[0m
+[0;33mW (1096) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1096) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;32mI (1106) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1106) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1116) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1136) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1136) wifi:connected with SmartLibrary, aid = 2, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1136) wifi:security: Open Auth, phy: bgn, rssi: -24[0m
+[0;32mI (1136) wifi:pm start, type: 1[0m
+
+[0;32mI (1136) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1136) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1136) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1136) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1146) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1146) wifi:state: run -> init (0x2c0)[0m
+[0;32mI (1156) wifi:pm stop, total sleep time: 0 us / 15863 us[0m
+
+[0;32mI (1156) wifi:<ba-del>idx:0, tid:0[0m
+[0;32mI (1156) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1156) WIFI: Disconnected, retrying...[0m
+[0;32mI (1156) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (1156) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (1166) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (1176) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (1176) wifi:connected with SmartLibrary, aid = 2, channel 1, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (1176) wifi:security: Open Auth, phy: bgn, rssi: -25[0m
+[0;32mI (1186) wifi:pm start, type: 1[0m
+
+[0;32mI (1186) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (1186) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;33mW (1216) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1216) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1216) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1216) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1216) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1216) main: ✅ LVGL input device detected[0m
+[0;32mI (1216) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1236) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (1236) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (1246) RFID: Mode set: 0[0m
+[0;32mI (1246) RFID: Callback cleared[0m
+[0;32mI (1256) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (1296) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1296) KEYBOARD: Creating keyboard (parent = 0x3fccba18)[0m
+[0;32mI (1316) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1316) KEYBOARD: Creating keyboard (parent = 0x3fcccf9c)[0m
+[0;32mI (1336) RFID: Callback set[0m
+[0;32mI (1336) RFID: Mode set: 2[0m
+[0;32mI (1346) main: UI started successfully[0m
+[0;32mI (1346) main_task: Returned from app_main()[0m
+[0;32mI (1706) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2206) esp_netif_handlers: sta ip: 10.243.71.14, mask: 255.255.255.0, gw: 10.243.71.11[0m
+[0;32mI (2206) WIFI: Connected to WiFi[0m
+[0;32mI (2206) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (2206) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (2206) WIFI: Starting register IP task[0m
+[0;32mI (2206) WIFI: Local IP: 10.243.71.14[0m
+[0;32mI (2906) WIFI: Register Response: [0m
+[0;32mI (6866) RFID: Mode set: 0[0m
+[0;32mI (6866) RFID: Callback cleared[0m
+[0;32mI (14726) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (14726) RFID: Callback set[0m
+[0;32mI (14726) RFID: Mode set: 1[0m
+[0;32mI (18746) RFID: Mode set: 0[0m
+[0;32mI (18746) RFID: Callback cleared[0m
+[0;32mI (18776) RFID: Mode set: 0[0m
+[0;32mI (18776) RFID: Callback cleared[0m
+[0;32mI (19046) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (19046) RFID: Mode set: 0[0m
+[0;32mI (19046) RFID: Callback cleared[0m
+[0;32mI (41096) RFID: Mode set: 0[0m
+[0;32mI (41096) RFID: Callback cleared[0m
+[0;32mI (44296) TA: Textarea focused → show keyboard[0m
+[0;32mI (44296) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (44296) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (44296) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (44296) TA: Textarea focused → show keyboard[0m
+[0;32mI (44296) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (44296) KEYBOARD: Creating keyboard (parent = 0x3fcc8d6c)[0m
+[0;32mI (44296) TA: keyboard parent=0x3fcc8d6c visible? 1[0m
+[0;32mI (46686) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (46686) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (46686) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (47046) SEARCH: Starting find book task[0m
+[0;32mI (47046) FINDTASK: Calling API for: math[0m
+[0;32mI (47346) api_findbook: HTTP status = 200[0m
+[0;32mI (47356) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (47366) FINDTASK: Book found[0m
+[0;32mI (47366) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (47366) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (47366) FINDTASK: Rack: A[0m
+[0;32mI (47366) FINDTASK: Row: 1[0m
+[0;32mI (47366) FINDTASK: Column: 2[0m
+[0;32mI (47366) FINDTASK: Side: Left[0m
+[0;32mI (50826) BLINK: Blink Book requested[0m
+[0;32mI (50826) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (51416) API_BLINK_RACK: Status = 500[0m
+[0;32mI (54286) api_blink: Blink response: [0m
+[0;32mI (54286) api_blink: Blink response: {
+  "error": "rack not reachable"
+}
+[0m
+[0;31mE (54286) api_blink: No color field[0m
+[0;31mE (54286) BLINK_UI: api_blink_book failed[0m
