@@ -1,0 +1,235 @@
+Command: ninja all
+[0/1] Re-running CMake...
+-- Component directory C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_blockdev does not contain a CMakeLists.txt file. No component will be added
+-- Minimal build - OFF
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32s3
+NOTICE: 
+Following dependencies have new versions available:
+Dependency "espressif/cjson": "1.7.19" -> "1.7.19~2"
+Dependency "espressif/dl_fft": "0.3.1" -> "0.6.0"
+Dependency "espressif/esp-dsp": "1.7.0" -> "1.8.0"
+Dependency "espressif/esp-sr": "2.3.1" -> "2.4.7"
+Dependency "espressif/esp_lcd_touch_gt911": "1.2.0~1" -> "1.2.0~3"
+Dependency "espressif/esp_lcd_touch_tt21100": "1.2.0" -> "1.2.0~2"
+Consider running "idf.py update-dependencies" to update your lock file.
+NOTICE: Processing 18 dependencies:
+NOTICE: [1/18] espressif/button (3.5.0)
+NOTICE: [2/18] espressif/cjson (1.7.19)
+NOTICE: [3/18] espressif/cmake_utilities (0.5.3)
+NOTICE: [4/18] espressif/dl_fft (0.3.1)
+NOTICE: [5/18] espressif/esp-box (3.0.5)
+NOTICE: [6/18] espressif/esp-box-3 (1.1.3)
+NOTICE: [7/18] espressif/esp-box-lite (2.0.4)
+NOTICE: [8/18] espressif/esp-dsp (1.7.0)
+NOTICE: [9/18] espressif/esp-sr (2.3.1)
+NOTICE: [10/18] espressif/esp_codec_dev (1.1.0)
+NOTICE: [11/18] espressif/esp_lcd_ili9341 (1.2.0)
+NOTICE: [12/18] espressif/esp_lcd_touch (1.2.1)
+NOTICE: [13/18] espressif/esp_lcd_touch_gt911 (1.2.0~1)
+NOTICE: [14/18] espressif/esp_lcd_touch_tt21100 (1.2.0)
+NOTICE: [15/18] espressif/esp_lvgl_port (1.4.0)
+NOTICE: [16/18] espressif/icm42670 (1.0.0)
+NOTICE: [17/18] lvgl/lvgl (8.4.0)
+NOTICE: [18/18] idf (5.5.5)
+-- use sdkconfig
+-- PLATFORM ESP32_S3_BOX_3.
+-- ESP-TEE is currently supported only on the esp32c6;esp32h2;esp32c5 SoCs
+-- Project sdkconfig file D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/sdkconfig
+Loading defaults file D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/sdkconfig.defaults...
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/sdkconfig.defaults:10 CONFIG_ESP32S3_SPIRAM_SUPPORT was replaced with CONFIG_SPIRAM 
+-- Compiler supported targets: xtensa-esp-elf
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- USING O3
+-- App "FindMyGrocery" version: 0aaa43ec-dirty
+-- Adding linker script D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_master.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_50.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_smp.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_dtm.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_test.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.ble_scan.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script C:/Espressif/frameworks/esp-idf-v5.5.5/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- BUTTON: 3.5.0
+-- ESP_LCD_ILI9341: 1.2.0
+-- use sdkconfig
+-- PLATFORM ESP32_S3_BOX_3.
+-- Components: app_trace app_update bootloader bootloader_support bsp bt cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_driver_ana_cmpr esp_driver_bitscrambler esp_driver_cam esp_driver_dac esp_driver_gpio esp_driver_gptimer esp_driver_i2c esp_driver_i2s esp_driver_isp esp_driver_jpeg esp_driver_ledc esp_driver_mcpwm esp_driver_parlio esp_driver_pcnt esp_driver_ppa esp_driver_rmt esp_driver_sdio esp_driver_sdm esp_driver_sdmmc esp_driver_sdspi esp_driver_spi esp_driver_touch_sens esp_driver_tsens esp_driver_twai esp_driver_uart esp_driver_usb_serial_jtag esp_eth esp_event esp_gdbstub esp_hal_ieee802154 esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_security esp_system esp_timer esp_vfs_console esp_wifi espcoredump espressif__button espressif__cjson espressif__cmake_utilities espressif__dl_fft espressif__esp-box espressif__esp-box-3 espressif__esp-box-lite espressif__esp-dsp espressif__esp-sr espressif__esp_codec_dev espressif__esp_lcd_ili9341 espressif__esp_lcd_touch espressif__esp_lcd_touch_gt911 espressif__esp_lcd_touch_tt21100 espressif__esp_lvgl_port espressif__icm42670 esptool_py fatfs freertos hal heap http_parser idf_test ieee802154 json log lvgl__lvgl lwip main mbedtls mqtt newlib nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread rt sdmmc soc spi_flash spiffs tcp_transport touch_element ui ulp unity usb vfs wear_levelling wifi wifi_provisioning wpa_supplicant xtensa
+-- Component paths: C:/Espressif/frameworks/esp-idf-v5.5.5/components/app_trace C:/Espressif/frameworks/esp-idf-v5.5.5/components/app_update C:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader C:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader_support D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/components/bsp C:/Espressif/frameworks/esp-idf-v5.5.5/components/bt C:/Espressif/frameworks/esp-idf-v5.5.5/components/cmock C:/Espressif/frameworks/esp-idf-v5.5.5/components/console C:/Espressif/frameworks/esp-idf-v5.5.5/components/cxx C:/Espressif/frameworks/esp-idf-v5.5.5/components/driver C:/Espressif/frameworks/esp-idf-v5.5.5/components/efuse C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp-tls C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_adc C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_app_format C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_bootloader_format C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_coex C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_common C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ana_cmpr C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_bitscrambler C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_cam C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_dac C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gpio C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_gptimer C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2c C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_i2s C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_isp C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_jpeg C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ledc C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_mcpwm C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_parlio C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_pcnt C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_ppa C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_rmt C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdio C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdm C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdmmc C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_sdspi C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_spi C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_touch_sens C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_tsens C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_twai C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_uart C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_driver_usb_serial_jtag C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_eth C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_event C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_gdbstub C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hal_ieee802154 C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hid C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_http_client C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_http_server C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_https_ota C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_https_server C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_hw_support C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_lcd C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_local_ctrl C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_mm C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_netif C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_netif_stack C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_partition C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_phy C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_pm C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_psram C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_ringbuf C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_security C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_system C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_timer C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_vfs_console C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_wifi C:/Espressif/frameworks/esp-idf-v5.5.5/components/espcoredump D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__button D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__cjson D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__cmake_utilities D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__dl_fft D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-box D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-box-3 D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-box-lite D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-dsp D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-sr D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_codec_dev D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_lcd_ili9341 D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_lcd_touch D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_lcd_touch_gt911 D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_lcd_touch_tt21100 D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp_lvgl_port D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__icm42670 C:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py C:/Espressif/frameworks/esp-idf-v5.5.5/components/fatfs C:/Espressif/frameworks/esp-idf-v5.5.5/components/freertos C:/Espressif/frameworks/esp-idf-v5.5.5/components/hal C:/Espressif/frameworks/esp-idf-v5.5.5/components/heap C:/Espressif/frameworks/esp-idf-v5.5.5/components/http_parser C:/Espressif/frameworks/esp-idf-v5.5.5/components/idf_test C:/Espressif/frameworks/esp-idf-v5.5.5/components/ieee802154 C:/Espressif/frameworks/esp-idf-v5.5.5/components/json C:/Espressif/frameworks/esp-idf-v5.5.5/components/log D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/lvgl__lvgl C:/Espressif/frameworks/esp-idf-v5.5.5/components/lwip D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/main C:/Espressif/frameworks/esp-idf-v5.5.5/components/mbedtls C:/Espressif/frameworks/esp-idf-v5.5.5/components/mqtt C:/Espressif/frameworks/esp-idf-v5.5.5/components/newlib C:/Espressif/frameworks/esp-idf-v5.5.5/components/nvs_flash C:/Espressif/frameworks/esp-idf-v5.5.5/components/nvs_sec_provider C:/Espressif/frameworks/esp-idf-v5.5.5/components/openthread C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table C:/Espressif/frameworks/esp-idf-v5.5.5/components/perfmon C:/Espressif/frameworks/esp-idf-v5.5.5/components/protobuf-c C:/Espressif/frameworks/esp-idf-v5.5.5/components/protocomm C:/Espressif/frameworks/esp-idf-v5.5.5/components/pthread C:/Espressif/frameworks/esp-idf-v5.5.5/components/rt C:/Espressif/frameworks/esp-idf-v5.5.5/components/sdmmc C:/Espressif/frameworks/esp-idf-v5.5.5/components/soc C:/Espressif/frameworks/esp-idf-v5.5.5/components/spi_flash C:/Espressif/frameworks/esp-idf-v5.5.5/components/spiffs C:/Espressif/frameworks/esp-idf-v5.5.5/components/tcp_transport C:/Espressif/frameworks/esp-idf-v5.5.5/components/touch_element D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui C:/Espressif/frameworks/esp-idf-v5.5.5/components/ulp C:/Espressif/frameworks/esp-idf-v5.5.5/components/unity C:/Espressif/frameworks/esp-idf-v5.5.5/components/usb C:/Espressif/frameworks/esp-idf-v5.5.5/components/vfs C:/Espressif/frameworks/esp-idf-v5.5.5/components/wear_levelling D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/wifi C:/Espressif/frameworks/esp-idf-v5.5.5/components/wifi_provisioning C:/Espressif/frameworks/esp-idf-v5.5.5/components/wpa_supplicant C:/Espressif/frameworks/esp-idf-v5.5.5/components/xtensa
+-- Configuring done (30.3s)
+-- Generating done (1.2s)
+-- Build files have been written to: D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build
+[1/85] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5710 bytes. 0x28f0 bytes (32%) free.
+[2/85] No install step for 'bootloader'
+[3/85] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[4/85] Completed 'bootloader'
+[5/85] Linking C static library esp-idf\esp_app_format\libesp_app_format.a
+[6/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenLoader.c.obj
+[7/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueScan.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenIssueScan.c:60:13: warning: 'rfid_ui_issue_callback' defined but not used [-Wunused-function]
+   60 | static void rfid_ui_issue_callback(const char *uid)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[8/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueEnrollment.c.obj
+[9/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenFindBook.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBook.c:33:13: warning: 'go_to_findbook_info' defined but not used [-Wunused-function]
+   33 | static void go_to_findbook_info(void *arg)
+      |             ^~~~~~~~~~~~~~~~~~~
+[10/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtpFail.c.obj
+[11/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenHome.c.obj
+[12/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtpSuccess.c.obj
+[13/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenReturnSuccess.c.obj
+[14/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenFindBookInfo.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBookInfo.c: In function 'ui_event_btnOpenOnPhone':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBookInfo.c:86:28: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   86 |     lv_img_dsc_t *qr_img = get_qr_image_for_location(
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+[15/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueFinalConfirm.c.obj
+[16/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenReturnScan.c.obj
+[17/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtp.c.obj
+[18/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/rfid/returnHandler.c.obj
+[19/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenAbout.c.obj
+[20/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/rfid/rfid_handler.c.obj
+[21/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui.c.obj
+[22/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui_helpers.c.obj
+[23/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/blink_task.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/blink_task.c: In function 'blink_ui_cb':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/blink_task.c:103:17: warning: unused variable 't' [-Wunused-variable]
+  103 |     lv_timer_t *t = lv_timer_create(_start_fade_out_cb, hold_ms, overlay);
+      |                 ^
+[24/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui_screenVoiceOverlay.c.obj
+[25/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/qr_mapper.c.obj
+[26/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_find_a_grocery_png.c.obj
+[27/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_fmg_logo_png.c.obj
+[28/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_fmg_text_png.c.obj
+[29/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_knowprice_png.c.obj
+[30/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_check_price_png.c.obj
+[31/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/findbook_task.c.obj
+[32/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_makeorder_png.c.obj
+[33/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/http_server.c.obj
+[34/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_blinkbook.c.obj
+[35/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueOtp.c.obj
+[36/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_returnBook.c.obj
+[37/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueDone.c.obj
+[38/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueBook.c.obj
+[39/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_findbook.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/api_findbook.c: In function 'api_find_book':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/api_findbook.c:52:9: warning: unused variable 'status' [-Wunused-variable]
+   52 |     int status = esp_http_client_fetch_headers(client);
+      |         ^~~~~~
+[40/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_blinkRack.c.obj
+[41/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_theft_check.c.obj
+[42/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_find_book_icon_png.c.obj
+[43/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_return_book_icon_png.c.obj
+[44/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_issue_book_icon_png.c.obj
+[45/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_backpressed_png.c.obj
+[46/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_backbtn_png.c.obj
+[47/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_about_us_icon_png.c.obj
+[48/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_cross_png.c.obj
+[49/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_rfidicon_png.c.obj
+[50/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_success_png.c.obj
+[51/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_failed_png.c.obj
+[52/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_a_right_png.c.obj
+[53/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c1l_png.c.obj
+[54/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c1r_png.c.obj
+[55/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_a_left_png.c.obj
+[56/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c2l_png.c.obj
+[57/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_b_left_png.c.obj
+[58/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c2r_png.c.obj
+[59/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_b_right_png.c.obj
+[60/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c1l_png.c.obj
+[61/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c2l_png.c.obj
+[62/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c1r_png.c.obj
+[63/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c2r_png.c.obj
+[64/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c1l_png.c.obj
+[65/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c1r_png.c.obj
+[66/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c2r_png.c.obj
+[67/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c2l_png.c.obj
+[68/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c1r_png.c.obj
+[69/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c1l_png.c.obj
+[70/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c2l_png.c.obj
+[71/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c2r_png.c.obj
+[72/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_ScreenFindAGrocery.c.obj
+[73/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_typesearch_png.c.obj
+[74/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_ScreenFindVoice.c.obj
+[75/85] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_voicesearch_png.c.obj
+[76/85] Linking C static library esp-idf\ui\libui.a
+[77/85] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+[78/85] Linking C static library esp-idf\wifi\libwifi.a
+[79/85] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/fmg.c.obj
+[80/85] Linking C static library esp-idf\main\libmain.a
+[81/85] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol BSP_ERROR_CHECK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:3
+info: INFO: Symbol BSP_I2C_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:10
+info: INFO: Symbol BSP_I2C_FAST_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:17
+info: INFO: Symbol BSP_I2C_CLK_SPEED_HZ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:23
+info: INFO: Symbol BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:30
+info: INFO: Symbol BSP_SPIFFS_MOUNT_POINT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:36
+info: INFO: Symbol BSP_SPIFFS_PARTITION_LABEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:42
+info: INFO: Symbol BSP_SPIFFS_MAX_FILES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:48
+info: INFO: Symbol BSP_DISPLAY_BRIGHTNESS_LEDC_CH defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:56
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:56
+info: INFO: Symbol BSP_LCD_DRAW_BUF_HEIGHT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:79
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:64
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:64
+info: INFO: Symbol BSP_LCD_DRAW_BUF_DOUBLE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:86
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:71
+info: INFO: Symbol BSP_I2S_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:78
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:78
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:93
+[82/85] Linking CXX executable FindMyGrocery.elf
+[83/85] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin
+[84/85] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/partition_table/partition-table.bin" "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin""
+FindMyGrocery.bin binary size 0x2438b0 bytes. Smallest app partition is 0x400000 bytes. 0x1bc750 bytes (43%) free.

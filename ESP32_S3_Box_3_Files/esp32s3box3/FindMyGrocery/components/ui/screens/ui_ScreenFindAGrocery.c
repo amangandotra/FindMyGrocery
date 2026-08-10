@@ -103,20 +103,20 @@ void ui_ScreenFindAGrocery_screen_init(void)
     ui_Label16 = lv_label_create(ui_ScreenFindAGrocery);
     lv_obj_set_width(ui_Label16, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label16, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label16, -5);
-    lv_obj_set_y(ui_Label16, -48);
+    lv_obj_set_x(ui_Label16, 0);
+    lv_obj_set_y(ui_Label16, -54);
     lv_obj_set_align(ui_Label16, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label16, "Search your grocery quickly \nthe way you like!");
-    lv_obj_set_style_text_color(ui_Label16, lv_color_hex(0x001100), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_label_set_text(ui_Label16, "Search your grocery quickly the way you like!");
+    lv_obj_set_style_text_color(ui_Label16, lv_color_hex(0xE8F4FF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label16, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label16, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label16, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label16, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_btnTypeSearch = lv_btn_create(ui_ScreenFindAGrocery);
     lv_obj_set_width(ui_btnTypeSearch, 128);
     lv_obj_set_height(ui_btnTypeSearch, 128);
     lv_obj_set_x(ui_btnTypeSearch, -74);
-    lv_obj_set_y(ui_btnTypeSearch, 41);
+    lv_obj_set_y(ui_btnTypeSearch, 30);
     lv_obj_set_align(ui_btnTypeSearch, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_btnTypeSearch, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_btnTypeSearch, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -141,7 +141,7 @@ void ui_ScreenFindAGrocery_screen_init(void)
     lv_obj_set_align(ui_Container1, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container1, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_Container1, 1000, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Container1, lv_color_hex(0x000229), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_Container1, lv_color_hex(0x0B117B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Container1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(ui_Container1, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_Container1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -174,6 +174,8 @@ void ui_ScreenFindAGrocery_screen_init(void)
     lv_obj_set_y(ui_Label55, 38);
     lv_obj_set_align(ui_Label55, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label55, "Type a name of \nthe grocery item");
+    lv_obj_set_style_text_color(ui_Label55, lv_color_hex(0xDCEBFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label55, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label55, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label55, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
@@ -181,7 +183,7 @@ void ui_ScreenFindAGrocery_screen_init(void)
     lv_obj_set_width(ui_btnVoiceSearch, 128);
     lv_obj_set_height(ui_btnVoiceSearch, 128);
     lv_obj_set_x(ui_btnVoiceSearch, 74);
-    lv_obj_set_y(ui_btnVoiceSearch, 41);
+    lv_obj_set_y(ui_btnVoiceSearch, 30);
     lv_obj_set_align(ui_btnVoiceSearch, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_btnVoiceSearch, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_btnVoiceSearch, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -206,7 +208,7 @@ void ui_ScreenFindAGrocery_screen_init(void)
     lv_obj_set_align(ui_Container11, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container11, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
     lv_obj_set_style_radius(ui_Container11, 1000, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_bg_color(ui_Container11, lv_color_hex(0x000229), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_color(ui_Container11, lv_color_hex(0x0B117B), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_opa(ui_Container11, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_color(ui_Container11, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_border_opa(ui_Container11, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -239,6 +241,8 @@ void ui_ScreenFindAGrocery_screen_init(void)
     lv_obj_set_y(ui_Label58, 38);
     lv_obj_set_align(ui_Label58, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label58, "Tap And Speak\nWhat You Need");
+    lv_obj_set_style_text_color(ui_Label58, lv_color_hex(0xDCEBFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label58, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label58, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label58, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 

@@ -9,6 +9,7 @@ lv_obj_t * ui_screenHome = NULL;
 lv_obj_t * ui_Image5 = NULL;
 lv_obj_t * ui_Image6 = NULL;
 lv_obj_t * ui_Label1 = NULL;
+lv_obj_t * ui_Label59 = NULL;
 lv_obj_t * ui_Container2 = NULL;
 lv_obj_t * ui_btnFindBook = NULL;
 lv_obj_t * ui_Image7 = NULL;
@@ -134,13 +135,25 @@ void ui_screenHome_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label1, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label1, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label1, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
+   
+    ui_Label59 = lv_label_create(ui_screenHome);
+    lv_obj_set_width(ui_Label59, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Label59, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Label59, 0);
+    lv_obj_set_y(ui_Label59, 106);
+    lv_obj_set_align(ui_Label59, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Label59, "Crafted with passion by Aman Gandotra");
+    lv_obj_set_style_text_color(ui_Label59, lv_color_hex(0xC2CEFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label59, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(ui_Label59, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label59, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Container2 = lv_obj_create(ui_screenHome);
     lv_obj_remove_style_all(ui_Container2);
     lv_obj_set_width(ui_Container2, 449);
     lv_obj_set_height(ui_Container2, 148);
     lv_obj_set_x(ui_Container2, 0);
-    lv_obj_set_y(ui_Container2, 44);
+    lv_obj_set_y(ui_Container2, 31);
     lv_obj_set_align(ui_Container2, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container2, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
@@ -326,6 +339,7 @@ void ui_screenHome_screen_destroy(void)
     ui_Image5 = NULL;
     ui_Image6 = NULL;
     ui_Label1 = NULL;
+    ui_Label59 = NULL;
     ui_Container2 = NULL;
     ui_btnFindBook = NULL;
     ui_Image7 = NULL;

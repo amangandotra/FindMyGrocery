@@ -1,0 +1,692 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\FindMyGrocery.elf D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+[0;32mI (217) esp_image: segment 1: paddr=001430f8 vaddr=3fca4800 sizeESP-ROM:esp32s3-20210327[0m
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xb (SPI_FAST_FLASH_BOOT)
+Saved PC:0x4038041e
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x16a8
+load:0x403c8700,len:0xe88
+load:0x403cb700,len:0x3184
+entry 0x403c8948
+[0;32mI (18) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Aug 11 2026 00:13:41[0m
+[0;32mI (19) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (19) boot: efuse block revision: v1.3[0m
+[0;32mI (19) qio_mode: Enabling QIO for flash chip GD[0m
+[0;32mI (19) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (20) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (20) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (20) boot: Enabling RNG early entropy source...[0m
+[0;32mI (20) boot: Partition Table:[0m
+[0;32mI (20) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (21) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (21) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (22) boot:  2 factory          factory app      00 00 00010000 00400000[0m
+[0;32mI (22) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=3c0f0020 size=1330d0h (1257680) map[0m
+[0;32mI (217) esp_image: segment 1: paddr=001430f8 vaddr=3fca4800 size=05ba4h ( 23460) load[0m
+[0;32mI (222) esp_image: segment 2: paddr=00148ca4 vaddr=40378000 size=07374h ( 29556) load[0m
+[0;32mI (228) esp_image: segment 3: paddr=00150020 vaddr=42000020 size=ee3e4h (975844) map[0m
+[0;32mI (379) esp_image: segment 4: paddr=0023e40c vaddr=4037f374 size=15390h ( 86928) load[0m
+[0;32mI (397) esp_image: segment 5: paddr=002537a4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (408) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (409) boot: Disabling RNG early entropy source...[0m
+[0;32mI (410) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (410) octal_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (410) octal_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (410) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (410) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (411) octal_psram: VCC          : 0x00 (1.8V)[0m
+[0;32mI (411) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (411) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (412) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (412) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (412) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (412) MSPI Timing: Enter psram timing tuning[0m
+W MSPI Timing: tuning fail, best point is fallen back to index 5
+[0;32mI (414) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (414) esp_psram: Speed: 80MHz[0m
+[0;32mI (414) cpu_start: Multicore app[0m
+[0;32mI (1017) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1026) cpu_start: Pro cpu start user code[0m
+[0;32mI (1026) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1026) app_init: Application information:[0m
+[0;32mI (1026) app_init: Project name:     FindMyGrocery[0m
+[0;32mI (1026) app_init: App version:      4dd2c98c-dirty[0m
+[0;32mI (1027) app_init: Compile time:     Aug 11 2026 00:12:49[0m
+[0;32mI (1027) app_init: ELF file SHA256:  3f3603d4b1e2800d...[0m
+[0;32mI (1027) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1027) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1028) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1028) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1028) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1028) heap_init: At 3FCAF8C0 len 00039E50 (231 KiB): RAM[0m
+[0;32mI (1028) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1029) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1029) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1030) spi_flash: detected chip: gd[0m
+[0;32mI (1030) spi_flash: flash io: qio[0m
+[0;33mW (1031) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1031) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1032) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1032) main_task: Started on CPU0[0m
+[0;32mI (1032) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1032) main_task: Calling app_main()[0m
+[0;32mI (1032) main: Starting FindMyGrocery UI[0m
+[0;32mI (1052) pp: pp rom version: e7ae62f[0m
+[0;32mI (1052) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1062) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1072) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1072) wifi:wifi certification version: v7.0[0m
+[0;32mI (1072) wifi:config NVS flash: enabled[0m
+[0;32mI (1072) wifi:config nano formatting: disabled[0m
+[0;32mI (1072) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1072) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1072) wifi:Init management short buffer num: 32[0m
+[0;32mI (1072) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1072) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1072) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1072) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1072) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1072) wifi_init: rx ba win: 6[0m
+[0;32mI (1072) wifi_init: accept mbox: 6[0m
+[0;32mI (1072) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1072) wifi_init: udp mbox: 6[0m
+[0;32mI (1072) wifi_init: tcp mbox: 6[0m
+[0;32mI (1072) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1072) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1072) wifi_init: tcp mss: 1440[0m
+[0;32mI (1072) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1072) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1072) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1112) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1112) wifi:enable tsf[0m
+[0;32mI (1112) WIFI: WiFi init done[0m
+[0;32mI (1112) RFID: RFID init done[0m
+[0;32mI (1112) LVGL: Starting LVGL task[0m
+[0;33mW (1112) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1112) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (1232) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1232) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1232) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1232) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1232) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1232) main: ✅ LVGL input device detected[0m
+[0;32mI (1232) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1262) RFID: Mode set: 0[0m
+[0;32mI (1262) RFID: Callback cleared[0m
+[0;32mI (1272) KEYBOARD: Creating keyboard (parent = 0x3fcc9e70)[0m
+[0;32mI (1302) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1302) KEYBOARD: Creating keyboard (parent = 0x3fccca68)[0m
+[0;32mI (1332) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1332) KEYBOARD: Creating keyboard (parent = 0x3fccdfec)[0m
+[0;32mI (1352) RFID: Callback set[0m
+[0;32mI (1352) RFID: Mode set: 2[0m
+[0;32mI (1382) main: UI started successfully[0m
+[0;32mI (1382) main_task: Returned from app_main()[0m
+[0;32mI (3522) WIFI: Disconnected, retrying...[0m
+[0;32mI (5932) WIFI: Disconnected, retrying...[0m
+[0;32mI (6882) RFID: Mode set: 0[0m
+[0;32mI (6882) RFID: Callback cleared[0m
+[0;32mI (8342) WIFI: Disconnected, retrying...[0m
+[0;32mI (10752) WIFI: Disconnected, retrying...[0m
+[0;32mI (13152) WIFI: Disconnected, retrying...[0m
+[0;32mI (15562) WIFI: Disconnected, retrying...[0m
+[0;32mI (17972) WIFI: Disconnected, retrying...[0m
+[0;32mI (20372) WIFI: Disconnected, retrying...[0m
+[0;32mI (22782) WIFI: Disconnected, retrying...[0m
+[0;32mI (25192) WIFI: Disconnected, retrying...[0m
+[0;32mI (27592) WIFI: Disconnected, retrying...[0m
+[0;32mI (30002) WIFI: Disconnected, retrying...[0m
+[0;32mI (32412) WIFI: Disconnected, retrying...[0m
+[0;32mI (34812) WIFI: Disconnected, retrying...[0m
+[0;32mI (37222) WIFI: Disconnected, retrying...[0m
+[0;32mI (39632) WIFI: Disconnected, retrying...[0m
+[0;32mI (42032) WIFI: Disconnected, retrying...[0m
+[0;32mI (44442) WIFI: Disconnected, retrying...[0m
+[0;32mI (46842) WIFI: Disconnected, retrying...[0m
+[0;32mI (49252) WIFI: Disconnected, retrying...[0m
+[0;32mI (51662) WIFI: Disconnected, retrying...[0m
+[0;32mI (54062) WIFI: Disconnected, retrying...[0m
+[0;32mI (56472) WIFI: Disconnected, retrying...[0m
+[0;32mI (58882) WIFI: Disconnected, retrying...[0m
+[0;32mI (61282) WIFI: Disconnected, retrying...[0m
+[0;32mI (63692) WIFI: Disconnected, retrying...[0m
+[0;32mI (66102) WIFI: Disconnected, retrying...[0m
+[0;32mI (68502) WIFI: Disconnected, retrying...[0m
+[0;32mI (70912) WIFI: Disconnected, retrying...[0m
+[0;32mI (73322) WIFI: Disconnected, retrying...[0m
+[0;32mI (75722) WIFI: Disconnected, retrying...[0m
+[0;32mI (78132) WIFI: Disconnected, retrying...[0m
+[0;32mI (80542) WIFI: Disconnected, retrying...[0m
+[0;32mI (82942) WIFI: Disconnected, retrying...[0m
+[0;32mI (85352) WIFI: Disconnected, retrying...[0m
+[0;32mI (87762) WIFI: Disconnected, retrying...[0m
+[0;32mI (90162) WIFI: Disconnected, retrying...[0m
+[0;32mI (92572) WIFI: Disconnected, retrying...[0m
+[0;32mI (94982) WIFI: Disconnected, retrying...[0m
+[0;32mI (97382) WIFI: Disconnected, retrying...[0m
+[0;32mI (99792) WIFI: Disconnected, retrying...[0m
+[0;32mI (102202) WIFI: Disconnected, retrying...[0m
+[0;32mI (104602) WIFI: Disconnected, retrying...[0m
+[0;32mI (107012) WIFI: Disconnected, retrying...[0m
+[0;32mI (109412) WIFI: Disconnected, retrying...[0m
+[0;32mI (111822) WIFI: Disconnected, retrying...[0m
+[0;32mI (114232) WIFI: Disconnected, retrying...[0m
+[0;32mI (116632) WIFI: Disconnected, retrying...[0m
+[0;32mI (119042) WIFI: Disconnected, retrying...[0m
+[0;32mI (121452) WIFI: Disconnected, retrying...[0m
+[0;32mI (123852) WIFI: Disconnected, retrying...[0m
+[0;32mI (126262) WIFI: Disconnected, retrying...[0m
+[0;32mI (128672) WIFI: Disconnected, retrying...[0m
+[0;32mI (131072) WIFI: Disconnected, retrying...[0m
+[0;32mI (133482) WIFI: Disconnected, retrying...[0m
+[0;32mI (135892) WIFI: Disconnected, retrying...[0m
+[0;32mI (138292) WIFI: Disconnected, retrying...[0m
+[0;32mI (140702) WIFI: Disconnected, retrying...[0m
+[0;32mI (143112) WIFI: Disconnected, retrying...[0m
+[0;32mI (145512) WIFI: Disconnected, retrying...[0m
+[0;32mI (147922) WIFI: Disconnected, retrying...[0m
+[0;32mI (150332) WIFI: Disconnected, retrying...[0m
+[0;32mI (152732) WIFI: Disconnected, retrying...[0m
+[0;32mI (155142) WIFI: Disconnected, retrying...[0m
+[0;32mI (157552) WIFI: Disconnected, retrying...[0m
+[0;32mI (159952) WIFI: Disconnected, retrying...[0m
+[0;32mI (162362) WIFI: Disconnected, retrying...[0m
+[0;32mI (164762) WIFI: Disconnected, retrying...[0m
+[0;32mI (167172) WIFI: Disconnected, retrying...[0m
+[0;32mI (169582) WIFI: Disconnected, retrying...[0m
+[0;32mI (171982) WIFI: Disconnected, retrying...[0m
+[0;32mI (174392) WIFI: Disconnected, retrying...[0m
+[0;32mI (176802) WIFI: Disconnected, retrying...[0m
+[0;32mI (179202) WIFI: Disconnected, retrying...[0m
+[0;32mI (181612) WIFI: Disconnected, retrying...[0m
+[0;32mI (184022) WIFI: Disconnected, retrying...[0m
+[0;32mI (186422) WIFI: Disconnected, retrying...[0m
+[0;32mI (188832) WIFI: Disconnected, retrying...[0m
+[0;32mI (191242) WIFI: Disconnected, retrying...[0m
+[0;32mI (193642) WIFI: Disconnected, retrying...[0m
+[0;32mI (196052) WIFI: Disconnected, retrying...[0m
+[0;32mI (198462) WIFI: Disconnected, retrying...[0m
+[0;32mI (200862) WIFI: Disconnected, retrying...[0m
+[0;32mI (203272) WIFI: Disconnected, retrying...[0m
+[0;32mI (205682) WIFI: Disconnected, retrying...[0m
+[0;32mI (208082) WIFI: Disconnected, retrying...[0m
+[0;32mI (210492) WIFI: Disconnected, retrying...[0m
+[0;32mI (212902) WIFI: Disconnected, retrying...[0m
+[0;32mI (215302) WIFI: Disconnected, retrying...[0m
+[0;32mI (217712) WIFI: Disconnected, retrying...[0m
+[0;32mI (220122) WIFI: Disconnected, retrying...[0m
+[0;32mI (222522) WIFI: Disconnected, retrying...[0m
+[0;32mI (224932) WIFI: Disconnected, retrying...[0m
+[0;32mI (227342) WIFI: Disconnected, retrying...[0m
+[0;32mI (229742) WIFI: Disconnected, retrying...[0m
+[0;32mI (232152) WIFI: Disconnected, retrying...[0m
+[0;32mI (234552) WIFI: Disconnected, retrying...[0m
+[0;32mI (236962) WIFI: Disconnected, retrying...[0m
+[0;32mI (239372) WIFI: Disconnected, retrying...[0m
+[0;32mI (241772) WIFI: Disconnected, retrying...[0m
+[0;32mI (244182) WIFI: Disconnected, retrying...[0m
+[0;32mI (246592) WIFI: Disconnected, retrying...[0m
+[0;32mI (248992) WIFI: Disconnected, retrying...[0m
+[0;32mI (251402) WIFI: Disconnected, retrying...[0m
+[0;32mI (253812) WIFI: Disconnected, retrying...[0m
+[0;32mI (256212) WIFI: Disconnected, retrying...[0m
+[0;32mI (258622) WIFI: Disconnected, retrying...[0m
+[0;32mI (261032) WIFI: Disconnected, retrying...[0m
+[0;32mI (263432) WIFI: Disconnected, retrying...[0m
+[0;32mI (265842) WIFI: Disconnected, retrying...[0m
+[0;32mI (268252) WIFI: Disconnected, retrying...[0m
+[0;32mI (270652) WIFI: Disconnected, retrying...[0m
+[0;32mI (273062) WIFI: Disconnected, retrying...[0m
+[0;32mI (275472) WIFI: Disconnected, retrying...[0m
+[0;32mI (277872) WIFI: Disconnected, retrying...[0m
+[0;32mI (280282) WIFI: Disconnected, retrying...[0m
+[0;32mI (282692) WIFI: Disconnected, retrying...[0m
+[0;32mI (285092) WIFI: Disconnected, retrying...[0m
+[0;32mI (287502) WIFI: Disconnected, retrying...[0m
+[0;32mI (289912) WIFI: Disconnected, retrying...[0m
+[0;32mI (292312) WIFI: Disconnected, retrying...[0m
+[0;32mI (294722) WIFI: Disconnected, retrying...[0m
+[0;32mI (297132) WIFI: Disconnected, retrying...[0m
+[0;32mI (299532) WIFI: Disconnected, retrying...[0m
+[0;32mI (301942) WIFI: Disconnected, retrying...[0m
+[0;32mI (304352) WIFI: Disconnected, retrying...[0m
+[0;32mI (306762) WIFI: Disconnected, retrying...[0m
+[0;32mI (309172) WIFI: Disconnected, retrying...[0m
+[0;32mI (309772) RFID: Mode set: 0[0m
+[0;32mI (309772) RFID: Callback cleared[0m
+[0;32mI (311202) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (311202) RFID: Callback set[0m
+[0;32mI (311202) RFID: Mode set: 1[0m
+[0;32mI (311582) WIFI: Disconnected, retrying...[0m
+[0;32mI (311682) RFID: Mode set: 0[0m
+[0;32mI (311682) RFID: Callback cleared[0m
+[0;32mI (311712) RFID: Mode set: 0[0m
+[0;32mI (311712) RFID: Callback cleared[0m
+[0;32mI (312012) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (312012) RFID: Mode set: 0[0m
+[0;32mI (312012) RFID: Callback cleared[0m
+[0;32mI (312612) RETURN: Return screen loaded → enabling RFID[0m
+[0;32mI (312612) RFID: Callback set[0m
+[0;32mI (312612) RFID: Mode set: 2[0m
+[0;32mI (313342) RFID: Mode set: 0[0m
+[0;32mI (313342) RFID: Callback cleared[0m
+[0;32mI (313372) RFID: Mode set: 0[0m
+[0;32mI (313372) RFID: Callback cleared[0m
+[0;32mI (313992) WIFI: Disconnected, retrying...[0m
+[0;32mI (316402) WIFI: Disconnected, retrying...[0m
+[0;32mI (318802) WIFI: Disconnected, retrying...[0m
+[0;32mI (321212) WIFI: Disconnected, retrying...[0m
+[0;32mI (323622) WIFI: Disconnected, retrying...[0m
+[0;32mI (326032) WIFI: Disconnected, retrying...[0m
+[0;32mI (326272) TA: Textarea focused → show keyboard[0m
+[0;32mI (326272) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (326272) KEYBOARD: Creating keyboard (parent = 0x3fcc9e70)[0m
+[0;32mI (326272) TA: keyboard parent=0x3fcc9e70 visible? 1[0m
+[0;32mI (326272) TA: Textarea focused → show keyboard[0m
+[0;32mI (326272) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (326272) KEYBOARD: Creating keyboard (parent = 0x3fcc9e70)[0m
+[0;32mI (326272) TA: keyboard parent=0x3fcc9e70 visible? 1[0m
+[0;32mI (326902) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (326902) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (326902) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (327372) TA: Textarea focused → show keyboard[0m
+[0;32mI (327372) KEYBOARD: Creating keyboard (parent = 0x3fcc9e70)[0m
+[0;32mI (327372) TA: keyboard parent=0x3fcc9e70 visible? 1[0m
+[0;32mI (327372) TA: Textarea focused → show keyboard[0m
+[0;32mI (327372) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (327372) KEYBOARD: Creating keyboard (parent = 0x3fcc9e70)[0m
+[0;32mI (327372) TA: keyboard parent=0x3fcc9e70 visible? 1[0m
+[0;32mI (328442) WIFI: Disconnected, retrying...[0m
+[0;32mI (330852) WIFI: Disconnected, retrying...[0m
+[0;32mI (331552) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (331552) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (331552) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (333262) WIFI: Disconnected, retrying...[0m
+[0;32mI (335662) WIFI: Disconnected, retrying...[0m
+[0;32mI (338072) WIFI: Disconnected, retrying...[0m
+[0;32mI (340482) WIFI: Disconnected, retrying...[0m
+[0;32mI (342882) WIFI: Disconnected, retrying...[0m
+[0;32mI (345292) WIFI: Disconnected, retrying...[0m
+[0;32mI (347692) WIFI: Disconnected, retrying...[0m
+[0;32mI (350102) WIFI: Disconnected, retrying...[0m
+[0;32mI (352512) WIFI: Disconnected, retrying...[0m
+[0;32mI (354912) WIFI: Disconnected, retrying...[0m
+[0;32mI (357322) WIFI: Disconnected, retrying...[0m
+[0;32mI (359732) WIFI: Disconnected, retrying...[0m
+[0;32mI (362132) WIFI: Disconnected, retrying...[0m
+[0;32mI (364542) WIFI: Disconnected, retrying...[0m
+[0;32mI (366952) WIFI: Disconnected, retrying...[0m
+[0;32mI (369352) WIFI: Disconnected, retrying...[0m
+[0;32mI (371762) WIFI: Disconnected, retrying...[0m
+[0;32mI (374172) WIFI: Disconnected, retrying...[0m
+[0;32mI (376572) WIFI: Disconnected, retrying...[0m
+[0;32mI (378982) WIFI: Disconnected, retrying...[0m
+[0;32mI (381392) WIFI: Disconnected, retrying...[0m
+[0;32mI (383792) WIFI: Disconnected, retrying...[0m
+[0;32mI (386202) WIFI: Disconnected, retrying...[0m
+[0;32mI (388612) WIFI: Disconnected, retrying...[0m
+[0;32mI (391012) WIFI: Disconnected, retrying...[0m
+[0;32mI (393422) WIFI: Disconnected, retrying...[0m
+[0;32mI (395832) WIFI: Disconnected, retrying...[0m
+[0;32mI (398232) WIFI: Disconnected, retrying...[0m
+[0;32mI (400642) WIFI: Disconnected, retrying...[0m
+[0;32mI (403052) WIFI: Disconnected, retrying...[0m
+[0;32mI (405452) WIFI: Disconnected, retrying...[0m
+[0;32mI (407862) WIFI: Disconnected, retrying...[0m
+[0;32mI (410272) WIFI: Disconnected, retrying...[0m
+[0;32mI (412672) WIFI: Disconnected, retrying...[0m
+[0;32mI (415082) WIFI: Disconnected, retrying...[0m
+[0;32mI (417492) WIFI: Disconnected, retrying...[0m
+[0;32mI (419892) WIFI: Disconnected, retrying...[0m
+[0;32mI (422302) WIFI: Disconnected, retrying...[0m
+[0;32mI (423062) RFID: Mode set: 0[0m
+[0;32mI (423062) RFID: Callback cleared[0m
+[0;32mI (424712) WIFI: Disconnected, retrying...[0m
+[0;32mI (427112) WIFI: Disconnected, retrying...[0m
+[0;32mI (429522) WIFI: Disconnected, retrying...[0m
+[0;32mI (431932) WIFI: Disconnected, retrying...[0m
+[0;32mI (434332) WIFI: Disconnected, retrying...[0m
+[0;32mI (436742) WIFI: Disconnected, retrying...[0m
+[0;32mI (439152) WIFI: Disconnected, retrying...[0m
+[0;32mI (441552) WIFI: Disconnected, retrying...[0m
+[0;32mI (443962) WIFI: Disconnected, retrying...[0m
+[0;32mI (446372) WIFI: Disconnected, retrying...[0m
+[0;32mI (448772) WIFI: Disconnected, retrying...[0m
+[0;32mI (451182) WIFI: Disconnected, retrying...[0m
+[0;32mI (453592) WIFI: Disconnected, retrying...[0m
+[0;32mI (455992) WIFI: Disconnected, retrying...[0m
+[0;32mI (458402) WIFI: Disconnected, retrying...[0m
+[0;32mI (460812) WIFI: Disconnected, retrying...[0m
+[0;32mI (463212) WIFI: Disconnected, retrying...[0m
+[0;32mI (465622) WIFI: Disconnected, retrying...[0m
+[0;32mI (468032) WIFI: Disconnected, retrying...[0m
+[0;32mI (470432) WIFI: Disconnected, retrying...[0m
+[0;32mI (472842) WIFI: Disconnected, retrying...[0m
+[0;32mI (475242) WIFI: Disconnected, retrying...[0m
+[0;32mI (477652) WIFI: Disconnected, retrying...[0m
+[0;32mI (480062) WIFI: Disconnected, retrying...[0m
+[0;32mI (482462) WIFI: Disconnected, retrying...[0m
+[0;32mI (484872) WIFI: Disconnected, retrying...[0m
+[0;32mI (487282) WIFI: Disconnected, retrying...[0m
+[0;32mI (487322) RFID: Mode set: 0[0m
+[0;32mI (487322) RFID: Callback cleared[0m
+[0;32mI (489692) WIFI: Disconnected, retrying...[0m
+[0;32mI (492102) WIFI: Disconnected, retrying...[0m
+[0;32mI (492442) RFID: Mode set: 0[0m
+[0;32mI (492442) RFID: Callback cleared[0m
+[0;32mI (494502) WIFI: Disconnected, retrying...[0m
+[0;32mI (496912) WIFI: Disconnected, retrying...[0m
+[0;32mI (499322) WIFI: Disconnected, retrying...[0m
+[0;32mI (501202) RFID: Mode set: 0[0m
+[0;32mI (501202) RFID: Callback cleared[0m
+[0;32mI (501732) WIFI: Disconnected, retrying...[0m
+[0;32mI (504142) WIFI: Disconnected, retrying...[0m
+[0;32mI (506542) WIFI: Disconnected, retrying...[0m
+[0;32mI (508952) WIFI: Disconnected, retrying...[0m
+[0;32mI (511362) WIFI: Disconnected, retrying...[0m
+[0;32mI (513762) WIFI: Disconnected, retrying...[0m
+[0;32mI (516172) WIFI: Disconnected, retrying...[0m
+[0;32mI (518582) WIFI: Disconnected, retrying...[0m
+[0;32mI (520982) WIFI: Disconnected, retrying...[0m
+[0;32mI (523392) WIFI: Disconnected, retrying...[0m
+[0;32mI (525802) WIFI: Disconnected, retrying...[0m
+[0;32mI (528202) WIFI: Disconnected, retrying...[0m
+[0;32mI (530612) WIFI: Disconnected, retrying...[0m
+[0;32mI (533022) WIFI: Disconnected, retrying...[0m
+[0;32mI (535422) WIFI: Disconnected, retrying...[0m
+[0;32mI (537832) WIFI: Disconnected, retrying...[0m
+[0;32mI (540242) WIFI: Disconnected, retrying...[0m
+[0;32mI (542642) WIFI: Disconnected, retrying...[0m
+[0;32mI (545052) WIFI: Disconnected, retrying...[0m
+[0;32mI (547462) WIFI: Disconnected, retrying...[0m
+[0;32mI (549862) WIFI: Disconnected, retrying...[0m
+[0;32mI (552272) WIFI: Disconnected, retrying...[0m
+[0;32mI (554682) WIFI: Disconnected, retrying...[0m
+[0;32mI (557082) WIFI: Disconnected, retrying...[0m
+[0;32mI (559492) WIFI: Disconnected, retrying...[0m
+[0;32mI (561902) WIFI: Disconnected, retrying...[0m
+[0;32mI (564302) WIFI: Disconnected, retrying...[0m
+[0;32mI (566712) WIFI: Disconnected, retrying...[0m
+[0;32mI (569122) WIFI: Disconnected, retrying...[0m
+[0;32mI (571522) WIFI: Disconnected, retrying...[0m
+[0;32mI (573932) WIFI: Disconnected, retrying...[0m
+[0;32mI (576332) WIFI: Disconnected, retrying...[0m
+[0;32mI (578742) WIFI: Disconnected, retrying...[0m
+[0;32mI (581152) WIFI: Disconnected, retrying...[0m
+[0;32mI (583552) WIFI: Disconnected, retrying...[0m
+[0;32mI (585962) WIFI: Disconnected, retrying...[0m
+[0;32mI (588372) WIFI: Disconnected, retrying...[0m
+[0;32mI (590772) WIFI: Disconnected, retrying...[0m
+[0;32mI (593182) WIFI: Disconnected, retrying...[0m
+[0;32mI (595592) WIFI: Disconnected, retrying...[0m
+[0;32mI (597992) WIFI: Disconnected, retrying...[0m
+[0;32mI (600402) WIFI: Disconnected, retrying...[0m
+[0;32mI (602812) WIFI: Disconnected, retrying...[0m
+[0;32mI (605212) WIFI: Disconnected, retrying...[0m
+[0;32mI (607622) WIFI: Disconnected, retrying...[0m
+[0;32mI (610032) WIFI: Disconnected, retrying...[0m
+[0;32mI (612432) WIFI: Disconnected, retrying...[0m
+[0;32mI (614842) WIFI: Disconnected, retrying...[0m
+[0;32mI (617252) WIFI: Disconnected, retrying...[0m
+[0;32mI (619652) WIFI: Disconnected, retrying...[0m
+[0;32mI (622062) WIFI: Disconnected, retrying...[0m
+[0;32mI (624472) WIFI: Disconnected, retrying...[0m
+[0;32mI (626872) WIFI: Disconnected, retrying...[0m
+[0;32mI (629282) WIFI: Disconnected, retrying...[0m
+[0;32mI (631692) WIFI: Disconnected, retrying...[0m
+[0;32mI (634092) WIFI: Disconnected, retrying...[0m
+[0;32mI (636502) WIFI: Disconnected, retrying...[0m
+[0;32mI (638902) WIFI: Disconnected, retrying...[0m
+[0;32mI (641312) WIFI: Disconnected, retrying...[0m
+[0;32mI (643722) WIFI: Disconnected, retrying...[0m
+[0;32mI (646122) WIFI: Disconnected, retrying...[0m
+[0;32mI (648532) WIFI: Disconnected, retrying...[0m
+[0;32mI (650942) WIFI: Disconnected, retrying...[0m
+[0;32mI (653342) WIFI: Disconnected, retrying...[0m
+[0;32mI (655752) WIFI: Disconnected, retrying...[0m
+[0;32mI (658162) WIFI: Disconnected, retrying...[0m
+[0;32mI (660562) WIFI: Disconnected, retrying...[0m
+[0;32mI (662972) WIFI: Disconnected, retrying...[0m
+[0;32mI (665382) WIFI: Disconnected, retrying...[0m
+[0;32mI (667782) WIFI: Disconnected, retrying...[0m
+[0;32mI (670192) WIFI: Disconnected, retrying...[0m
+[0;32mI (672602) WIFI: Disconnected, retrying...[0m
+[0;32mI (675002) WIFI: Disconnected, retrying...[0m
+[0;32mI (677412) WIFI: Disconnected, retrying...[0m
+[0;32mI (679822) WIFI: Disconnected, retrying...[0m
+[0;32mI (682222) WIFI: Disconnected, retrying...[0m
+[0;32mI (684632) WIFI: Disconnected, retrying...[0m
+[0;32mI (687042) WIFI: Disconnected, retrying...[0m
+[0;32mI (689442) WIFI: Disconnected, retrying...[0m
+[0;32mI (691852) WIFI: Disconnected, retrying...[0m
+[0;32mI (694262) WIFI: Disconnected, retrying...[0m
+[0;32mI (696662) WIFI: Disconnected, retrying...[0m
+[0;32mI (699072) WIFI: Disconnected, retrying...[0m
+[0;32mI (701482) WIFI: Disconnected, retrying...[0m
+[0;32mI (703882) WIFI: Disconnected, retrying...[0m
+[0;32mI (706292) WIFI: Disconnected, retrying...[0m
+[0;32mI (708692) WIFI: Disconnected, retrying...[0m
+[0;32mI (711102) WIFI: Disconnected, retrying...[0m
+[0;32mI (713512) WIFI: Disconnected, retrying...[0m
+[0;32mI (715912) WIFI: Disconnected, retrying...[0m
+[0;32mI (718322) WIFI: Disconnected, retrying...[0m
+[0;32mI (720732) WIFI: Disconnected, retrying...[0m
+[0;32mI (723132) WIFI: Disconnected, retrying...[0m
+[0;32mI (725542) WIFI: Disconnected, retrying...[0m
+[0;32mI (727952) WIFI: Disconnected, retrying...[0m
+[0;32mI (730352) WIFI: Disconnected, retrying...[0m
+[0;32mI (732762) WIFI: Disconnected, retrying...[0m
+[0;32mI (735172) WIFI: Disconnected, retrying...[0m
+[0;32mI (737572) WIFI: Disconnected, retrying...[0m
+[0;32mI (739982) WIFI: Disconnected, retrying...[0m
+[0;32mI (742392) WIFI: Disconnected, retrying...[0m
+[0;32mI (744792) WIFI: Disconnected, retrying...[0m
+[0;32mI (747202) WIFI: Disconnected, retrying...[0m
+[0;32mI (749612) WIFI: Disconnected, retrying...[0m
+[0;32mI (752012) WIFI: Disconnected, retrying...[0m
+[0;32mI (754422) WIFI: Disconnected, retrying...[0m
+[0;32mI (756832) WIFI: Disconnected, retrying...[0m
+[0;32mI (759232) WIFI: Disconnected, retrying...[0m
+[0;32mI (761642) WIFI: Disconnected, retrying...[0m
+[0;32mI (764052) WIFI: Disconnected, retrying...[0m
+[0;32mI (766452) WIFI: Disconnected, retrying...[0m
+[0;32mI (768862) WIFI: Disconnected, retrying...[0m
+[0;32mI (771262) WIFI: Disconnected, retrying...[0m
+[0;32mI (773672) WIFI: Disconnected, retrying...[0m
+[0;32mI (776082) WIFI: Disconnected, retrying...[0m
+[0;32mI (778482) WIFI: Disconnected, retrying...[0m
+[0;32mI (780892) WIFI: Disconnected, retrying...[0m
+[0;32mI (783302) WIFI: Disconnected, retrying...[0m
+[0;32mI (785702) WIFI: Disconnected, retrying...[0m
+[0;32mI (788112) WIFI: Disconnected, retrying...[0m
+[0;32mI (790522) WIFI: Disconnected, retrying...[0m
+[0;32mI (792922) WIFI: Disconnected, retrying...[0m
+[0;32mI (795332) WIFI: Disconnected, retrying...[0m
+[0;32mI (797742) WIFI: Disconnected, retrying...[0m
+[0;32mI (800142) WIFI: Disconnected, retrying...[0m
+[0;32mI (802552) WIFI: Disconnected, retrying...[0m
+[0;32mI (804962) WIFI: Disconnected, retrying...[0m
+[0;32mI (807362) WIFI: Disconnected, retrying...[0m
+[0;32mI (809772) WIFI: Disconnected, retrying...[0m
+[0;32mI (812182) WIFI: Disconnected, retrying...[0m
+[0;32mI (814582) WIFI: Disconnected, retrying...[0m
+[0;32mI (816992) WIFI: Disconnected, retrying...[0m
+[0;32mI (819402) WIFI: Disconnected, retrying...[0m
+[0;32mI (821802) WIFI: Disconnected, retrying...[0m
+[0;32mI (824212) WIFI: Disconnected, retrying...[0m
+[0;32mI (826622) WIFI: Disconnected, retrying...[0m
+[0;32mI (829022) WIFI: Disconnected, retrying...[0m
+[0;32mI (831432) WIFI: Disconnected, retrying...[0m
+[0;32mI (833842) WIFI: Disconnected, retrying...[0m
+[0;32mI (836242) WIFI: Disconnected, retrying...[0m
+[0;32mI (838652) WIFI: Disconnected, retrying...[0m
+[0;32mI (841052) WIFI: Disconnected, retrying...[0m
+[0;32mI (843462) WIFI: Disconnected, retrying...[0m
+[0;32mI (845872) WIFI: Disconnected, retrying...[0m
+[0;32mI (848272) WIFI: Disconnected, retrying...[0m
+[0;32mI (850682) WIFI: Disconnected, retrying...[0m
+[0;32mI (853092) WIFI: Disconnected, retrying...[0m
+[0;32mI (855492) WIFI: Disconnected, retrying...[0m
+[0;32mI (857902) WIFI: Disconnected, retrying...[0m
+[0;32mI (860312) WIFI: Disconnected, retrying...[0m
+[0;32mI (862712) WIFI: Disconnected, retrying...[0m
+[0;32mI (865122) WIFI: Disconnected, retrying...[0m
+[0;32mI (867532) WIFI: Disconnected, retrying...[0m
+[0;32mI (869932) WIFI: Disconnected, retrying...[0m
+[0;32mI (872342) WIFI: Disconnected, retrying...[0m
+[0;32mI (874752) WIFI: Disconnected, retrying...[0m
+[0;32mI (877152) WIFI: Disconnected, retrying...[0m
+[0;32mI (879562) WIFI: Disconnected, retrying...[0m
+[0;32mI (881972) WIFI: Disconnected, retrying...[0m
+[0;32mI (884372) WIFI: Disconnected, retrying...[0m
+[0;32mI (886782) WIFI: Disconnected, retrying...[0m
+[0;32mI (889192) WIFI: Disconnected, retrying...[0m
+[0;32mI (891592) WIFI: Disconnected, retrying...[0m
+[0;32mI (894002) WIFI: Disconnected, retrying...[0m
+[0;32mI (896412) WIFI: Disconnected, retrying...[0m
+[0;32mI (898812) WIFI: Disconnected, retrying...[0m
+[0;32mI (901222) WIFI: Disconnected, retrying...[0m
+[0;32mI (903632) WIFI: Disconnected, retrying...[0m
+[0;32mI (906032) WIFI: Disconnected, retrying...[0m
+[0;32mI (908442) WIFI: Disconnected, retrying...[0m
+[0;32mI (910852) WIFI: Disconnected, retrying...[0m
+[0;32mI (913252) WIFI: Disconnected, retrying...[0m
+[0;32mI (915662) WIFI: Disconnected, retrying...[0m
+[0;32mI (918062) WIFI: Disconnected, retrying...[0m
+[0;32mI (920472) WIFI: Disconnected, retrying...[0m
+[0;32mI (922882) WIFI: Disconnected, retrying...[0m
+[0;32mI (925282) WIFI: Disconnected, retrying...[0m
+[0;32mI (927692) WIFI: Disconnected, retrying...[0m
+[0;32mI (930102) WIFI: Disconnected, retrying...[0m
+[0;32mI (932502) WIFI: Disconnected, retrying...[0m
+[0;32mI (934912) WIFI: Disconnected, retrying...[0m
+[0;32mI (937322) WIFI: Disconnected, retrying...[0m
+[0;32mI (939722) WIFI: Disconnected, retrying...[0m
+[0;32mI (942132) WIFI: Disconnected, retrying...[0m
+[0;32mI (944542) WIFI: Disconnected, retrying...[0m
+[0;32mI (946942) WIFI: Disconnected, retrying...[0m
+[0;32mI (949352) WIFI: Disconnected, retrying...[0m
+[0;32mI (951762) WIFI: Disconnected, retrying...[0m
+[0;32mI (954162) WIFI: Disconnected, retrying...[0m
+[0;32mI (956572) WIFI: Disconnected, retrying...[0m
+[0;32mI (958982) WIFI: Disconnected, retrying...[0m
+[0;32mI (961382) WIFI: Disconnected, retrying...[0m
+[0;32mI (963792) WIFI: Disconnected, retrying...[0m
+[0;32mI (966202) WIFI: Disconnected, retrying...[0m
+[0;32mI (968602) WIFI: Disconnected, retrying...[0m
+[0;32mI (971012) WIFI: Disconnected, retrying...[0m
+[0;32mI (973422) WIFI: Disconnected, retrying...[0m
+[0;32mI (975822) WIFI: Disconnected, retrying...[0m
+[0;32mI (978232) WIFI: Disconnected, retrying...[0m
+[0;32mI (980642) WIFI: Disconnected, retrying...[0m
+[0;32mI (983042) WIFI: Disconnected, retrying...[0m
+[0;32mI (985452) WIFI: Disconnected, retrying...[0m
+[0;32mI (987852) WIFI: Disconnected, retrying...[0m
+[0;32mI (990262) WIFI: Disconnected, retrying...[0m
+[0;32mI (992672) WIFI: Disconnected, retrying...[0m
+[0;32mI (995072) WIFI: Disconnected, retrying...[0m
+[0;32mI (997482) WIFI: Disconnected, retrying...[0m
+[0;32mI (999892) WIFI: Disconnected, retrying...[0m
+[0;32mI (1002292) WIFI: Disconnected, retrying...[0m
+[0;32mI (1004702) WIFI: Disconnected, retrying...[0m
+[0;32mI (1007112) WIFI: Disconnected, retrying...[0m
+[0;32mI (1009512) WIFI: Disconnected, retrying...[0m
+[0;32mI (1011922) WIFI: Disconnected, retrying...[0m
+[0;32mI (1014332) WIFI: Disconnected, retrying...[0m
+[0;32mI (1016732) WIFI: Disconnected, retrying...[0m
+[0;32mI (1019142) WIFI: Disconnected, retrying...[0m
+[0;32mI (1021552) WIFI: Disconnected, retrying...[0m
+[0;32mI (1023952) WIFI: Disconnected, retrying...[0m
+[0;32mI (1026362) WIFI: Disconnected, retrying...[0m
+[0;32mI (1028772) WIFI: Disconnected, retrying...[0m
+[0;32mI (1031172) WIFI: Disconnected, retrying...[0m
+[0;32mI (1033582) WIFI: Disconnected, retrying...[0m
+[0;32mI (1035992) WIFI: Disconnected, retrying...[0m
+[0;32mI (1038392) WIFI: Disconnected, retrying...[0m
+[0;32mI (1040802) WIFI: Disconnected, retrying...[0m
+[0;32mI (1043212) WIFI: Disconnected, retrying...[0m
+[0;32mI (1045612) WIFI: Disconnected, retrying...[0m
+[0;32mI (1048022) WIFI: Disconnected, retrying...[0m
+[0;32mI (1050432) WIFI: Disconnected, retrying...[0m
+[0;32mI (1052832) WIFI: Disconnected, retrying...[0m
+[0;32mI (1055242) WIFI: Disconnected, retrying...[0m
+[0;32mI (1057652) WIFI: Disconnected, retrying...[0m
+[0;32mI (1060052) WIFI: Disconnected, retrying...[0m
+[0;32mI (1062462) WIFI: Disconnected, retrying...[0m
+[0;32mI (1064872) WIFI: Disconnected, retrying...[0m
+[0;32mI (1067272) WIFI: Disconnected, retrying...[0m
+[0;32mI (1069682) WIFI: Disconnected, retrying...[0m
+[0;32mI (1072092) WIFI: Disconnected, retrying...[0m
+[0;32mI (1074492) WIFI: Disconnected, retrying...[0m
+[0;32mI (1076902) WIFI: Disconnected, retrying...[0m
+[0;32mI (1079302) WIFI: Disconnected, retrying...[0m
+[0;32mI (1081712) WIFI: Disconnected, retrying...[0m
+[0;32mI (1084122) WIFI: Disconnected, retrying...[0m
+[0;32mI (1086522) WIFI: Disconnected, retrying...[0m
+[0;32mI (1088932) WIFI: Disconnected, retrying...[0m
+[0;32mI (1091342) WIFI: Disconnected, retrying...[0m
+[0;32mI (1093742) WIFI: Disconnected, retrying...[0m
+[0;32mI (1096152) WIFI: Disconnected, retrying...[0m
+[0;32mI (1098562) WIFI: Disconnected, retrying...[0m
+[0;32mI (1100962) WIFI: Disconnected, retrying...[0m
+[0;32mI (1103372) WIFI: Disconnected, retrying...[0m
+[0;32mI (1105782) WIFI: Disconnected, retrying...[0m
+[0;32mI (1108182) WIFI: Disconnected, retrying...[0m
+[0;32mI (1110592) WIFI: Disconnected, retrying...[0m
+[0;32mI (1113002) WIFI: Disconnected, retrying...[0m
+[0;32mI (1115402) WIFI: Disconnected, retrying...[0m
+[0;32mI (1117812) WIFI: Disconnected, retrying...[0m
+[0;32mI (1120222) WIFI: Disconnected, retrying...[0m
+[0;32mI (1122622) WIFI: Disconnected, retrying...[0m
+[0;32mI (1125032) WIFI: Disconnected, retrying...[0m
+[0;32mI (1127442) WIFI: Disconnected, retrying...[0m
+[0;32mI (1129842) WIFI: Disconnected, retrying...[0m
+[0;32mI (1132252) WIFI: Disconnected, retrying...[0m
+[0;32mI (1134662) WIFI: Disconnected, retrying...[0m
+[0;32mI (1137062) WIFI: Disconnected, retrying...[0m
+[0;32mI (1139472) WIFI: Disconnected, retrying...[0m
+[0;32mI (1141882) WIFI: Disconnected, retrying...[0m
+[0;32mI (1144282) WIFI: Disconnected, retrying...[0m
+[0;32mI (1146692) WIFI: Disconnected, retrying...[0m
+[0;32mI (1149092) WIFI: Disconnected, retrying...[0m
+[0;32mI (1151502) WIFI: Disconnected, retrying...[0m
+[0;32mI (1153912) WIFI: Disconnected, retrying...[0m
+[0;32mI (1156312) WIFI: Disconnected, retrying...[0m
+[0;32mI (1158722) WIFI: Disconnected, retrying...[0m
+[0;32mI (1161132) WIFI: Disconnected, retrying...[0m
+[0;32mI (1163532) WIFI: Disconnected, retrying...[0m
+[0;32mI (1165942) WIFI: Disconnected, retrying...[0m
+[0;32mI (1168352) WIFI: Disconnected, retrying...[0m
+[0;32mI (1170752) WIFI: Disconnected, retrying...[0m
+[0;32mI (1173162) WIFI: Disconnected, retrying...[0m
+[0;32mI (1175572) WIFI: Disconnected, retrying...[0m
+[0;32mI (1177972) WIFI: Disconnected, retrying...[0m
+[0;32mI (1180382) WIFI: Disconnected, retrying...[0m
+[0;32mI (1182792) WIFI: Disconnected, retrying...[0m
+[0;32mI (1185192) WIFI: Disconnected, retrying...[0m
+[0;32mI (1187602) WIFI: Disconnected, retrying...[0m
+[0;32mI (1190012) WIFI: Disconnected, retrying...[0m
+[0;32mI (1192412) WIFI: Disconnected, retrying...[0m
+[0;32mI (1194822) WIFI: Disconnected, retrying...[0m
+[0;32mI (1197232) WIFI: Disconnected, retrying...[0m
+[0;32mI (1199632) WIFI: Disconnected, retrying...[0m
+[0;32mI (1202042) WIFI: Disconnected, retrying...[0m
+[0;32mI (1204452) WIFI: Disconnected, retrying...[0m
+[0;32mI (1206852) WIFI: Disconnected, retrying...[0m
+[0;32mI (1209262) WIFI: Disconnected, retrying...[0m
+[0;32mI (1211672) WIFI: Disconnected, retrying...[0m
+[0;32mI (1214072) WIFI: Disconnected, retrying...[0m
+[0;32mI (1216482) WIFI: Disconnected, retrying...[0m
+[0;32mI (1218882) WIFI: Disconnected, retrying...[0m
+[0;32mI (1221292) WIFI: Disconnected, retrying...[0m
+[0;32mI (1223702) WIFI: Disconnected, retrying...[0m
+[0;32mI (1226102) WIFI: Disconnected, retrying...[0m
+[0;32mI (1228512) WIFI: Disconnected, retrying...[0m
+[0;32mI (1230922) WIFI: Disconnected, retrying...[0m
+[0;32mI (1233322) WIFI: Disconnected, retrying...[0m
+[0;32mI (1235732) WIFI: Disconnected, retrying...[0m
+[0;32mI (1238142) WIFI: Disconnected, retrying...[0m

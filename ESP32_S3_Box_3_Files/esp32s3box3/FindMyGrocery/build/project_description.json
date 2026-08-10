@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "FindMyGrocery",
-    "project_version":    "4dd2c98c-dirty",
+    "project_version":    "0aaa43ec-dirty",
     "project_path":       "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery",
     "idf_path":           "C:/Espressif/frameworks/esp-idf-v5.5.5",
     "build_dir":          "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build",
