@@ -14,18 +14,22 @@ SET(SOURCES screens/ui_screenLoader.c
     ui.c
     components/ui_comp_hook.c
     ui_helpers.c
-    images/ui_img_fmb_logo_png.c
-    images/ui_img_fmb_text_png.c
+    images/ui_img_fmg_logo_png.c
+    images/ui_img_fmg_text_png.c
+    images/ui_img_find_a_grocery_png.c
+    images/ui_img_knowprice_png.c
+    images/ui_img_check_price_png.c
+    images/ui_img_makeorder_png.c
     images/ui_img_find_book_icon_png.c
-    images/ui_img_return_book_icon_png.c
-    images/ui_img_issue_book_icon_png.c
-    images/ui_img_about_us_icon_png.c
     images/ui_img_mic_png.c
     images/ui_img_backbtn_png.c
     images/ui_img_backpressed_png.c
     images/ui_img_cross_png.c
+    images/ui_img_issue_book_icon_png.c
     images/ui_img_rfidicon_png.c
     images/ui_img_success_png.c
-    images/ui_img_failed_png.c)
+    images/ui_img_failed_png.c
+    images/ui_img_return_book_icon_png.c
+    images/ui_img_about_us_icon_png.c)
 
 add_library(ui ${SOURCES})

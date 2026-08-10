@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/CMakeFiles/bootloader
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/CMakeFiles/bootloader.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/CMakeFiles/bootloader-complete.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
