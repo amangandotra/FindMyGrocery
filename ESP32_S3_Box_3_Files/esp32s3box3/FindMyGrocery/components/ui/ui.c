@@ -151,6 +151,8 @@ void ui_init(void)
     ui_screenReturnScan_screen_init();
     ui_screenReturnSuccess_screen_init();
     ui_screenAbout_screen_init();
+    ui_ScreenFindAGrocery_screen_init();
+    ui_ScreenFindVoice_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_screenLoader);
 }
@@ -170,4 +172,7 @@ void ui_destroy(void)
     ui_screenReturnScan_screen_destroy();
     ui_screenReturnSuccess_screen_destroy();
     ui_screenAbout_screen_destroy();
+    ui_ScreenFindAGrocery_screen_destroy();
+    ui_ScreenFindVoice_screen_destroy();
+
 }

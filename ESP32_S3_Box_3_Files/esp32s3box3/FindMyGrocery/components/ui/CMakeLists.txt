@@ -46,7 +46,6 @@ idf_component_register(
         images/ui_img_return_book_icon_png.c
         images/ui_img_issue_book_icon_png.c
         images/ui_img_about_us_icon_png.c
-        images/ui_img_mic_png.c
         images/ui_img_backbtn_png.c
         images/ui_img_backpressed_png.c
         images/ui_img_cross_png.c
@@ -73,6 +72,11 @@ idf_component_register(
         images/ui_img_qr_br2c1r_png.c
         images/ui_img_qr_br2c2l_png.c
         images/ui_img_qr_br2c2r_png.c
+        screens/ui_ScreenFindAGrocery.c
+        screens/ui_ScreenFindVoice.c
+        images/ui_img_typesearch_png.c
+        images/ui_img_voicesearch_png.c
+
     SRC_DIRS
         "."
         "screens"

@@ -13,7 +13,6 @@ lv_obj_t * ui_Label9 = NULL;
 lv_obj_t * ui_taFBookName = NULL;
 lv_obj_t * ui_btnSearchBook = NULL;
 lv_obj_t * ui_Label10 = NULL;
-lv_obj_t * ui_btnMic = NULL;
 lv_obj_t * ui_ImgButton6 = NULL;
 lv_obj_t * ui_ErrorFBEBN = NULL;
 // event funtions
@@ -40,7 +39,7 @@ void ui_event_ImgButton6(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
 
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_screenHome, LV_SCR_LOAD_ANIM_FADE_ON, 250, 0, &ui_screenHome_screen_init);
+        _ui_screen_change(&ui_ScreenFindAGrocery, LV_SCR_LOAD_ANIM_FADE_ON, 250, 0, &ui_ScreenFindAGrocery_screen_init);
     }
 }
 
@@ -142,16 +141,6 @@ void ui_screenFindBook_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label10, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label10, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_btnMic = lv_imgbtn_create(ui_screenFindBook);
-    lv_imgbtn_set_src(ui_btnMic, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_mic_png, NULL);
-    lv_imgbtn_set_src(ui_btnMic, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_mic_png, NULL);
-    lv_obj_set_width(ui_btnMic, 40);
-    lv_obj_set_height(ui_btnMic, 41);
-    lv_obj_set_x(ui_btnMic, 115);
-    lv_obj_set_y(ui_btnMic, 11);
-    lv_obj_set_align(ui_btnMic, LV_ALIGN_CENTER);
-    lv_obj_set_style_transform_zoom(ui_btnMic, 170, LV_PART_MAIN | LV_STATE_DEFAULT);
-
     ui_ImgButton6 = lv_imgbtn_create(ui_screenFindBook);
     lv_imgbtn_set_src(ui_ImgButton6, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_backbtn_png, NULL);
     lv_imgbtn_set_src(ui_ImgButton6, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_backpressed_png, NULL);
@@ -192,7 +181,6 @@ void ui_screenFindBook_screen_destroy(void)
     ui_taFBookName = NULL;
     ui_btnSearchBook = NULL;
     ui_Label10 = NULL;
-    ui_btnMic = NULL;
     ui_ImgButton6 = NULL;
     ui_ErrorFBEBN = NULL;
 

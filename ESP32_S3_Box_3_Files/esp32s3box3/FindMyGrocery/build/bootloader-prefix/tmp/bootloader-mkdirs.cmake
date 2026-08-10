@@ -10,18 +10,18 @@ if(NOT EXISTS "C:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subp
   file(MAKE_DIRECTORY "C:/Espressif/frameworks/esp-idf-v5.5.5/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader"
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix"
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/tmp"
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp"
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src"
-  "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/tmp"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/src"
+  "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

@@ -40,7 +40,7 @@ void ui_event_btnFindBook(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
 
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_screenFindBook, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 400, 0, &ui_screenFindBook_screen_init);
+        _ui_screen_change(&ui_ScreenFindAGrocery, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 400, 0, &ui_ScreenFindAGrocery_screen_init);
         _ui_opacity_set(ui_btnAboutUs, 0);
         _ui_opacity_set(ui_btnIssueBook, 0);
         _ui_opacity_set(ui_btnReturnBook, 0);

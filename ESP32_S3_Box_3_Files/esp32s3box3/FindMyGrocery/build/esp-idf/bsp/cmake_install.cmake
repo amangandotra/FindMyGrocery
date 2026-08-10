@@ -1,4 +1,4 @@
-# Install script for directory: D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/components/bsp
+# Install script for directory: D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/components/bsp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

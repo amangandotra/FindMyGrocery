@@ -3,5 +3,5 @@ source "C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_app_format/Kconfig
 source "C:/Espressif/frameworks/esp-idf-v5.5.5/components/esp_rom/Kconfig.projbuild"
 source "C:/Espressif/frameworks/esp-idf-v5.5.5/components/esptool_py/Kconfig.projbuild"
 source "C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/Kconfig.projbuild"
-source "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/components/bsp/Kconfig.projbuild"
-source "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/managed_components/espressif__esp-sr/Kconfig.projbuild"
+source "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/components/bsp/Kconfig.projbuild"
+source "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-sr/Kconfig.projbuild"

@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: D:\FMB V1\FindMyGrocery\ESP S3 Box\ESP FILES\FindMyGrocery\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

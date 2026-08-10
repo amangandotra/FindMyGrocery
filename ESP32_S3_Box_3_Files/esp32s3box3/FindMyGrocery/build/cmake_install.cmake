@@ -1,4 +1,4 @@
-# Install script for directory: D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery
+# Install script for directory: D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/esp-idf/cmake_install.cmake")
+  include("D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/esp-idf/cmake_install.cmake")
 
 endif()
 
@@ -58,6 +58,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

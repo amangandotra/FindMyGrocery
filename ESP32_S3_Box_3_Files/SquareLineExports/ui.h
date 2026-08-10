@@ -31,6 +31,8 @@ extern "C" {
 #include "screens/ui_screenReturnScan.h"
 #include "screens/ui_screenReturnSuccess.h"
 #include "screens/ui_screenAbout.h"
+#include "screens/ui_ScreenFindAGrocery.h"
+#include "screens/ui_ScreenFindVoice.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -50,7 +52,6 @@ LV_IMG_DECLARE(ui_img_knowprice_png);    // assets/knowprice.png
 LV_IMG_DECLARE(ui_img_check_price_png);    // assets/check price.png
 LV_IMG_DECLARE(ui_img_makeorder_png);    // assets/makeorder.png
 LV_IMG_DECLARE(ui_img_find_book_icon_png);    // assets/find book icon.png
-LV_IMG_DECLARE(ui_img_mic_png);    // assets/mic.png
 LV_IMG_DECLARE(ui_img_backbtn_png);    // assets/backBtn.png
 LV_IMG_DECLARE(ui_img_backpressed_png);    // assets/backpressed.png
 LV_IMG_DECLARE(ui_img_cross_png);    // assets/cross.png
@@ -60,6 +61,8 @@ LV_IMG_DECLARE(ui_img_success_png);    // assets/success.png
 LV_IMG_DECLARE(ui_img_failed_png);    // assets/Failed.png
 LV_IMG_DECLARE(ui_img_return_book_icon_png);    // assets/return book icon.png
 LV_IMG_DECLARE(ui_img_about_us_icon_png);    // assets/About Us icon.png
+LV_IMG_DECLARE(ui_img_typesearch_png);    // assets/TypeSearch.png
+LV_IMG_DECLARE(ui_img_voicesearch_png);    // assets/VoiceSearch.png
 
 // UI INIT
 void ui_init(void);

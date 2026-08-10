@@ -11,6 +11,8 @@ SET(SOURCES screens/ui_screenLoader.c
     screens/ui_screenReturnScan.c
     screens/ui_screenReturnSuccess.c
     screens/ui_screenAbout.c
+    screens/ui_ScreenFindAGrocery.c
+    screens/ui_ScreenFindVoice.c
     ui.c
     components/ui_comp_hook.c
     ui_helpers.c
@@ -21,7 +23,6 @@ SET(SOURCES screens/ui_screenLoader.c
     images/ui_img_check_price_png.c
     images/ui_img_makeorder_png.c
     images/ui_img_find_book_icon_png.c
-    images/ui_img_mic_png.c
     images/ui_img_backbtn_png.c
     images/ui_img_backpressed_png.c
     images/ui_img_cross_png.c
@@ -30,6 +31,8 @@ SET(SOURCES screens/ui_screenLoader.c
     images/ui_img_success_png.c
     images/ui_img_failed_png.c
     images/ui_img_return_book_icon_png.c
-    images/ui_img_about_us_icon_png.c)
+    images/ui_img_about_us_icon_png.c
+    images/ui_img_typesearch_png.c
+    images/ui_img_voicesearch_png.c)
 
 add_library(ui ${SOURCES})

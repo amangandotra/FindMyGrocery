@@ -1,4 +1,4 @@
-# Install script for directory: D:/FMB V1/FindMyGrocery/ESP S3 Box/ESP FILES/FindMyGrocery/managed_components/espressif__esp-box-lite
+# Install script for directory: D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/managed_components/espressif__esp-box-lite
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
