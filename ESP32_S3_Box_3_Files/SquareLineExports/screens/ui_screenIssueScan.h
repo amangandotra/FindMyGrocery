@@ -25,6 +25,7 @@ extern lv_obj_t * ui_Label19;
 extern void ui_event_btnCancelIssue(lv_event_t * e);
 extern lv_obj_t * ui_btnCancelIssue;
 extern lv_obj_t * ui_Label21;
+extern lv_obj_t * ui_Image24;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

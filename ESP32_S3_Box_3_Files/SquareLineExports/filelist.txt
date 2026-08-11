@@ -13,6 +13,10 @@ screens/ui_screenReturnSuccess.c
 screens/ui_screenAbout.c
 screens/ui_ScreenFindAGrocery.c
 screens/ui_ScreenFindVoice.c
+screens/ui_screenPriceOfProduct.c
+screens/ui_screenProductDetails.c
+screens/ui_screenCreateBill.c
+screens/ui_ScreenBillCreatedSuccess.c
 ui.c
 components/ui_comp_hook.c
 ui_helpers.c
@@ -25,12 +29,14 @@ images/ui_img_makeorder_png.c
 images/ui_img_backbtn_png.c
 images/ui_img_backpressed_png.c
 images/ui_img_cross_png.c
-images/ui_img_issue_book_icon_png.c
-images/ui_img_rfidicon_png.c
+images/ui_img_rfidorcam_png.c
 images/ui_img_success_png.c
 images/ui_img_failed_png.c
 images/ui_img_return_book_icon_png.c
+images/ui_img_rfidicon_png.c
 images/ui_img_about_us_icon_png.c
 images/ui_img_typesearch_png.c
 images/ui_img_voicesearch_png.c
 images/ui_img_speakvs_png.c
+images/ui_img_pdcam_png.c
+images/ui_img_billcreatedsuccess_png.c

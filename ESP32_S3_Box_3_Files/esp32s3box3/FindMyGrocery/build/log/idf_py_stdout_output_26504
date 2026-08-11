@@ -1,0 +1,69 @@
+Command: ninja all
+[1/9] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5710 bytes. 0x28f0 bytes (32%) free.
+[2/9] No install step for 'bootloader'
+[3/9] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueScan.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenIssueScan.c:61:13: warning: 'rfid_ui_issue_callback' defined but not used [-Wunused-function]
+   61 | static void rfid_ui_issue_callback(const char *uid)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[4/9] Completed 'bootloader'
+[5/9] Linking C static library esp-idf\ui\libui.a
+[6/9] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol BSP_ERROR_CHECK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:3
+info: INFO: Symbol BSP_I2C_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:10
+info: INFO: Symbol BSP_I2C_FAST_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:17
+info: INFO: Symbol BSP_I2C_CLK_SPEED_HZ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:23
+info: INFO: Symbol BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:30
+info: INFO: Symbol BSP_SPIFFS_MOUNT_POINT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:36
+info: INFO: Symbol BSP_SPIFFS_PARTITION_LABEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:42
+info: INFO: Symbol BSP_SPIFFS_MAX_FILES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:48
+info: INFO: Symbol BSP_DISPLAY_BRIGHTNESS_LEDC_CH defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:56
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:56
+info: INFO: Symbol BSP_LCD_DRAW_BUF_HEIGHT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:64
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:64
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:79
+info: INFO: Symbol BSP_LCD_DRAW_BUF_DOUBLE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:86
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:71
+info: INFO: Symbol BSP_I2S_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:78
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:78
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:93
+[7/9] Linking CXX executable FindMyGrocery.elf
+[8/9] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin
+[9/9] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/partition_table/partition-table.bin" "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin""
+FindMyGrocery.bin binary size 0x2c2f20 bytes. Smallest app partition is 0x400000 bytes. 0x13d0e0 bytes (31%) free.

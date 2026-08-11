@@ -14,6 +14,12 @@ idf_component_register(
         screens/ui_screenReturnSuccess.c
         screens/ui_screenAbout.c
         screens/blink_task.c
+        screens/ui_screenPriceOfProduct.c
+        screens/ui_screenProductDetails.c
+        screens/ui_screenCreateBill.c
+        screens/ui_ScreenBillCreatedSuccess.c
+        screens/ui_ScreenFindAGrocery.c
+        screens/ui_ScreenFindVoice.c
         rfid/rfid_service.c
         rfid/rfid_handler.c
         rfid/rfid_state.c
@@ -43,7 +49,8 @@ idf_component_register(
         images/ui_img_check_price_png.c
         images/ui_img_makeorder_png.c
         images/ui_img_return_book_icon_png.c
-        images/ui_img_issue_book_icon_png.c
+        images/ui_img_rfidorcam_png.c
+        images/ui_img_rfidicon_png.c
         images/ui_img_about_us_icon_png.c
         images/ui_img_backbtn_png.c
         images/ui_img_backpressed_png.c
@@ -71,12 +78,11 @@ idf_component_register(
         images/ui_img_qr_br2c1r_png.c
         images/ui_img_qr_br2c2l_png.c
         images/ui_img_qr_br2c2r_png.c
-        screens/ui_ScreenFindAGrocery.c
-        screens/ui_ScreenFindVoice.c
         images/ui_img_typesearch_png.c
         images/ui_img_voicesearch_png.c
         images/ui_img_speakvs_png.c
-        
+        images/ui_img_pdcam_png.c
+        images/ui_img_billcreatedsuccess_png.c        
     SRC_DIRS
         "."
         "screens"

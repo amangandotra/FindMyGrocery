@@ -59,7 +59,7 @@ void ui_event_btnReturnBook(lv_event_t * e)
         _ui_opacity_set(ui_btnAboutUs, 0);
         _ui_opacity_set(ui_btnIssueBook, 0);
         _ui_opacity_set(ui_btnFindBook, 0);
-        _ui_screen_change(&ui_screenReturnScan, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 400, 0, &ui_screenReturnScan_screen_init);
+        _ui_screen_change(&ui_screenProductDetails, LV_SCR_LOAD_ANIM_MOVE_RIGHT, 400, 0, &ui_screenProductDetails_screen_init);
     }
 }
 
@@ -80,7 +80,7 @@ void ui_event_btnAboutUs(lv_event_t * e)
     lv_event_code_t event_code = lv_event_get_code(e);
 
     if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_screenAbout, LV_SCR_LOAD_ANIM_MOVE_LEFT, 500, 0, &ui_screenAbout_screen_init);
+        _ui_screen_change(&ui_screenCreateBill, LV_SCR_LOAD_ANIM_MOVE_LEFT, 500, 0, &ui_screenCreateBill_screen_init);
         _ui_opacity_set(ui_btnReturnBook, 0);
         _ui_opacity_set(ui_btnIssueBook, 0);
         _ui_opacity_set(ui_btnFindBook, 0);

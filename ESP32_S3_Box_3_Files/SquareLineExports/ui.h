@@ -33,6 +33,10 @@ extern "C" {
 #include "screens/ui_screenAbout.h"
 #include "screens/ui_ScreenFindAGrocery.h"
 #include "screens/ui_ScreenFindVoice.h"
+#include "screens/ui_screenPriceOfProduct.h"
+#include "screens/ui_screenProductDetails.h"
+#include "screens/ui_screenCreateBill.h"
+#include "screens/ui_ScreenBillCreatedSuccess.h"
 
 ///////////////////// VARIABLES ////////////////////
 
@@ -54,15 +58,17 @@ LV_IMG_DECLARE(ui_img_makeorder_png);    // assets/makeorder.png
 LV_IMG_DECLARE(ui_img_backbtn_png);    // assets/backBtn.png
 LV_IMG_DECLARE(ui_img_backpressed_png);    // assets/backpressed.png
 LV_IMG_DECLARE(ui_img_cross_png);    // assets/cross.png
-LV_IMG_DECLARE(ui_img_issue_book_icon_png);    // assets/issue book icon.png
-LV_IMG_DECLARE(ui_img_rfidicon_png);    // assets/RFIDicon.png
+LV_IMG_DECLARE(ui_img_rfidorcam_png);    // assets/RFIDorCam.png
 LV_IMG_DECLARE(ui_img_success_png);    // assets/success.png
 LV_IMG_DECLARE(ui_img_failed_png);    // assets/Failed.png
 LV_IMG_DECLARE(ui_img_return_book_icon_png);    // assets/return book icon.png
+LV_IMG_DECLARE(ui_img_rfidicon_png);    // assets/RFIDicon.png
 LV_IMG_DECLARE(ui_img_about_us_icon_png);    // assets/About Us icon.png
 LV_IMG_DECLARE(ui_img_typesearch_png);    // assets/TypeSearch.png
 LV_IMG_DECLARE(ui_img_voicesearch_png);    // assets/voicesearch.png
 LV_IMG_DECLARE(ui_img_speakvs_png);    // assets/SpeakVS.png
+LV_IMG_DECLARE(ui_img_pdcam_png);    // assets/PDCam.png
+LV_IMG_DECLARE(ui_img_billcreatedsuccess_png);    // assets/BillCreatedSuccess.png
 
 // UI INIT
 void ui_init(void);

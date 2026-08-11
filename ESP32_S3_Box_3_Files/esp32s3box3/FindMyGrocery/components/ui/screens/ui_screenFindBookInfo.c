@@ -206,7 +206,7 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_Label12 = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_Label12, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label12, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label12, -74);
+    lv_obj_set_x(ui_Label12, -71);
     lv_obj_set_y(ui_Label12, -47);
     lv_obj_set_align(ui_Label12, LV_ALIGN_CENTER);
     lv_label_set_text(ui_Label12, "Product Name :");
@@ -225,7 +225,7 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_width(ui_labelBDStatus, 252);
     lv_obj_set_height(ui_labelBDStatus, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_labelBDStatus, -1);
-    lv_obj_set_y(ui_labelBDStatus, 2);
+    lv_obj_set_y(ui_labelBDStatus, 4);
     lv_obj_set_align(ui_labelBDStatus, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelBDStatus, "Available");
     lv_obj_set_style_text_color(ui_labelBDStatus, lv_color_hex(0x00C218), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -235,16 +235,16 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_Label7 = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_Label7, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label7, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label7, -81);
+    lv_obj_set_x(ui_Label7, -58);
     lv_obj_set_y(ui_Label7, -30);
     lv_obj_set_align(ui_Label7, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label7, "Price:             ");
+    lv_label_set_text(ui_Label7, "Price / MRP :            ");
     lv_obj_set_style_text_align(ui_Label7, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_labelPDPrice = lv_label_create(ui_screenFindBookInfo);
-    lv_obj_set_width(ui_labelPDPrice, 204);
+    lv_obj_set_width(ui_labelPDPrice, 151);
     lv_obj_set_height(ui_labelPDPrice, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelPDPrice, 20);
+    lv_obj_set_x(ui_labelPDPrice, 44);
     lv_obj_set_y(ui_labelPDPrice, -32);
     lv_obj_set_align(ui_labelPDPrice, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelPDPrice, "");
@@ -253,16 +253,16 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_Label61 = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_Label61, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label61, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label61, -81);
-    lv_obj_set_y(ui_Label61, -15);
+    lv_obj_set_x(ui_Label61, -67);
+    lv_obj_set_y(ui_Label61, -14);
     lv_obj_set_align(ui_Label61, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label61, "MRP:              ");
+    lv_label_set_text(ui_Label61, "Quantity :             ");
     lv_obj_set_style_text_align(ui_Label61, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_labelPDMRP = lv_label_create(ui_screenFindBookInfo);
-    lv_obj_set_width(ui_labelPDMRP, 204);
+    lv_obj_set_width(ui_labelPDMRP, 192);
     lv_obj_set_height(ui_labelPDMRP, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelPDMRP, 15);
+    lv_obj_set_x(ui_labelPDMRP, 46);
     lv_obj_set_y(ui_labelPDMRP, -18);
     lv_obj_set_align(ui_labelPDMRP, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelPDMRP, "");

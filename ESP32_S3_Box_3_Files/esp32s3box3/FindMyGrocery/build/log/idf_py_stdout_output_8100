@@ -1,0 +1,163 @@
+Command: ninja all
+[1/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenHome.c.obj
+[2/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenFindBook.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBook.c:41:13: warning: 'go_to_findbook_info' defined but not used [-Wunused-function]
+   41 | static void go_to_findbook_info(void *arg)
+      |             ^~~~~~~~~~~~~~~~~~~
+[3/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenLoader.c.obj
+[4/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenFindBookInfo.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBookInfo.c: In function 'ui_event_btnOpenOnPhone':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenFindBookInfo.c:88:28: warning: initialization discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+   88 |     lv_img_dsc_t *qr_img = get_qr_image_for_location(
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~
+[5/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueScan.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/ui_screenIssueScan.c:61:13: warning: 'rfid_ui_issue_callback' defined but not used [-Wunused-function]
+   61 | static void rfid_ui_issue_callback(const char *uid)
+      |             ^~~~~~~~~~~~~~~~~~~~~~
+[6/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueEnrollment.c.obj
+[7/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueFinalConfirm.c.obj
+[8/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtp.c.obj
+[9/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtpSuccess.c.obj
+[10/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenIssueOtpFail.c.obj
+[11/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenReturnScan.c.obj
+[12/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenReturnSuccess.c.obj
+[13/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenAbout.c.obj
+[14/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/blink_task.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/blink_task.c: In function 'blink_ui_cb':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/screens/blink_task.c:103:17: warning: unused variable 't' [-Wunused-variable]
+  103 |     lv_timer_t *t = lv_timer_create(_start_fade_out_cb, hold_ms, overlay);
+      |                 ^
+[15/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenPriceOfProduct.c.obj
+[16/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenProductDetails.c.obj
+[17/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_ScreenBillCreatedSuccess.c.obj
+[18/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_screenCreateBill.c.obj
+[19/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_ScreenFindAGrocery.c.obj
+[20/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/screens/ui_ScreenFindVoice.c.obj
+[21/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/rfid/rfid_handler.c.obj
+[22/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/rfid/returnHandler.c.obj
+[23/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui.c.obj
+[24/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui_helpers.c.obj
+[25/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_findbook.c.obj
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/api_findbook.c: In function 'api_find_book':
+D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/components/ui/api_findbook.c:52:9: warning: unused variable 'status' [-Wunused-variable]
+   52 |     int status = esp_http_client_fetch_headers(client);
+      |         ^~~~~~
+[26/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_blinkbook.c.obj
+[27/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/findbook_task.c.obj
+[28/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueBook.c.obj
+[29/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueOtp.c.obj
+[30/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_issueDone.c.obj
+[31/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_returnBook.c.obj
+[32/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/qr_mapper.c.obj
+[33/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/http_server.c.obj
+[34/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_blinkRack.c.obj
+[35/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/ui_screenVoiceOverlay.c.obj
+[36/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_fmg_logo_png.c.obj
+[37/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_fmg_text_png.c.obj
+[38/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/api_theft_check.c.obj
+[39/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_find_a_grocery_png.c.obj
+[40/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_check_price_png.c.obj
+[41/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_knowprice_png.c.obj
+[42/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_makeorder_png.c.obj
+[43/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_return_book_icon_png.c.obj
+[44/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_rfidicon_png.c.obj
+[45/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_rfidorcam_png.c.obj
+[46/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_about_us_icon_png.c.obj
+[47/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_backbtn_png.c.obj
+[48/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_backpressed_png.c.obj
+[49/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_cross_png.c.obj
+[50/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_success_png.c.obj
+[51/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_failed_png.c.obj
+[52/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_a_right_png.c.obj
+[53/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_a_left_png.c.obj
+[54/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_b_left_png.c.obj
+[55/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_map_b_right_png.c.obj
+[56/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c1l_png.c.obj
+[57/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c1r_png.c.obj
+[58/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c2l_png.c.obj
+[59/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar1c2r_png.c.obj
+[60/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c1l_png.c.obj
+[61/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c1r_png.c.obj
+[62/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c2l_png.c.obj
+[63/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_ar2c2r_png.c.obj
+[64/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c1l_png.c.obj
+[65/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c1r_png.c.obj
+[66/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c2l_png.c.obj
+[67/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br1c2r_png.c.obj
+[68/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c1l_png.c.obj
+[69/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c1r_png.c.obj
+[70/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c2l_png.c.obj
+[71/88] Performing build step for 'bootloader'
+[1/1] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5710 bytes. 0x28f0 bytes (32%) free.
+[72/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_voicesearch_png.c.obj
+[73/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_qr_br2c2r_png.c.obj
+[74/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_typesearch_png.c.obj
+[75/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_speakvs_png.c.obj
+[76/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_billcreatedsuccess_png.c.obj
+[77/88] No install step for 'bootloader'
+[78/88] Building C object esp-idf/ui/CMakeFiles/__idf_ui.dir/images/ui_img_pdcam_png.c.obj
+[79/88] Completed 'bootloader'
+[80/88] Building C object esp-idf/wifi/CMakeFiles/__idf_wifi.dir/wifi.c.obj
+[81/88] Linking C static library esp-idf\ui\libui.a
+[82/88] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/fmg.c.obj
+[83/88] Linking C static library esp-idf\wifi\libwifi.a
+[84/88] Linking C static library esp-idf\main\libmain.a
+[85/88] Generating esp-idf/esp_system/ld/sections.ld
+info: INFO: Symbol BSP_ERROR_CHECK defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:3
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:3
+info: INFO: Symbol BSP_I2C_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:10
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:10
+info: INFO: Symbol BSP_I2C_FAST_MODE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:17
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:17
+info: INFO: Symbol BSP_I2C_CLK_SPEED_HZ defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:23
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:23
+info: INFO: Symbol BSP_SPIFFS_FORMAT_ON_MOUNT_FAIL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:30
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:30
+info: INFO: Symbol BSP_SPIFFS_MOUNT_POINT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:36
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:36
+info: INFO: Symbol BSP_SPIFFS_PARTITION_LABEL defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:42
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:42
+info: INFO: Symbol BSP_SPIFFS_MAX_FILES defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:48
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:48
+info: INFO: Symbol BSP_DISPLAY_BRIGHTNESS_LEDC_CH defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:56
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:56
+info: INFO: Symbol BSP_LCD_DRAW_BUF_HEIGHT defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:64
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:79
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:64
+info: INFO: Symbol BSP_LCD_DRAW_BUF_DOUBLE defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:71
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:86
+info: INFO: Symbol BSP_I2S_NUM defined in multiple locations (see below). Please check if this is a correct behavior or a random name match:
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-3\Kconfig:93
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box-lite\Kconfig:78
+    D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\managed_components\espressif__esp-box\Kconfig:78
+[86/88] Linking CXX executable FindMyGrocery.elf
+[87/88] Generating binary image from built executable
+esptool.py v4.12.0
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin
+[88/88] C:\Windows\system32\cmd.exe /C "cd /D "D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.5.5/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/partition_table/partition-table.bin" "D:/FMB V1/FindMyGrocery/ESP32_S3_Box_3_Files/esp32s3box3/FindMyGrocery/build/FindMyGrocery.bin""
+FindMyGrocery.bin binary size 0x2c2e30 bytes. Smallest app partition is 0x400000 bytes. 0x13d1d0 bytes (31%) free.

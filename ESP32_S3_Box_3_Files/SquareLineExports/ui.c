@@ -145,6 +145,10 @@ void ui_init(void)
     ui_screenAbout_screen_init();
     ui_ScreenFindAGrocery_screen_init();
     ui_ScreenFindVoice_screen_init();
+    ui_screenPriceOfProduct_screen_init();
+    ui_screenProductDetails_screen_init();
+    ui_screenCreateBill_screen_init();
+    ui_ScreenBillCreatedSuccess_screen_init();
     ui____initial_actions0 = lv_obj_create(NULL);
     lv_disp_load_scr(ui_screenLoader);
 }
@@ -166,4 +170,8 @@ void ui_destroy(void)
     ui_screenAbout_screen_destroy();
     ui_ScreenFindAGrocery_screen_destroy();
     ui_ScreenFindVoice_screen_destroy();
+    ui_screenPriceOfProduct_screen_destroy();
+    ui_screenProductDetails_screen_destroy();
+    ui_screenCreateBill_screen_destroy();
+    ui_ScreenBillCreatedSuccess_screen_destroy();
 }

@@ -1,0 +1,666 @@
+Command: C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe C:\Espressif\frameworks\esp-idf-v5.5.5\tools/idf_monitor.py -p COM13 -b 115200 --toolchain-prefix xtensa-esp32s3-elf- --target esp32s3 --revision 0 D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\FindMyGrocery.elf D:\FMB V1\FindMyGrocery\ESP32_S3_Box_3_Files\esp32s3box3\FindMyGrocery\build\bootloader\bootloader.elf --force-color -m 'C:\Espressif\python_env\idf5.5_py3.11_env\Scripts\python.exe' 'C:\Espressif\frameworks\esp-idf-v5.5.5\tools\idf.py'
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x2a (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40048d0b
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce2820,len:0x16a8
+load:0x403c8700,len:0xe88
+load:0x403cb700,len:0x3184
+entry 0x403c8948
+[0;32mI (18) boot: ESP-IDF v5.5.5 2nd stage bootloader[0m
+[0;32mI (18) boot: compile time Aug 11 2026 00:13:41[0m
+[0;32mI (19) boot: Multicore bootloader[0m
+[0;32mI (19) boot: chip revision: v0.2[0m
+[0;32mI (19) boot: efuse block revision: v1.3[0m
+[0;32mI (19) qio_mode: Enabling QIO for flash chip GD[0m
+[0;32mI (19) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (20) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (20) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (20) boot: Enabling RNG early entropy source...[0m
+[0;32mI (20) boot: Partition Table:[0m
+[0;32mI (20) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (21) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (21) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (21) boot:  2 factory          factory app      00 00 00010000 00400000[0m
+[0;32mI (22) boot: End of partition table[0m
+[0;32mI (22) esp_image: segment 0: paddr=00010020 vaddr=3c0f0020 size=140e90h (1314448) map[0m
+[0;32mI (226) esp_image: segment 1: paddr=00150eb8 vaddr=3fca4800 size=05ba4h ( 23460) load[0m
+[0;32mI (230) esp_image: segment 2: paddr=00156a64 vaddr=40378000 size=095b4h ( 38324) load[0m
+[0;32mI (238) esp_image: segment 3: paddr=00160020 vaddr=42000020 size=ee674h (976500) map[0m
+[0;32mI (390) esp_image: segment 4: paddr=0024e69c vaddr=403815b4 size=13150h ( 78160) load[0m
+[0;32mI (406) esp_image: segment 5: paddr=002617f4 vaddr=50000000 size=00020h (    32) load[0m
+[0;32mI (417) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (417) boot: Disabling RNG early entropy source...[0m
+[0;32mI (418) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (418) octal_psram: dev id       : 0x03 (generation 4)[0m
+[0;32mI (419) octal_psram: density      : 0x05 (128 Mbit)[0m
+[0;32mI (419) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (419) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (419) octal_psram: VCC          : 0x00 (1.8V)[0m
+[0;32mI (420) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (420) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (420) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (421) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (421) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (421) MSPI Timing: Enter psram timing tuning[0m
+W MSPI Timing: tuning fail, best point is fallen back to index 5
+[0;32mI (422) esp_psram: Found 16MB PSRAM device[0m
+[0;32mI (422) esp_psram: Speed: 80MHz[0m
+[0;32mI (423) cpu_start: Multicore app[0m
+[0;32mI (1026) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1035) cpu_start: Pro cpu start user code[0m
+[0;32mI (1035) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1035) app_init: Application information:[0m
+[0;32mI (1035) app_init: Project name:     FindMyGrocery[0m
+[0;32mI (1035) app_init: App version:      4f485a59-dirty[0m
+[0;32mI (1035) app_init: Compile time:     Aug 11 2026 17:04:41[0m
+[0;32mI (1036) app_init: ELF file SHA256:  fb7f785259f7c7a7...[0m
+[0;32mI (1036) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1036) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1036) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1036) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1037) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1037) heap_init: At 3FCAF8D8 len 00039E38 (231 KiB): RAM[0m
+[0;32mI (1037) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1038) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1038) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1039) spi_flash: detected chip: gd[0m
+[0;32mI (1039) spi_flash: flash io: qio[0m
+[0;33mW (1039) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1040) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1040) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1041) main_task: Started on CPU0[0m
+[0;32mI (1041) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1041) main_task: Calling app_main()[0m
+[0;32mI (1041) main: Starting FindMyGrocery UI[0m
+[0;32mI (1061) pp: pp rom version: e7ae62f[0m
+[0;32mI (1061) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1071) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1081) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1081) wifi:wifi certification version: v7.0[0m
+[0;32mI (1081) wifi:config NVS flash: enabled[0m
+[0;32mI (1081) wifi:config nano formatting: disabled[0m
+[0;32mI (1081) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1081) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1081) wifi:Init management short buffer num: 32[0m
+[0;32mI (1081) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1081) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1081) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1081) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1081) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1081) wifi_init: rx ba win: 6[0m
+[0;32mI (1081) wifi_init: accept mbox: 6[0m
+[0;32mI (1081) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1081) wifi_init: udp mbox: 6[0m
+[0;32mI (1081) wifi_init: tcp mbox: 6[0m
+[0;32mI (1081) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1081) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1081) wifi_init: tcp mss: 1440[0m
+[0;32mI (1081) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1081) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1081) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1121) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1121) wifi:enable tsf[0m
+[0;32mI (1121) WIFI: WiFi init done[0m
+[0;32mI (1121) RFID: RFID init done[0m
+[0;32mI (1121) LVGL: Starting LVGL task[0m
+[0;33mW (1121) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1121) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (1251) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1251) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1251) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1251) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1251) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1251) main: ✅ LVGL input device detected[0m
+[0;32mI (1251) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1281) RFID: Mode set: 0[0m
+[0;32mI (1281) RFID: Callback cleared[0m
+[0;32mI (1291) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (1331) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1331) KEYBOARD: Creating keyboard (parent = 0x3fcccd74)[0m
+[0;32mI (1361) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1361) KEYBOARD: Creating keyboard (parent = 0x3fcce2f8)[0m
+[0;32mI (1371) RFID: Callback set[0m
+[0;32mI (1371) RFID: Mode set: 2[0m
+[0;32mI (1401) main: UI started successfully[0m
+[0;32mI (1401) main_task: Returned from app_main()[0m
+[0;32mI (3531) WIFI: Disconnected, retrying...[0m
+[0;32mI (5941) WIFI: Disconnected, retrying...[0m
+[0;32mI (6921) RFID: Mode set: 0[0m
+[0;32mI (6921) RFID: Callback cleared[0m
+[0;32mI (8351) WIFI: Disconnected, retrying...[0m
+[0;32mI (10761) WIFI: Disconnected, retrying...[0m
+[0;32mI (11501) TA: Textarea focused → show keyboard[0m
+[0;32mI (11501) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (11501) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (11501) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (11501) TA: Textarea focused → show keyboard[0m
+[0;32mI (11501) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (11501) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (11501) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (12191) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (12191) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (12191) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (12691) TA: Textarea focused → show keyboard[0m
+[0;32mI (12691) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (12691) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (12691) TA: Textarea focused → show keyboard[0m
+[0;32mI (12691) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (12691) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (12691) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (13171) WIFI: Disconnected, retrying...[0m
+[0;32mI (13201) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (13201) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (13201) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (13671) RFID: Mode set: 0[0m
+[0;32mI (13671) RFID: Callback cleared[0m
+[0;32mI (14901) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (14901) RFID: Callback set[0m
+[0;32mI (14901) RFID: Mode set: 1[0m
+[0;32mI (15571) WIFI: Disconnected, retrying...[0m
+[0;32mI (16821) RFID: Mode set: 0[0m
+[0;32mI (16821) RFID: Callback cleared[0m
+[0;32mI (16821) RFID: Mode set: 0[0m
+[0;32mI (16821) RFID: Callback cleared[0m
+[0;32mI (17251) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (17251) RFID: Mode set: 0[0m
+[0;32mI (17251) RFID: Callback cleared[0m
+[0;32mI (17981) WIFI: Disconnected, retrying...[0m
+[0;32mI (20391) WIFI: Disconnected, retrying...[0m
+[0;32mI (22801) WIFI: Disconnected, retrying...[0m
+[0;32mI (24341) TA: Textarea focused → show keyboard[0m
+[0;32mI (24341) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (24341) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (24341) TA: Textarea focused → show keyboard[0m
+[0;32mI (24341) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (24341) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (24341) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (25061) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (25061) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (25061) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (25201) WIFI: Disconnected, retrying...[0m
+[0;32mI (25651) TA: Textarea focused → show keyboard[0m
+[0;32mI (25651) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (25651) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (25651) TA: Textarea focused → show keyboard[0m
+[0;32mI (25651) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (25651) KEYBOARD: Creating keyboard (parent = 0x3fcc9f94)[0m
+[0;32mI (25651) TA: keyboard parent=0x3fcc9f94 visible? 1[0m
+[0;32mI (27611) WIFI: Disconnected, retrying...[0m
+[0;32mI (30021) WIFI: Disconnected, retrying...[0m
+[0;32mI (32431) WIFI: Disconnected, retrying...[0m
+[0;32mI (34841) WIFI: Disconnected, retrying...[0m
+[0;32mI (37241) WIFI: Disconnected, retrying...[0m
+[0;32mI (39651) WIFI: Disconnected, retrying...[0m
+[0;32mI (42061) WIFI: Disconnected, retrying...[0m
+[0;32mI (44471) WIFI: Disconnected, retrying...[0m
+[0;32mI (46871) WIFI: Disconnected, retrying...[0m
+[0;32mI (49281) WIFI: Disconnected, retrying...[0m
+[0;32mI (51691) WIFI: Disconnected, retrying...[0m
+[0;32mI (54101) WIFI: Disconnected, retrying...[0m
+[0;32mI (56511) WIFI: Disconnected, retrying...[0m
+[0;32mI (58911) WIFI: Disconnected, retrying...[0m
+[0;32mI (61321) WIFI: Disconnected, retrying...[0m
+[0;32mI (63731) WIFI: Disconnected, retrying...[0m
+[0;32mI (66141) WIFI: Disconnected, retrying...[0m
+[0;32mI (68541) WIFI: Disconnected, retrying...[0m
+[0;32mI (70951) WIFI: Disconnected, retrying...[0m
+[0;32mI (73361) WIFI: Disconnected, retrying...[0m
+[0;32mI (75771) WIFI: Disconnected, retrying...[0m
+[0;32mI (78181) WIFI: Disconnected, retrying...[0m
+[0;32mI (80581) WIFI: Disconnected, retrying...[0m
+[0;32mI (82991) WIFI: Disconnected, retrying...[0m
+[0;32mI (85401) WIFI: Disconnected, retrying...[0m
+[0;32mI (87811) WIFI: Disconnected, retrying...[0m
+[0;32mI (90211) WIFI: Disconnected, retrying...[0m
+[0;32mI (92621) WIFI: Disconnected, retrying...[0m
+[0;32mI (95031) WIFI: Disconnected, retrying...[0m
+[0;32mI (97441) WIFI: Disconnected, retrying...[0m
+[0;32mI (99851) WIFI: Disconnected, retrying...[0m
+[0;32mI (102251) WIFI: Disconnected, retrying...[0m
+[0;32mI (104661) WIFI: Disconnected, retrying...[0m
+[0;32mI (107071) WIFI: Disconnected, retrying...[0m
+[0;32mI (109481) WIFI: Disconnected, retrying...[0m
+[0;32mI (111881) WIFI: Disconnected, retrying...[0m
+[0;32mI (114291) WIFI: Disconnected, retrying...[0m
+[0;32mI (116701) WIFI: Disconnected, retrying...[0m
+[0;32mI (119111) WIFI: Disconnected, retrying...[0m
+[0;32mI (121521) WIFI: Disconnected, retrying...[0m
+[0;32mI (123921) WIFI: Disconnected, retrying...[0m
+[0;32mI (126331) WIFI: Disconnected, retrying...[0m
+[0;32mI (128741) WIFI: Disconnected, retrying...[0m
+[0;32mI (131151) WIFI: Disconnected, retrying...[0m
+[0;32mI (133551) WIFI: Disconnected, retrying...[0m
+[0;32mI (135961) WIFI: Disconnected, retrying...[0m
+[0;32mI (138371) WIFI: Disconnected, retrying...[0m
+[0;32mI (140781) WIFI: Disconnected, retrying...[0m
+[0;32mI (143181) WIFI: Disconnected, retrying...[0m
+[0;32mI (145591) WIFI: Disconnected, retrying...[0m
+[0;32mI (148001) WIFI: Disconnected, retrying...[0m
+[0;32mI (150411) WIFI: Disconnected, retrying...[0m
+[0;32mI (152821) WIFI: Disconnected, retrying...[0m
+[0;32mI (155221) WIFI: Disconnected, retrying...[0m
+[0;32mI (157631) WIFI: Disconnected, retrying...[0m
+[0;32mI (160041) WIFI: Disconnected, retrying...[0m
+[0;32mI (162451) WIFI: Disconnected, retrying...[0m
+[0;32mI (164851) WIFI: Disconnected, retrying...[0m
+[0;32mI (167261) WIFI: Disconnected, retrying...[0m
+[0;32mI (169671) WIFI: Disconnected, retrying...[0m
+[0;32mI (172081) WIFI: Disconnected, retrying...[0m
+[0;32mI (174491) WIFI: Disconnected, retrying...[0m
+[0;32mI (176891) WIFI: Disconnected, retrying...[0m
+[0;32mI (179301) WIFI: Disconnected, retrying...[0m
+[0;32mI (181711) WIFI: Disconnected, retrying...[0m
+[0;32mI (184121) WIFI: Disconnected, retrying...[0m
+[0;32mI (186521) WIFI: Disconnected, retrying...[0m
+[0;32mI (188931) WIFI: Disconnected, retrying...[0m
+[0;32mI (191341) WIFI: Disconnected, retrying...[0m
+[0;32mI (193751) WIFI: Disconnected, retrying...[0m
+[0;32mI (196161) WIFI: Disconnected, retrying...[0m
+[0;32mI (198561) WIFI: Disconnected, retrying...[0m
+[0;32mI (200971) WIFI: Disconnected, retrying...[0m
+[0;32mI (203381) WIFI: Disconnected, retrying...[0m
+[0;32mI (205791) WIFI: Disconnected, retrying...[0m
+[0;32mI (208191) WIFI: Disconnected, retrying...[0m
+[0;32mI (210601) WIFI: Disconnected, retrying...[0m
+[0;32mI (213011) WIFI: Disconnected, retrying...[0m
+[0;32mI (215421) WIFI: Disconnected, retrying...[0m
+[0;32mI (217821) WIFI: Disconnected, retrying...[0m
+[0;32mI (220231) WIFI: Disconnected, retrying...[0m
+[0;32mI (222641) WIFI: Disconnected, retrying...[0m
+[0;32mI (225051) WIFI: Disconnected, retrying...[0m
+[0;32mI (227461) WIFI: Disconnected, retrying...[0m
+[0;32mI (229861) WIFI: Disconnected, retrying...[0m
+[0;32mI (232271) WIFI: Disconnected, retrying...[0m
+[0;32mI (234681) WIFI: Disconnected, retrying...[0m
+[0;32mI (237091) WIFI: Disconnected, retrying...[0m
+[0;32mI (239491) WIFI: Disconnected, retrying...[0m
+[0;32mI (241901) WIFI: Disconnected, retrying...[0m
+[0;32mI (244311) WIFI: Disconnected, retrying...[0m
+[0;32mI (246721) WIFI: Disconnected, retrying...[0m
+[0;32mI (249131) WIFI: Disconnected, retrying...[0m
+[0;32mI (251531) WIFI: Disconnected, retrying...[0m
+[0;32mI (253941) WIFI: Disconnected, retrying...[0m
+[0;32mI (256351) WIFI: Disconnected, retrying...[0m
+[0;32mI (258761) WIFI: Disconnected, retrying...[0m
+[0;32mI (261161) WIFI: Disconnected, retrying...[0m
+[0;32mI (263571) WIFI: Disconnected, retrying...[0m
+[0;32mI (265981) WIFI: Disconnected, retrying...[0m
+[0;32mI (268391) WIFI: Disconnected, retrying...[0m
+[0;32mI (270801) WIFI: Disconnected, retrying...[0m
+[0;32mI (273201) WIFI: Disconnected, retrying...[0m
+[0;32mI (275611) WIFI: Disconnected, retrying...[0m
+[0;32mI (278021) WIFI: Disconnected, retrying...[0m
+[0;32mI (280431) WIFI: Disconnected, retrying...[0m
+[0;32mI (282831) WIFI: Disconnected, retrying...[0m
+[0;32mI (285241) WIFI: Disconnected, retrying...[0m
+[0;32mI (287651) WIFI: Disconnected, retrying...[0m
+[0;32mI (290061) WIFI: Disconnected, retrying...[0m
+[0;32mI (292461) WIFI: Disconnected, retrying...[0m
+[0;32mI (294871) WIFI: Disconnected, retrying...[0m
+[0;32mI (297281) WIFI: Disconnected, retrying...[0m
+[0;32mI (299691) WIFI: Disconnected, retrying...[0m
+[0;32mI (302101) WIFI: Disconnected, retrying...[0m
+[0;32mI (304501) WIFI: Disconnected, retrying...[0m
+[0;32mI (306911) WIFI: Disconnected, retrying...[0m
+[0;32mI (309321) WIFI: Disconnected, retrying...[0m
+[0;32mI (311731) WIFI: Disconnected, retrying...[0m
+[0;32mI (314141) WIFI: Disconnected, retrying...[0m
+[0;32mI (316541) WIFI: Disconnected, retrying...[0m
+[0;32mI (318951) WIFI: Disconnected, retrying...[0m
+[0;32mI (321361) WIFI: Disconnected, retrying...[0m
+[0;32mI (323771) WIFI: Disconnected, retrying...[0m
+[0;32mI (326171) WIFI: Disconnected, retrying...[0m
+[0;32mI (328581) WIFI: Disconnected, retrying...[0m
+[0;32mI (330991) WIFI: Disconnected, retrying...[0m
+[0;32mI (333401) WIFI: Disconnected, retrying...[0m
+[0;32mI (335811) WIFI: Disconnected, retrying...[0m
+[0;32mI (338211) WIFI: Disconnected, retrying...[0m
+[0;32mI (340621) WIFI: Disconnected, retrying...[0m
+[0;32mI (343031) WIFI: Disconnected, retrying...[0m
+[0;32mI (345441) WIFI: Disconnected, retrying...[0m
+[0;32mI (347841) WIFI: Disconnected, retrying...[0m
+[0;32mI (350251) WIFI: Disconnected, retrying...[0m
+[0;32mI (352661) WIFI: Disconnected, retrying...[0m
+[0;32mI (355071) WIFI: Disconnected, retrying...[0m
+[0;32mI (357481) WIFI: Disconnected, retrying...[0m
+[0;32mI (359881) WIFI: Disconnected, retrying...[0m
+[0;32mI (362291) WIFI: Disconnected, retrying...[0m
+[0;32mI (364701) WIFI: Disconnected, retrying...[0m
+[0;32mI (367111) WIFI: Disconnected, retrying...[0m
+[0;32mI (369511) WIFI: Disconnected, retrying...[0m
+[0;32mI (371921) WIFI: Disconnected, retrying...[0m
+[0;32mI (374331) WIFI: Disconnected, retrying...[0m
+[0;32mI (376741) WIFI: Disconnected, retrying...[0m
+[0;32mI (379151) WIFI: Disconnected, retrying...[0m
+[0;32mI (381551) WIFI: Disconnected, retrying...[0m
+[0;32mI (383961) WIFI: Disconnected, retrying...[0m
+[0;32mI (386371) WIFI: Disconnected, retrying...[0m
+[0;32mI (388781) WIFI: Disconnected, retrying...[0m
+[0;32mI (391181) WIFI: Disconnected, retrying...[0m
+[0;32mI (393591) WIFI: Disconnected, retrying...[0m
+[0;32mI (396001) WIFI: Disconnected, retrying...[0m
+[0;32mI (398411) WIFI: Disconnected, retrying...[0m
+[0;32mI (400821) WIFI: Disconnected, retrying...[0m
+[0;32mI (403221) WIFI: Disconnected, retrying...[0m
+[0;32mI (405631) WIFI: Disconnected, retrying...[0m
+[0;32mI (406911) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (406911) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (406911) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (407351) SEARCH: Starting find book task[0m
+[0;32mI (407351) FINDTASK: Calling API for: hi[0m
+[0;32mI (408041) WIFI: Disconnected, retrying...[0m
+[0;32mI (410451) WIFI: Disconnected, retrying...[0m
+[0;32mI (412851) WIFI: Disconnected, retrying...[0m
+[0;31mE (414351) esp-tls: couldn't get hostname for :fmb.local: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (414351) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (414351) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (414351) api_findbook: Failed to open HTTP connection: ESP_ERR_HTTP_CONNECT[0m
+[0;31mE (414351) FINDTASK: Book not found[0m
+[0;32mI (415261) WIFI: Disconnected, retrying...[0m
+[0;32mI (417671) WIFI: Disconnected, retrying...[0m
+[0;32mI (420071) WIFI: Disconnected, retrying...[0m
+[0;32mI (422481) WIFI: Disconnected, retrying...[0m
+[0;32mI (424881) WIFI: Disconnected, retrying...[0m
+[0;32mI (427291) WIFI: Disconnected, retrying...[0m
+[0;32mI (429701) WIFI: Disconnected, retrying...[0m
+[0;32mI (432101) WIFI: Disconnected, retrying...[0m
+[0;32mI (434511) WIFI: Disconnected, retrying...[0m
+[0;32mI (436921) WIFI: Disconnected, retrying...[0m
+[0;32mI (439321) WIFI: Disconnected, retrying...[0m
+[0;32mI (1026) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1035) cpu_start: Pro cpu start user code[0m
+[0;32mI (1035) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1035) app_init: Application information:[0m
+[0;32mI (1035) app_init: Project name:     FindMyGrocery[0m
+[0;32mI (1035) app_init: App version:      4f485a59-dirty[0m
+[0;32mI (1036) app_init: Compile time:     Aug 11 2026 17:04:41[0m
+[0;32mI (1036) app_init: ELF file SHA256:  fb7f785259f7c7a7...[0m
+[0;32mI (1036) app_init: ESP-IDF:          v5.5.5[0m
+[0;32mI (1036) efuse_init: Min chip rev:     v0.0[0m
+[0;32mI (1036) efuse_init: Max chip rev:     v0.99 [0m
+[0;32mI (1037) efuse_init: Chip rev:         v0.2[0m
+[0;32mI (1037) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1037) heap_init: At 3FCAF8D8 len 00039E38 (231 KiB): RAM[0m
+[0;32mI (1037) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (1038) heap_init: At 600FE000 len 00001FE8 (7 KiB): RTCRAM[0m
+[0;32mI (1038) esp_psram: Adding pool of 16384K of PSRAM memory to heap allocator[0m
+[0;32mI (1039) spi_flash: detected chip: gd[0m
+[0;32mI (1039) spi_flash: flash io: qio[0m
+[0;33mW (1039) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (1040) sleep_gpio: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (1041) sleep_gpio: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (1041) main_task: Started on CPU0[0m
+[0;32mI (1041) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1041) main_task: Calling app_main()[0m
+[0;32mI (1041) main: Starting FindMyGrocery UI[0m
+[0;32mI (1061) pp: pp rom version: e7ae62f[0m
+[0;32mI (1061) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (1071) wifi:wifi driver task: 3fced468, prio:23, stack:6656, core=0[0m
+[0;32mI (1081) wifi:wifi firmware version: b9f67df[0m
+[0;32mI (1081) wifi:wifi certification version: v7.0[0m
+[0;32mI (1081) wifi:config NVS flash: enabled[0m
+[0;32mI (1081) wifi:config nano formatting: disabled[0m
+[0;32mI (1081) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (1081) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (1081) wifi:Init management short buffer num: 32[0m
+[0;32mI (1081) wifi:Init dynamic tx buffer num: 32[0m
+[0;32mI (1081) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (1081) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (1081) wifi:Init static rx buffer num: 10[0m
+[0;32mI (1081) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (1081) wifi_init: rx ba win: 6[0m
+[0;32mI (1081) wifi_init: accept mbox: 6[0m
+[0;32mI (1081) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1081) wifi_init: udp mbox: 6[0m
+[0;32mI (1081) wifi_init: tcp mbox: 6[0m
+[0;32mI (1081) wifi_init: tcp tx win: 5760[0m
+[0;32mI (1081) wifi_init: tcp rx win: 5760[0m
+[0;32mI (1081) wifi_init: tcp mss: 1440[0m
+[0;32mI (1081) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1081) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1081) phy_init: phy_version 712,87e8c20e,Apr 13 2026,18:51:10[0m
+[0;32mI (1121) wifi:mode : sta (b4:3a:45:f3:98:50)[0m
+[0;32mI (1121) wifi:enable tsf[0m
+[0;32mI (1121) WIFI: WiFi init done[0m
+[0;32mI (1121) RFID: RFID init done[0m
+[0;32mI (1121) LVGL: Starting LVGL task[0m
+[0;33mW (1121) ledc: GPIO 47 is not usable, maybe conflict with others[0m
+[0;32mI (1121) ili9341: LCD panel create success, version: 1.2.0[0m
+[0;33mW (1241) ili9341: The 36h command has been used and will be overwritten by external initialization sequence[0m
+[0;33mW (1241) ili9341: The 3Ah command has been used and will be overwritten by external initialization sequence[0m
+[0;32mI (1241) GT911: I2C address initialization procedure skipped - using default GT9xx setup[0m
+[0;32mI (1241) GT911: TouchPad_ID:0x39,0x31,0x31[0m
+[0;32mI (1241) GT911: TouchPad_Config_Version:65[0m
+[0;32mI (1241) main: ✅ LVGL input device detected[0m
+[0;32mI (1241) ESP-BOX-3: Setting LCD backlight: 100%[0m
+[0;32mI (1271) RFID: Mode set: 0[0m
+[0;32mI (1271) RFID: Callback cleared[0m
+[0;32mI (1281) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (1321) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1321) KEYBOARD: Creating keyboard (parent = 0x3fcccd78)[0m
+[0;32mI (1351) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (1351) KEYBOARD: Creating keyboard (parent = 0x3fcce2fc)[0m
+[0;32mI (1361) RFID: Callback set[0m
+[0;32mI (1361) RFID: Mode set: 2[0m
+[0;32mI (1401) main: UI started successfully[0m
+[0;32mI (1401) main_task: Returned from app_main()[0m
+[0;32mI (3531) WIFI: Disconnected, retrying...[0m
+[0;32mI (5941) WIFI: Disconnected, retrying...[0m
+[0;32mI (6921) RFID: Mode set: 0[0m
+[0;32mI (6921) RFID: Callback cleared[0m
+[0;32mI (8351) WIFI: Disconnected, retrying...[0m
+[0;32mI (10751) WIFI: Disconnected, retrying...[0m
+[0;32mI (13161) WIFI: Disconnected, retrying...[0m
+[0;32mI (15571) WIFI: Disconnected, retrying...[0m
+[0;32mI (17971) WIFI: Disconnected, retrying...[0m
+[0;32mI (20381) WIFI: Disconnected, retrying...[0m
+[0;32mI (20391) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1, snd_ch_cfg:0x0[0m
+[0;32mI (20391) wifi:state: init -> auth (0xb0)[0m
+[0;32mI (20391) wifi:state: auth -> assoc (0x0)[0m
+[0;32mI (20411) wifi:state: assoc -> run (0x10)[0m
+[0;32mI (20411) wifi:connected with SmartLibrary, aid = 1, channel 6, BW20, bssid = ba:a8:25:d7:33:7a[0m
+[0;32mI (20411) wifi:security: Open Auth, phy: bgn, rssi: -25, cipher(pairwise:0x0, group:0x0), pmf:0[0m
+[0;32mI (20411) wifi:pm start, type: 1[0m
+
+[0;32mI (20411) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (20411) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (20491) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us[0m
+[0;32mI (20491) wifi:AP's beacon interval = 102400 us, DTIM period = 2[0m
+[0;32mI (20701) wifi:<ba-add>idx:0 (ifx:0, ba:a8:25:d7:33:7a), tid:0, ssn:0, winSize:64[0m
+[0;32mI (21951) esp_netif_handlers: sta ip: 10.142.117.14, mask: 255.255.255.0, gw: 10.142.117.114[0m
+[0;32mI (21951) WIFI: Connected to WiFi[0m
+[0;32mI (21951) HTTP_SERVER: Starting HTTP Server[0m
+[0;32mI (21951) HTTP_SERVER: HTTP Server Started[0m
+[0;32mI (21951) WIFI: Starting register IP task[0m
+[0;32mI (21951) WIFI: Local IP: 10.142.117.14[0m
+[0;32mI (25061) WIFI: Register Response: [0m
+[0;32mI (47271) TA: Textarea focused → show keyboard[0m
+[0;32mI (47271) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (47271) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (47271) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (47271) TA: Textarea focused → show keyboard[0m
+[0;32mI (47271) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (47271) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (47271) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (53671) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (53671) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (53671) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (54111) SEARCH: Starting find book task[0m
+[0;32mI (54111) FINDTASK: Calling API for: math[0m
+[0;32mI (54511) api_findbook: HTTP status = 200[0m
+[0;32mI (54521) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (54531) FINDTASK: Book found[0m
+[0;32mI (54531) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (54531) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (54531) FINDTASK: Rack: A[0m
+[0;32mI (54531) FINDTASK: Row: 1[0m
+[0;32mI (54531) FINDTASK: Column: 2[0m
+[0;32mI (54531) FINDTASK: Side: Left[0m
+[0;32mI (89301) SEARCH: Starting find book task[0m
+[0;32mI (89301) FINDTASK: Calling API for: math[0m
+[0;32mI (89731) api_findbook: HTTP status = 200[0m
+[0;32mI (89741) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (89741) FINDTASK: Book found[0m
+[0;32mI (89741) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (89741) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (89741) FINDTASK: Rack: A[0m
+[0;32mI (89751) FINDTASK: Row: 1[0m
+[0;32mI (89751) FINDTASK: Column: 2[0m
+[0;32mI (89751) FINDTASK: Side: Left[0m
+[0;32mI (92901) BLINK: Blink Book requested[0m
+[0;32mI (92901) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (94011) API_BLINK_RACK: Status = 500[0m
+[0;32mI (96061) api_blink: Blink response: [0m
+[0;32mI (96061) api_blink: Blink response: {
+  "error": "rack not reachable"
+}
+[0m
+[0;31mE (96061) api_blink: No color field[0m
+[0;31mE (96061) BLINK_UI: api_blink_book failed[0m
+[0;31mE (101831) esp-tls: Failed to create socket (family 2 socktype 1 protocol 0)[0m
+[0;31mE (101831) transport_base: Failed to open a new connection: 32770[0m
+[0;31mE (101831) HTTP_CLIENT: Connection failed, sock < 0[0m
+[0;31mE (101831) API_BLINK_RACK: HTTP failed: ESP_ERR_HTTP_CONNECT[0m
+[0;32mI (102821) API_BLINK_RACK: Status = 500[0m
+[0;32mI (103441) API_BLINK_RACK: Status = 500[0m
+[0;32mI (103841) API_BLINK_RACK: Status = 500[0m
+[0;32mI (104051) API_BLINK_RACK: Status = 500[0m
+[0;32mI (104461) API_BLINK_RACK: Status = 500[0m
+[0;32mI (104491) API_BLINK_RACK: Status = 500[0m
+[0;32mI (104871) API_BLINK_RACK: Status = 500[0m
+[0;32mI (108281) BLINK: Blink Book requested[0m
+[0;32mI (108281) BLINK_UI: blink_task: rack=a row=1 col=2 side=left[0m
+[0;32mI (112041) api_blink: Blink response: [0m
+[0;32mI (112041) api_blink: Blink response: {
+  "error": "rack not reachable"
+}
+[0m
+[0;31mE (112041) api_blink: No color field[0m
+[0;31mE (112041) BLINK_UI: api_blink_book failed[0m
+[0;32mI (120771) RFID: Mode set: 0[0m
+[0;32mI (120771) RFID: Callback cleared[0m
+[0;32mI (122181) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (122181) RFID: Callback set[0m
+[0;32mI (122181) RFID: Mode set: 1[0m
+[0;32mI (122631) RFID: Mode set: 0[0m
+[0;32mI (122631) RFID: Callback cleared[0m
+[0;32mI (122631) RFID: Mode set: 0[0m
+[0;32mI (122631) RFID: Callback cleared[0m
+[0;32mI (123061) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (123061) RFID: Mode set: 0[0m
+[0;32mI (123061) RFID: Callback cleared[0m
+[0;32mI (2186071) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (2186071) RFID: Callback set[0m
+[0;32mI (2186071) RFID: Mode set: 1[0m
+[0;32mI (3232341) RFID: Mode set: 0[0m
+[0;32mI (3232341) RFID: Callback cleared[0m
+[0;32mI (3232371) RFID: Mode set: 0[0m
+[0;32mI (3232371) RFID: Callback cleared[0m
+[0;32mI (3232671) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (3232671) RFID: Mode set: 0[0m
+[0;32mI (3232671) RFID: Callback cleared[0m
+[0;32mI (3616941) RFID: Mode set: 0[0m
+[0;32mI (3616941) RFID: Callback cleared[0m
+[0;32mI (3620161) TA: Textarea focused → show keyboard[0m
+[0;32mI (3620161) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3620161) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3620161) TA: Textarea focused → show keyboard[0m
+[0;32mI (3620161) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (3620161) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3620161) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3621991) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3621991) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (3621991) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3622971) TA: Textarea focused → show keyboard[0m
+[0;32mI (3622971) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3622971) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3622971) TA: Textarea focused → show keyboard[0m
+[0;32mI (3622971) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (3622971) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3622971) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3626311) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3626311) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (3626311) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3626781) SEARCH: Starting find book task[0m
+[0;32mI (3626781) FINDTASK: Calling API for: alpha[0m
+[0;32mI (3627061) api_findbook: HTTP status = 404[0m
+[0;32mI (3627081) api_findbook: Response: {
+  "error": "Book not found"
+}
+[0m
+[0;31mE (3627081) api_findbook: Invalid or missing JSON fields[0m
+[0;31mE (3627081) FINDTASK: Book not found[0m
+[0;32mI (3628321) TA: Textarea focused → show keyboard[0m
+[0;32mI (3628321) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3628321) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3628321) TA: Textarea focused → show keyboard[0m
+[0;32mI (3628321) KEYBOARD: Keyboard exists - deleting and recreating[0m
+[0;32mI (3628321) KEYBOARD: Creating keyboard (parent = 0x3fcc9f98)[0m
+[0;32mI (3628321) TA: keyboard parent=0x3fcc9f98 visible? 1[0m
+[0;32mI (3631861) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3631861) KEYBOARD: Hiding & deleting keyboard[0m
+[0;32mI (3631861) TA: Textarea defocused → hide keyboard[0m
+[0;32mI (3632271) SEARCH: Starting find book task[0m
+[0;32mI (3632271) FINDTASK: Calling API for: math[0m
+[0;32mI (3632581) api_findbook: HTTP status = 200[0m
+[0;32mI (3632591) api_findbook: Response: {
+  "book_type_id": "M-ADV",
+  "column": 2,
+  "name": "Maths Adventure",
+  "rack": "A",
+  "row": 1,
+  "side": "Left"
+}
+[0m
+[0;32mI (3632591) FINDTASK: Book found[0m
+[0;32mI (3632591) FINDTASK: Type ID: M-ADV[0m
+[0;32mI (3632591) FINDTASK: Name: Maths Adventure[0m
+[0;32mI (3632591) FINDTASK: Rack: A[0m
+[0;32mI (3632591) FINDTASK: Row: 1[0m
+[0;32mI (3632591) FINDTASK: Column: 2[0m
+[0;32mI (3632591) FINDTASK: Side: Left[0m
+[0;32mI (3638091) API_BLINK_RACK: Status = 500[0m
+[0;32mI (3639111) API_BLINK_RACK: Status = 500[0m
+[0;32mI (3670421) RFID: Mode set: 0[0m
+[0;32mI (3670421) RFID: Callback cleared[0m
+[0;32mI (3671651) RFID_UI: Issue Scan screen loaded[0m
+[0;32mI (3671651) RFID: Callback set[0m
+[0;32mI (3671651) RFID: Mode set: 1[0m
+[0;32mI (3672071) RFID: Mode set: 0[0m
+[0;32mI (3672071) RFID: Callback cleared[0m
+[0;32mI (3672071) RFID: Mode set: 0[0m
+[0;32mI (3672071) RFID: Callback cleared[0m
+[0;32mI (3672501) RFID_UI: Issue Scan screen unloaded[0m
+[0;32mI (3672501) RFID: Mode set: 0[0m
+[0;32mI (3672501) RFID: Callback cleared[0m
+[0;32mI (3673231) RETURN: Return screen loaded → enabling RFID[0m
+[0;32mI (3673241) RFID: Callback set[0m
+[0;32mI (3673241) RFID: Mode set: 2[0m
+[0;32mI (3674631) RFID: Mode set: 0[0m
+[0;32mI (3674631) RFID: Callback cleared[0m
+[0;32mI (3674631) RFID: Mode set: 0[0m
+[0;32mI (3674631) RFID: Callback cleared[0m
+[0;32mI (3684451) RFID: Mode set: 0[0m
+[0;32mI (3684451) RFID: Callback cleared[0m
+[0;32mI (3950801) RETURN: Return screen loaded → enabling RFID[0m
+[0;32mI (3950801) RFID: Callback set[0m
+[0;32mI (3950801) RFID: Mode set: 2[0m

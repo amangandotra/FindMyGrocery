@@ -20,6 +20,7 @@ lv_obj_t * ui_Image17 = NULL;
 lv_obj_t * ui_Label19 = NULL;
 lv_obj_t * ui_btnCancelIssue = NULL;
 lv_obj_t * ui_Label21 = NULL;
+lv_obj_t * ui_Image24 = NULL;
 // event funtions
 void ui_event_ImgButton7(lv_event_t * e)
 {
@@ -39,7 +40,7 @@ static void reset_issue_scan_ui(void)
     rfid_clear_issue_uid();
 
     if(ui_Label19) {
-        lv_label_set_text(ui_Label19, "Waiting for RFID...");
+        lv_label_set_text(ui_Label19, "Scanning........");
         lv_obj_set_style_text_color(ui_Label19, lv_color_hex(0x125400), 0);
     }
 }
@@ -97,7 +98,7 @@ static void issue_scan_screen_event_cb(lv_event_t * e)
         rfid_clear_issue_uid();
 
         if(ui_Label19) {
-            lv_label_set_text(ui_Label19, "Waiting for RFID...");
+            lv_label_set_text(ui_Label19, "Scanning........");
             lv_obj_set_style_text_color(ui_Label19, lv_color_hex(0x125400), 0);
         }
 
@@ -137,10 +138,10 @@ void ui_screenIssueScan_screen_init(void)
     lv_obj_clear_flag(ui_Container3, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Image2 = lv_img_create(ui_Container3);
-    lv_img_set_src(ui_Image2, &ui_img_issue_book_icon_png);
+    lv_img_set_src(ui_Image2, &ui_img_check_price_png);
     lv_obj_set_width(ui_Image2, LV_SIZE_CONTENT);   /// 74
     lv_obj_set_height(ui_Image2, LV_SIZE_CONTENT);    /// 50
-    lv_obj_set_x(ui_Image2, -81);
+    lv_obj_set_x(ui_Image2, -91);
     lv_obj_set_y(ui_Image2, 0);
     lv_obj_set_align(ui_Image2, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image2, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
@@ -149,10 +150,10 @@ void ui_screenIssueScan_screen_init(void)
     ui_Label8 = lv_label_create(ui_Container3);
     lv_obj_set_width(ui_Label8, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label8, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label8, 36);
+    lv_obj_set_x(ui_Label8, 44);
     lv_obj_set_y(ui_Label8, 0);
     lv_obj_set_align(ui_Label8, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label8, "Issue Book");
+    lv_label_set_text(ui_Label8, "Price Checker");
     lv_obj_set_style_text_color(ui_Label8, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label8, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label8, &lv_font_montserrat_30, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -170,19 +171,19 @@ void ui_screenIssueScan_screen_init(void)
     lv_obj_set_width(ui_Label18, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label18, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label18, 0);
-    lv_obj_set_y(ui_Label18, -48);
+    lv_obj_set_y(ui_Label18, 71);
     lv_obj_set_align(ui_Label18, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label18, "Please scan book RFID");
+    lv_label_set_text(ui_Label18, "Place the product in front of camera \nor RFID to know price");
     lv_obj_set_style_text_color(ui_Label18, lv_color_hex(0x010045), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label18, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label18, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_align(ui_Label18, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label18, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_Image17 = lv_img_create(ui_screenIssueScan);
-    lv_img_set_src(ui_Image17, &ui_img_rfidicon_png);
     lv_obj_set_width(ui_Image17, LV_SIZE_CONTENT);   /// 112
     lv_obj_set_height(ui_Image17, LV_SIZE_CONTENT);    /// 58
-    lv_obj_set_x(ui_Image17, 0);
-    lv_obj_set_y(ui_Image17, 3);
+    lv_obj_set_x(ui_Image17, -280);
+    lv_obj_set_y(ui_Image17, 108);
     lv_obj_set_align(ui_Image17, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image17, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image17, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -191,9 +192,9 @@ void ui_screenIssueScan_screen_init(void)
     lv_obj_set_width(ui_Label19, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label19, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_Label19, 0);
-    lv_obj_set_y(ui_Label19, 43);
+    lv_obj_set_y(ui_Label19, 95);
     lv_obj_set_align(ui_Label19, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label19, "Waiting for RFID....");
+    lv_label_set_text(ui_Label19, "Scanning........");
     lv_obj_set_style_text_color(ui_Label19, lv_color_hex(0x125400), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label19, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label19, &lv_font_montserrat_12, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -201,8 +202,8 @@ void ui_screenIssueScan_screen_init(void)
     ui_btnCancelIssue = lv_btn_create(ui_screenIssueScan);
     lv_obj_set_width(ui_btnCancelIssue, 256);
     lv_obj_set_height(ui_btnCancelIssue, 40);
-    lv_obj_set_x(ui_btnCancelIssue, 0);
-    lv_obj_set_y(ui_btnCancelIssue, 77);
+    lv_obj_set_x(ui_btnCancelIssue, -290);
+    lv_obj_set_y(ui_btnCancelIssue, -40);
     lv_obj_set_align(ui_btnCancelIssue, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_btnCancelIssue, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
     lv_obj_clear_flag(ui_btnCancelIssue, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
@@ -223,6 +224,17 @@ void ui_screenIssueScan_screen_init(void)
     lv_obj_set_style_text_color(ui_Label21, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label21, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label21, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
+    
+    ui_Image24 = lv_img_create(ui_screenIssueScan);
+    lv_img_set_src(ui_Image24, &ui_img_rfidorcam_png);
+    lv_obj_set_width(ui_Image24, LV_SIZE_CONTENT);   /// 260
+    lv_obj_set_height(ui_Image24, LV_SIZE_CONTENT);    /// 175
+    lv_obj_set_x(ui_Image24, 0);
+    lv_obj_set_y(ui_Image24, -7);
+    lv_obj_set_align(ui_Image24, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image24, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image24, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_img_set_zoom(ui_Image24, 170);
 
     lv_obj_add_event_cb(ui_ImgButton7, ui_event_ImgButton7, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_btnCancelIssue, ui_event_btnCancelIssue, LV_EVENT_ALL, NULL);
@@ -249,5 +261,6 @@ void ui_screenIssueScan_screen_destroy(void)
     ui_Label19 = NULL;
     ui_btnCancelIssue = NULL;
     ui_Label21 = NULL;
+    ui_Image24 = NULL;
 
 }
