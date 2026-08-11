@@ -10,7 +10,7 @@ static void go_to_findbook_info_async(void *arg)
 {
     lv_label_set_text(ui_labelBDBookName, g_findbook_name);
 
-    lv_label_set_text(ui_labelBDBookCode, g_findbook_type_id);
+    lv_label_set_text(ui_labelPDPrice, g_findbook_type_id);
 
     char loc[64];
     snprintf(loc, sizeof(loc),
@@ -57,7 +57,7 @@ static void findbook_task(void *param)
         lv_async_call(go_to_findbook_info_async, NULL);
     } else {
         ESP_LOGE(TAG, "Book not found");
-        lv_label_set_text(ui_ErrorFBEBN, "Book not found");
+        lv_label_set_text(ui_ErrorFBEBN, "Grocery Not Found, Try Again!");
         lv_obj_set_style_opa(ui_ErrorFBEBN, 255, LV_PART_MAIN);
 
     }

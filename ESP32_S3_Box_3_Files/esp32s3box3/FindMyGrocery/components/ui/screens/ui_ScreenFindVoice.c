@@ -9,9 +9,21 @@ lv_obj_t * ui_ScreenFindVoice = NULL;
 lv_obj_t * ui_Container13 = NULL;
 lv_obj_t * ui_Image22 = NULL;
 lv_obj_t * ui_Label60 = NULL;
-lv_obj_t * ui_ImgButton13 = NULL;
+lv_obj_t * ui_ImgButton14 = NULL;
+lv_obj_t * ui_Image23 = NULL;
+lv_obj_t * ui_btnCancelIssue2 = NULL;
+lv_obj_t * ui_Label63 = NULL;
 // event funtions
-void ui_event_ImgButton13(lv_event_t * e)
+void ui_event_ImgButton14(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_screenHome, LV_SCR_LOAD_ANIM_FADE_ON, 250, 0, &ui_screenHome_screen_init);
+    }
+}
+
+void ui_event_btnCancelIssue2(lv_event_t * e)
 {
     lv_event_code_t event_code = lv_event_get_code(e);
 
@@ -33,44 +45,82 @@ void ui_ScreenFindVoice_screen_init(void)
 
     ui_Container13 = lv_obj_create(ui_ScreenFindVoice);
     lv_obj_remove_style_all(ui_Container13);
-    lv_obj_set_width(ui_Container13, 317);
+    lv_obj_set_width(ui_Container13, 312);
     lv_obj_set_height(ui_Container13, 50);
-    lv_obj_set_x(ui_Container13, 5);
+    lv_obj_set_x(ui_Container13, 0);
     lv_obj_set_y(ui_Container13, -85);
     lv_obj_set_align(ui_Container13, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container13, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Image22 = lv_img_create(ui_Container13);
-    lv_img_set_src(ui_Image22, &ui_img_find_book_icon_png);
+    lv_img_set_src(ui_Image22, &ui_img_find_a_grocery_png);
     lv_obj_set_width(ui_Image22, LV_SIZE_CONTENT);   /// 74
     lv_obj_set_height(ui_Image22, LV_SIZE_CONTENT);    /// 50
-    lv_obj_set_x(ui_Image22, -81);
-    lv_obj_set_y(ui_Image22, 0);
+    lv_obj_set_x(ui_Image22, -94);
+    lv_obj_set_y(ui_Image22, -2);
     lv_obj_set_align(ui_Image22, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image22, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image22, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_img_set_zoom(ui_Image22, 200);
 
     ui_Label60 = lv_label_create(ui_Container13);
     lv_obj_set_width(ui_Label60, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label60, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label60, 36);
-    lv_obj_set_y(ui_Label60, 0);
+    lv_obj_set_x(ui_Label60, 40);
+    lv_obj_set_y(ui_Label60, -2);
     lv_obj_set_align(ui_Label60, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label60, "Find Book");
+    lv_label_set_text(ui_Label60, "Find A Grocery");
     lv_obj_set_style_text_color(ui_Label60, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label60, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label60, &lv_font_montserrat_30, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_ImgButton13 = lv_imgbtn_create(ui_ScreenFindVoice);
-    lv_imgbtn_set_src(ui_ImgButton13, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_backbtn_png, NULL);
-    lv_imgbtn_set_src(ui_ImgButton13, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_backpressed_png, NULL);
-    lv_obj_set_width(ui_ImgButton13, 30);
-    lv_obj_set_height(ui_ImgButton13, 30);
-    lv_obj_set_x(ui_ImgButton13, -134);
-    lv_obj_set_y(ui_ImgButton13, -85);
-    lv_obj_set_align(ui_ImgButton13, LV_ALIGN_CENTER);
+    ui_ImgButton14 = lv_imgbtn_create(ui_ScreenFindVoice);
+    lv_imgbtn_set_src(ui_ImgButton14, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_backbtn_png, NULL);
+    lv_imgbtn_set_src(ui_ImgButton14, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_backpressed_png, NULL);
+    lv_obj_set_width(ui_ImgButton14, 30);
+    lv_obj_set_height(ui_ImgButton14, 30);
+    lv_obj_set_x(ui_ImgButton14, -137);
+    lv_obj_set_y(ui_ImgButton14, -86);
+    lv_obj_set_align(ui_ImgButton14, LV_ALIGN_CENTER);
 
-    lv_obj_add_event_cb(ui_ImgButton13, ui_event_ImgButton13, LV_EVENT_ALL, NULL);
+    ui_Image23 = lv_img_create(ui_ScreenFindVoice);
+    lv_img_set_src(ui_Image23, &ui_img_speakvs_png);
+    lv_obj_set_width(ui_Image23, LV_SIZE_CONTENT);   /// 66
+    lv_obj_set_height(ui_Image23, LV_SIZE_CONTENT);    /// 40
+    lv_obj_set_x(ui_Image23, 0);
+    lv_obj_set_y(ui_Image23, 2);
+    lv_obj_set_align(ui_Image23, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_Image23, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
+    lv_obj_clear_flag(ui_Image23, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+
+    ui_btnCancelIssue2 = lv_btn_create(ui_ScreenFindVoice);
+    lv_obj_set_width(ui_btnCancelIssue2, 256);
+    lv_obj_set_height(ui_btnCancelIssue2, 40);
+    lv_obj_set_x(ui_btnCancelIssue2, 0);
+    lv_obj_set_y(ui_btnCancelIssue2, 86);
+    lv_obj_set_align(ui_btnCancelIssue2, LV_ALIGN_CENTER);
+    lv_obj_add_flag(ui_btnCancelIssue2, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_clear_flag(ui_btnCancelIssue2, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_obj_set_style_bg_color(ui_btnCancelIssue2, lv_color_hex(0xCACCFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_bg_opa(ui_btnCancelIssue2, 120, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_color(ui_btnCancelIssue2, lv_color_hex(0x000269), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_opa(ui_btnCancelIssue2, 120, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_width(ui_btnCancelIssue2, 12, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_spread(ui_btnCancelIssue2, 1, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_ofs_x(ui_btnCancelIssue2, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_shadow_ofs_y(ui_btnCancelIssue2, 2, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    ui_Label63 = lv_label_create(ui_btnCancelIssue2);
+    lv_obj_set_width(ui_Label63, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Label63, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_align(ui_Label63, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Label63, "Cancel");
+    lv_obj_set_style_text_color(ui_Label63, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_opa(ui_Label63, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label63, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    lv_obj_add_event_cb(ui_ImgButton14, ui_event_ImgButton14, LV_EVENT_ALL, NULL);
+    lv_obj_add_event_cb(ui_btnCancelIssue2, ui_event_btnCancelIssue2, LV_EVENT_ALL, NULL);
 
 }
 
@@ -83,6 +133,9 @@ void ui_ScreenFindVoice_screen_destroy(void)
     ui_Container13 = NULL;
     ui_Image22 = NULL;
     ui_Label60 = NULL;
-    ui_ImgButton13 = NULL;
+    ui_ImgButton14 = NULL;
+    ui_Image23 = NULL;
+    ui_btnCancelIssue2 = NULL;
+    ui_Label63 = NULL;
 
 }

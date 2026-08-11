@@ -17,8 +17,8 @@ lv_obj_t * ui_Label9 = NULL;
 lv_obj_t * ui_taFBookName = NULL;
 lv_obj_t * ui_btnSearchBook = NULL;
 lv_obj_t * ui_Label10 = NULL;
-lv_obj_t * ui_ImgButton6 = NULL;
 lv_obj_t * ui_ErrorFBEBN = NULL;
+lv_obj_t * ui_ImgButton13 = NULL;
 
 // event funtions
 void ui_event_screenFindBook(lv_event_t * e)
@@ -27,6 +27,14 @@ void ui_event_screenFindBook(lv_event_t * e)
 
     if(event_code == LV_EVENT_SCREEN_LOAD_START) {
         _ui_opacity_set(ui_ErrorFBEBN, 0);
+    }
+}
+void ui_event_ImgButton13(lv_event_t * e)
+{
+    lv_event_code_t event_code = lv_event_get_code(e);
+
+    if(event_code == LV_EVENT_CLICKED) {
+        _ui_screen_change(&ui_screenHome, LV_SCR_LOAD_ANIM_FADE_ON, 250, 0, &ui_screenHome_screen_init);
     }
 }
 
@@ -101,14 +109,6 @@ void ui_event_taFBookName(lv_event_t * e)
 }
 
 
-void ui_event_ImgButton6(lv_event_t * e)
-{
-    lv_event_code_t event_code = lv_event_get_code(e);
-
-    if(event_code == LV_EVENT_CLICKED) {
-        _ui_screen_change(&ui_ScreenFindAGrocery, LV_SCR_LOAD_ANIM_FADE_ON, 250, 0, &ui_ScreenFindAGrocery_screen_init);
-    }
-}
 
 // build funtions
 
@@ -123,30 +123,31 @@ void ui_screenFindBook_screen_init(void)
 
     ui_Container5 = lv_obj_create(ui_screenFindBook);
     lv_obj_remove_style_all(ui_Container5);
-    lv_obj_set_width(ui_Container5, 317);
+    lv_obj_set_width(ui_Container5, 312);
     lv_obj_set_height(ui_Container5, 50);
-    lv_obj_set_x(ui_Container5, 5);
+    lv_obj_set_x(ui_Container5, 0);
     lv_obj_set_y(ui_Container5, -85);
     lv_obj_set_align(ui_Container5, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container5, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
     ui_Image13 = lv_img_create(ui_Container5);
-    lv_img_set_src(ui_Image13, &ui_img_find_book_icon_png);
+    lv_img_set_src(ui_Image13, &ui_img_find_a_grocery_png);
     lv_obj_set_width(ui_Image13, LV_SIZE_CONTENT);   /// 74
     lv_obj_set_height(ui_Image13, LV_SIZE_CONTENT);    /// 50
-    lv_obj_set_x(ui_Image13, -81);
-    lv_obj_set_y(ui_Image13, 0);
+    lv_obj_set_x(ui_Image13, -94);
+    lv_obj_set_y(ui_Image13, -2);
     lv_obj_set_align(ui_Image13, LV_ALIGN_CENTER);
     lv_obj_add_flag(ui_Image13, LV_OBJ_FLAG_ADV_HITTEST);     /// Flags
     lv_obj_clear_flag(ui_Image13, LV_OBJ_FLAG_SCROLLABLE);      /// Flags
+    lv_img_set_zoom(ui_Image13, 200);
 
     ui_Label6 = lv_label_create(ui_Container5);
     lv_obj_set_width(ui_Label6, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label6, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label6, 36);
-    lv_obj_set_y(ui_Label6, 0);
+    lv_obj_set_x(ui_Label6, 40);
+    lv_obj_set_y(ui_Label6, -2);
     lv_obj_set_align(ui_Label6, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label6, "Find Book");
+    lv_label_set_text(ui_Label6, "Find A Grocery");
     lv_obj_set_style_text_color(ui_Label6, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label6, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label6, &lv_font_montserrat_30, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -157,8 +158,17 @@ void ui_screenFindBook_screen_init(void)
     lv_obj_set_x(ui_Label9, -1);
     lv_obj_set_y(ui_Label9, -36);
     lv_obj_set_align(ui_Label9, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label9, "Enter Book Name");
+    lv_label_set_text(ui_Label9, "What are you searching for?");
     lv_obj_set_style_text_font(ui_Label9, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    ui_ImgButton13 = lv_imgbtn_create(ui_screenFindBook);
+    lv_imgbtn_set_src(ui_ImgButton13, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_backbtn_png, NULL);
+    lv_imgbtn_set_src(ui_ImgButton13, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_backpressed_png, NULL);
+    lv_obj_set_width(ui_ImgButton13, 30);
+    lv_obj_set_height(ui_ImgButton13, 30);
+    lv_obj_set_x(ui_ImgButton13, -137);
+    lv_obj_set_y(ui_ImgButton13, -86);
+    lv_obj_set_align(ui_ImgButton13, LV_ALIGN_CENTER);
 
     ui_taFBookName = lv_textarea_create(ui_screenFindBook);
     lv_obj_set_width(ui_taFBookName, 256);
@@ -166,7 +176,7 @@ void ui_screenFindBook_screen_init(void)
     lv_obj_set_x(ui_taFBookName, 0);
     lv_obj_set_y(ui_taFBookName, 5);
     lv_obj_set_align(ui_taFBookName, LV_ALIGN_CENTER);
-    lv_textarea_set_placeholder_text(ui_taFBookName, "Enter Book Name");
+    lv_textarea_set_placeholder_text(ui_taFBookName, "Enter Here");
     lv_obj_set_style_text_color(ui_taFBookName, lv_color_hex(0x000000), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_taFBookName, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_bg_color(ui_taFBookName, lv_color_hex(0xCCC6FF), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -216,22 +226,13 @@ void ui_screenFindBook_screen_init(void)
     lv_obj_set_style_text_opa(ui_Label10, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label10, &lv_font_montserrat_18, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_ImgButton6 = lv_imgbtn_create(ui_screenFindBook);
-    lv_imgbtn_set_src(ui_ImgButton6, LV_IMGBTN_STATE_RELEASED, NULL, &ui_img_backbtn_png, NULL);
-    lv_imgbtn_set_src(ui_ImgButton6, LV_IMGBTN_STATE_PRESSED, NULL, &ui_img_backpressed_png, NULL);
-    lv_obj_set_width(ui_ImgButton6, 30);
-    lv_obj_set_height(ui_ImgButton6, 30);
-    lv_obj_set_x(ui_ImgButton6, -134);
-    lv_obj_set_y(ui_ImgButton6, -85);
-    lv_obj_set_align(ui_ImgButton6, LV_ALIGN_CENTER);
-
     ui_ErrorFBEBN = lv_label_create(ui_screenFindBook);
     lv_obj_set_width(ui_ErrorFBEBN, 247);
     lv_obj_set_height(ui_ErrorFBEBN, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_x(ui_ErrorFBEBN, -1);
     lv_obj_set_y(ui_ErrorFBEBN, 35);
     lv_obj_set_align(ui_ErrorFBEBN, LV_ALIGN_CENTER);
-    // lv_label_set_text(ui_ErrorFBEBN, "Book Not Found, Try another book.");
+    // lv_label_set_text(ui_ErrorFBEBN, "Grocery Not Found, Try Again!");
     lv_obj_set_style_text_color(ui_ErrorFBEBN, lv_color_hex(0xC90F39), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_ErrorFBEBN, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_ErrorFBEBN, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -239,9 +240,8 @@ void ui_screenFindBook_screen_init(void)
     lv_obj_set_style_opa(ui_ErrorFBEBN, 0, LV_PART_MAIN);
     lv_label_set_text(ui_ErrorFBEBN, "");
 
-
+    lv_obj_add_event_cb(ui_ImgButton13, ui_event_ImgButton13, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_btnSearchBook, ui_event_btnSearchBook, LV_EVENT_ALL, NULL);
-    lv_obj_add_event_cb(ui_ImgButton6, ui_event_ImgButton6, LV_EVENT_ALL, NULL);
     lv_obj_add_event_cb(ui_screenFindBook, ui_event_screenFindBook, LV_EVENT_ALL, NULL);
 
     // keyboard_init();   
@@ -261,10 +261,10 @@ void ui_screenFindBook_screen_destroy(void)
     ui_Image13 = NULL;
     ui_Label6 = NULL;
     ui_Label9 = NULL;
+    ui_ImgButton13 = NULL;
     ui_taFBookName = NULL;
     ui_btnSearchBook = NULL;
     ui_Label10 = NULL;
-    ui_ImgButton6 = NULL;
     ui_ErrorFBEBN = NULL;
 
 }

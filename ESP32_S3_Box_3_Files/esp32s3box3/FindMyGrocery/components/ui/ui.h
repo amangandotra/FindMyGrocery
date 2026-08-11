@@ -61,7 +61,6 @@ extern lv_obj_t * ui____initial_actions0;
 // IMAGES AND IMAGE SETS
 LV_IMG_DECLARE(ui_img_fmg_logo_png);    // assets/FMB Logo.png
 LV_IMG_DECLARE(ui_img_fmg_text_png);    // assets/FMB Text.png
-LV_IMG_DECLARE(ui_img_find_book_icon_png);    // assets/find book icon.png
 LV_IMG_DECLARE(ui_img_find_a_grocery_png);    // assets/find a grocery.png
 LV_IMG_DECLARE(ui_img_knowprice_png);    // assets/knowprice.png
 LV_IMG_DECLARE(ui_img_check_price_png);    // assets/check price.png
@@ -97,6 +96,7 @@ LV_IMG_DECLARE(ui_img_qr_br2c2l_png);    // assets/QR/Br2c2l.png
 LV_IMG_DECLARE(ui_img_qr_br2c2r_png);    // assets/QR/Br2c2r.png
 LV_IMG_DECLARE(ui_img_typesearch_png);    // assets/TypeSearch.png
 LV_IMG_DECLARE(ui_img_voicesearch_png);    // assets/VoiceSearch.png
+LV_IMG_DECLARE(ui_img_speakvs_png);    // assets/SpeakVS.png
 
 
 // UI INIT

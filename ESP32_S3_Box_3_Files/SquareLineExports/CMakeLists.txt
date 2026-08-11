@@ -22,7 +22,6 @@ SET(SOURCES screens/ui_screenLoader.c
     images/ui_img_knowprice_png.c
     images/ui_img_check_price_png.c
     images/ui_img_makeorder_png.c
-    images/ui_img_find_book_icon_png.c
     images/ui_img_backbtn_png.c
     images/ui_img_backpressed_png.c
     images/ui_img_cross_png.c
@@ -33,6 +32,7 @@ SET(SOURCES screens/ui_screenLoader.c
     images/ui_img_return_book_icon_png.c
     images/ui_img_about_us_icon_png.c
     images/ui_img_typesearch_png.c
-    images/ui_img_voicesearch_png.c)
+    images/ui_img_voicesearch_png.c
+    images/ui_img_speakvs_png.c)
 
 add_library(ui ${SOURCES})

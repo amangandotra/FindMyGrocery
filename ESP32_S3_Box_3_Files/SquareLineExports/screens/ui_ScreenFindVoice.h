@@ -17,8 +17,12 @@ extern lv_obj_t * ui_ScreenFindVoice;
 extern lv_obj_t * ui_Container13;
 extern lv_obj_t * ui_Image22;
 extern lv_obj_t * ui_Label60;
-extern void ui_event_ImgButton13(lv_event_t * e);
-extern lv_obj_t * ui_ImgButton13;
+extern void ui_event_ImgButton14(lv_event_t * e);
+extern lv_obj_t * ui_ImgButton14;
+extern lv_obj_t * ui_Image23;
+extern void ui_event_btnCancelIssue2(lv_event_t * e);
+extern lv_obj_t * ui_btnCancelIssue2;
+extern lv_obj_t * ui_Label63;
 // CUSTOM VARIABLES
 
 #ifdef __cplusplus

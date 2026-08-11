@@ -42,7 +42,6 @@ idf_component_register(
         images/ui_img_knowprice_png.c
         images/ui_img_check_price_png.c
         images/ui_img_makeorder_png.c
-        images/ui_img_find_book_icon_png.c
         images/ui_img_return_book_icon_png.c
         images/ui_img_issue_book_icon_png.c
         images/ui_img_about_us_icon_png.c
@@ -76,7 +75,8 @@ idf_component_register(
         screens/ui_ScreenFindVoice.c
         images/ui_img_typesearch_png.c
         images/ui_img_voicesearch_png.c
-
+        images/ui_img_speakvs_png.c
+        
     SRC_DIRS
         "."
         "screens"

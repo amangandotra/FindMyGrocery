@@ -19,12 +19,12 @@ extern lv_obj_t * ui_Container5;
 extern lv_obj_t * ui_Image13;
 extern lv_obj_t * ui_Label6;
 extern lv_obj_t * ui_Label9;
+extern void ui_event_ImgButton13(lv_event_t * e);
+extern lv_obj_t * ui_ImgButton13;
 extern lv_obj_t * ui_taFBookName;
 extern void ui_event_btnSearchBook(lv_event_t * e);
 extern lv_obj_t * ui_btnSearchBook;
 extern lv_obj_t * ui_Label10;
-extern void ui_event_ImgButton6(lv_event_t * e);
-extern lv_obj_t * ui_ImgButton6;
 extern lv_obj_t * ui_ErrorFBEBN;
 // CUSTOM VARIABLES
 

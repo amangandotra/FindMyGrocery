@@ -13,7 +13,9 @@ lv_obj_t * ui_Label12 = NULL;
 lv_obj_t * ui_labelBDBookName = NULL;
 lv_obj_t * ui_labelBDStatus = NULL;
 lv_obj_t * ui_Label7 = NULL;
-lv_obj_t * ui_labelBDBookCode = NULL;
+lv_obj_t * ui_labelPDPrice = NULL;
+lv_obj_t * ui_Label61 = NULL;
+lv_obj_t * ui_labelPDMRP = NULL;
 lv_obj_t * ui_labelBDLocation = NULL;
 lv_obj_t * ui_Container7 = NULL;
 lv_obj_t * ui_btnBlinkShelf = NULL;
@@ -104,10 +106,10 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_Label11 = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_Label11, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label11, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label11, 0);
+    lv_obj_set_x(ui_Label11, 6);
     lv_obj_set_y(ui_Label11, -92);
     lv_obj_set_align(ui_Label11, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label11, "Book Details");
+    lv_label_set_text(ui_Label11, "Product Details");
     lv_obj_set_style_text_color(ui_Label11, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label11, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_font(ui_Label11, &lv_font_montserrat_30, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -130,16 +132,16 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_Label12 = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_Label12, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label12, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_Label12, -82);
+    lv_obj_set_x(ui_Label12, -74);
     lv_obj_set_y(ui_Label12, -47);
     lv_obj_set_align(ui_Label12, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label12, "Book Name :");
+    lv_label_set_text(ui_Label12, "Grocery Name :");
     lv_obj_set_style_text_align(ui_Label12, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_labelBDBookName = lv_label_create(ui_screenFindBookInfo);
-    lv_obj_set_width(ui_labelBDBookName, 163);
+    lv_obj_set_width(ui_labelBDBookName, 150);
     lv_obj_set_height(ui_labelBDBookName, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelBDBookName, 52);
+    lv_obj_set_x(ui_labelBDBookName, 63);
     lv_obj_set_y(ui_labelBDBookName, -48);
     lv_obj_set_align(ui_labelBDBookName, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelBDBookName, "");
@@ -148,8 +150,8 @@ void ui_screenFindBookInfo_screen_init(void)
     ui_labelBDStatus = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_labelBDStatus, 252);
     lv_obj_set_height(ui_labelBDStatus, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelBDStatus, 1);
-    lv_obj_set_y(ui_labelBDStatus, -9);
+    lv_obj_set_x(ui_labelBDStatus, -1);
+    lv_obj_set_y(ui_labelBDStatus, 2);
     lv_obj_set_align(ui_labelBDStatus, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelBDStatus, "Available");
     lv_obj_set_style_text_color(ui_labelBDStatus, lv_color_hex(0x00C218), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -162,23 +164,41 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_x(ui_Label7, -81);
     lv_obj_set_y(ui_Label7, -30);
     lv_obj_set_align(ui_Label7, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label7, "Book Code :  ");
+    lv_label_set_text(ui_Label7, "Price:             ");
     lv_obj_set_style_text_align(ui_Label7, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
 
-    ui_labelBDBookCode = lv_label_create(ui_screenFindBookInfo);
-    lv_obj_set_width(ui_labelBDBookCode, 161);
-    lv_obj_set_height(ui_labelBDBookCode, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelBDBookCode, 51);
-    lv_obj_set_y(ui_labelBDBookCode, -29);
-    lv_obj_set_align(ui_labelBDBookCode, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_labelBDBookCode, "");
-    lv_obj_set_style_text_align(ui_labelBDBookCode, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+    ui_labelPDPrice = lv_label_create(ui_screenFindBookInfo);
+    lv_obj_set_width(ui_labelPDPrice, 204);
+    lv_obj_set_height(ui_labelPDPrice, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_labelPDPrice, 20);
+    lv_obj_set_y(ui_labelPDPrice, -32);
+    lv_obj_set_align(ui_labelPDPrice, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_labelPDPrice, "");
+    lv_obj_set_style_text_align(ui_labelPDPrice, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    ui_Label61 = lv_label_create(ui_screenFindBookInfo);
+    lv_obj_set_width(ui_Label61, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_Label61, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_Label61, -81);
+    lv_obj_set_y(ui_Label61, -15);
+    lv_obj_set_align(ui_Label61, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_Label61, "MRP:              ");
+    lv_obj_set_style_text_align(ui_Label61, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
+
+    ui_labelPDMRP = lv_label_create(ui_screenFindBookInfo);
+    lv_obj_set_width(ui_labelPDMRP, 204);
+    lv_obj_set_height(ui_labelPDMRP, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_labelPDMRP, 15);
+    lv_obj_set_y(ui_labelPDMRP, -18);
+    lv_obj_set_align(ui_labelPDMRP, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_labelPDMRP, "");
+    lv_obj_set_style_text_align(ui_labelPDMRP, LV_TEXT_ALIGN_LEFT, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_labelBDLocation = lv_label_create(ui_screenFindBookInfo);
     lv_obj_set_width(ui_labelBDLocation, 236);
     lv_obj_set_height(ui_labelBDLocation, LV_SIZE_CONTENT);    /// 1
-    lv_obj_set_x(ui_labelBDLocation, -7);
-    lv_obj_set_y(ui_labelBDLocation, 9);
+    lv_obj_set_x(ui_labelBDLocation, -9);
+    lv_obj_set_y(ui_labelBDLocation, 17);
     lv_obj_set_align(ui_labelBDLocation, LV_ALIGN_CENTER);
     lv_label_set_text(ui_labelBDLocation, "ABCD");
     lv_obj_set_style_text_color(ui_labelBDLocation, lv_color_hex(0x00C218), LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -190,7 +210,7 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_width(ui_Container7, 288);
     lv_obj_set_height(ui_Container7, 98);
     lv_obj_set_x(ui_Container7, 0);
-    lv_obj_set_y(ui_Container7, 62);
+    lv_obj_set_y(ui_Container7, 68);
     lv_obj_set_align(ui_Container7, LV_ALIGN_CENTER);
     lv_obj_clear_flag(ui_Container7, LV_OBJ_FLAG_CLICKABLE | LV_OBJ_FLAG_SCROLLABLE);      /// Flags
 
@@ -219,10 +239,10 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_width(ui_Label14, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label14, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label14, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label14, "Blink Shelf");
+    lv_label_set_text(ui_Label14, "Highlight Shelf");
     lv_obj_set_style_text_color(ui_Label14, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label14, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label14, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label14, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_btnBlinkBook = lv_btn_create(ui_Container7);
     lv_obj_set_width(ui_btnBlinkBook, 115);
@@ -249,10 +269,10 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_width(ui_Label13, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label13, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label13, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label13, "Blink Book");
+    lv_label_set_text(ui_Label13, "Highlight Item");
     lv_obj_set_style_text_color(ui_Label13, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label13, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
-    lv_obj_set_style_text_font(ui_Label13, &lv_font_montserrat_16, LV_PART_MAIN | LV_STATE_DEFAULT);
+    lv_obj_set_style_text_font(ui_Label13, &lv_font_montserrat_14, LV_PART_MAIN | LV_STATE_DEFAULT);
 
     ui_btnShowBookLocation = lv_btn_create(ui_Container7);
     lv_obj_set_width(ui_btnShowBookLocation, 115);
@@ -279,7 +299,7 @@ void ui_screenFindBookInfo_screen_init(void)
     lv_obj_set_width(ui_Label28, LV_SIZE_CONTENT);   /// 1
     lv_obj_set_height(ui_Label28, LV_SIZE_CONTENT);    /// 1
     lv_obj_set_align(ui_Label28, LV_ALIGN_CENTER);
-    lv_label_set_text(ui_Label28, "Location Map");
+    lv_label_set_text(ui_Label28, "Take Me There");
     lv_obj_set_style_text_color(ui_Label28, lv_color_hex(0xFFFFFF), LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_opa(ui_Label28, 255, LV_PART_MAIN | LV_STATE_DEFAULT);
     lv_obj_set_style_text_align(ui_Label28, LV_TEXT_ALIGN_CENTER, LV_PART_MAIN | LV_STATE_DEFAULT);
@@ -435,7 +455,9 @@ void ui_screenFindBookInfo_screen_destroy(void)
     ui_labelBDBookName = NULL;
     ui_labelBDStatus = NULL;
     ui_Label7 = NULL;
-    ui_labelBDBookCode = NULL;
+    ui_labelPDPrice = NULL;
+    ui_Label61 = NULL;
+    ui_labelPDMRP = NULL;
     ui_labelBDLocation = NULL;
     ui_Container7 = NULL;
     uic_Button7 = NULL;
